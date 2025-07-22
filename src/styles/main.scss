@@ -1,0 +1,27 @@
+@import '../components/NavigationBar.module.scss';
+@import '../components/HeroSection.module.scss';
+@import '../components/FeaturesSection.module.scss';
+@import '../components/FinalCTASection.module.scss';
+@import '../components/Header.module.scss';
+@import '../components/ProjectsSection.module.scss';
+@import '../components/RecentActivitySidebar.module.scss';
+@import '../pages/DashboardPage.module.scss';
+@import '../components/ProjectHeader.module.scss';
+@import '../components/TabbedNavigation.module.scss';
+@import '../components/TasksTabContent.module.scss';
+@import '../components/Container.module.scss';
+@import '../components/ProjectCard.module.scss';
+@import '../components/TaskCard.module.scss';
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #111827;
+  background-color: #F3F4F6;
+}
+
+* {
+  box-sizing: border-box;
+}
