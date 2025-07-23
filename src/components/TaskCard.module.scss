@@ -1,0 +1,43 @@
+.taskCard {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 0.8rem;
+  cursor: grab;
+
+  h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #6B7280;
+
+    .priority {
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.3rem;
+      font-weight: bold;
+
+      &.high {
+        background-color: #FEE2E2;
+        color: #EF4444;
+      }
+
+      &.medium {
+        background-color: #FFFBEB;
+        color: #F59E0B;
+      }
+
+      &.low {
+        background-color: #EEF2FF;
+        color: #6366F1;
+      }
+    }
+  }
+}
