@@ -1,13 +1,21 @@
 import React from 'react'
 import styles from './HeroSection.module.scss'
-import { Text } from '@contentstorage/react'
+import { Image, Text, useManageLanguage } from '@contentstorage/react'
 
 const HeroSection: React.FC = () => {
+  const { languageCodes, currentLanguageCode, setLanguage } =
+    useManageLanguage()
+  console.log('currentLanguageCode', currentLanguageCode)
   return (
     <div className={styles.hero}>
       <h1>
         <Text contentId="App.Heading" />
       </h1>
+      <Image width="200" contentId="App.kanghuru" />
+
+      {languageCodes.map((code) => {
+        return <button onClick={() => setLanguage(code)}>{code}</button>
+      })}
       <h1>Where Great Work Happens, Together.</h1>
       <p>
         Stop juggling apps. ConnectSphere brings your team, tasks, and projects
