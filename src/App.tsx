@@ -1,24 +1,49 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import LandingPage from './pages/LandingPage'
+import React, { useState } from 'react'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom'
+import LoginPage from './pages/LoginPage'
 import DashboardPage from './pages/DashboardPage'
-import ProjectDetailPage from './pages/ProjectDetailPage'
-import { ContentProvider } from '@contentstorage/react'
+import AnalyticsPage from './pages/AnalyticsPage'
+import ReportsPage from './pages/ReportsPage'
+import IntegrationsPage from './pages/IntegrationsPage'
+import SettingsPage from './pages/SettingsPage'
+import Layout from './components/Layout'
+import './styles/main.scss' // Import global styles
 
-function App() {
+const App: React.FC = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+  const handleLoginSuccess = () => {
+    setIsLoggedIn(true)
+  }
+
   return (
-    <ContentProvider
-      contentKey="108541025900791613826/2076807b-036d-4e7a-a5ea-24190920bde6"
-      loadingFallback={<div>LOADING CONTENT</div>}
-      languageCodes={['EN', 'FR']}
-    >
-      <Router>
+    <Router>
+      <div className="App">
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/dashboard" element={<DashboardPage />} />
-          <Route path="/project/:id" element={<ProjectDetailPage />} />
+          <Route
+            path="/login"
+            element={<LoginPage onLoginSuccess={handleLoginSuccess} />}
+          />
+          {isLoggedIn ? (
+            <Route path="/" element={<Layout />}>
+              <Route path="dashboard" element={<DashboardPage />} />
+              <Route path="analytics" element={<AnalyticsPage />} />
+              <Route path="reports" element={<ReportsPage />} />
+              <Route path="integrations" element={<IntegrationsPage />} />
+              <Route path="settings" element={<SettingsPage />} />
+              <Route path="*" element={<Navigate to="dashboard" replace />} />
+            </Route>
+          ) : (
+            <Route path="*" element={<Navigate to="/login" replace />} />
+          )}
         </Routes>
-      </Router>
-    </ContentProvider>
+      </div>
+    </Router>
   )
 }
 

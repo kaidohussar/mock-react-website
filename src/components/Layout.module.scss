@@ -1,0 +1,24 @@
+@use '../../src/styles/variables' as *;
+
+.layoutContainer {
+  display: flex;
+  min-height: 100vh;
+  background-color: $color-background-light;
+
+  .mainContentArea {
+    flex-grow: 1;
+    margin-left: 250px; // Corresponds to sidebar width
+
+    @media (max-width: $breakpoint-md) {
+      margin-left: 80px; // Corresponds to collapsed sidebar width
+    }
+
+    .mainContent {
+      padding: $spacing-lg;
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: row; // Keep sidebar on left, but it will be collapsed
+  }
+}

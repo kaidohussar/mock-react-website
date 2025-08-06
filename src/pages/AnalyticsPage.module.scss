@@ -1,0 +1,29 @@
+.analyticsPage {
+  padding: 20px;
+
+  .dataSection {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 8px 0;
+        border-bottom: 1px dashed #eee;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

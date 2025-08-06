@@ -1,0 +1,40 @@
+// src/styles/_variables.scss
+
+// Colors
+$color-primary: #007bff; // Muted blue accent
+$color-primary-dark: #0056b3;
+$color-text-dark: #333;
+$color-text-light: #666;
+$color-background-light: #f8f9fa;
+$color-background-card: #fff;
+$color-border: #ddd;
+$color-success: #28a745;
+$color-danger: #dc3545;
+$color-warning: #ffc107;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+// Font Sizes
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 1.5rem;
+$font-size-xxl: 2rem;
+
+// Border Radius
+$border-radius: 8px;
+
+// Box Shadow
+$box-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+$box-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

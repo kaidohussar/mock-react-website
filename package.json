@@ -8,13 +8,16 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate-types": "generate-types"
+    "generate-types": "generate-types",
+    "pull-content": "pull-content"
   },
   "dependencies": {
-    "@contentstorage/react": "0.2.13",
+    "@contentstorage/react": "0.3.1",
+    "lucide-react": "^0.536.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.7.0"
+    "react-router-dom": "^7.7.1",
+    "recharts": "^3.1.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
@@ -28,7 +31,7 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "prettier": "^3.6.2",
-    "sass": "^1.89.2",
+    "sass": "^1.90.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.35.1",
     "vite": "^7.0.4"

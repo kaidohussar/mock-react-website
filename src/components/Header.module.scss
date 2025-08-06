@@ -1,45 +1,117 @@
+@use '../../src/styles/variables' as *;
+@use "sass:color";
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #F3F4F6;
+  padding: $spacing-md $spacing-lg;
+  background-color: $color-background-card;
+  border-bottom: 1px solid $color-border;
+  box-shadow: $box-shadow-sm;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 
-  .welcomeMessage {
-    font-size: 1.2rem;
+  .searchBar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 400px;
+    margin-right: $spacing-lg;
+
+    .searchIcon {
+      color: $color-text-light;
+      margin-right: $spacing-sm;
+    }
+
+    .searchInput {
+      flex-grow: 1;
+      margin-bottom: 0 !important;
+      .input {
+        border: none;
+        background-color: color.adjust($color-background-light, $lightness: 2%);
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
   }
 
-  .actions {
+  .userSection {
     display: flex;
     align-items: center;
 
-    input {
-      padding: 0.5rem;
-      border-radius: 0.5rem;
-      border: 1px solid #D1D5DB;
-      margin-right: 1rem;
-    }
-
-    button {
-      background-color: #4F46E5;
-      color: white;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 0.5rem;
+    .icon {
+      color: $color-text-light;
+      margin-right: $spacing-lg;
       cursor: pointer;
-      margin-right: 1rem;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: $color-primary;
+      }
     }
 
-    .profileAvatar {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #4F46E5;
-      color: white;
+    .userProfile {
       display: flex;
-      justify-content: center;
       align-items: center;
-      font-weight: bold;
+
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        margin-right: $spacing-sm;
+      }
+
+      .userInfo {
+        display: flex;
+        flex-direction: column;
+
+        .userName {
+          font-weight: 600;
+          color: $color-text-dark;
+        }
+
+        .userRole {
+          font-size: $font-size-sm;
+          color: $color-text-light;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: $spacing-md;
+    .searchBar {
+      max-width: 200px;
+      margin-right: $spacing-md;
+      .searchInput {
+        .input {
+          padding: $spacing-sm;
+        }
+      }
+    }
+
+    .userSection {
+      .icon {
+        margin-right: $spacing-md;
+      }
+      .userInfo {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    .searchBar {
+      display: none;
     }
   }
 }

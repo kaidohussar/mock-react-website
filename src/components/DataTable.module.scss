@@ -1,0 +1,56 @@
+@use '../../src/styles/variables' as *;
+@use "sass:color";
+
+.dataTableContainer {
+  background-color: $color-background-card;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-md;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-lg;
+
+  .dataTableTitle {
+    font-size: $font-size-lg;
+    color: $color-text-dark;
+    margin-bottom: $spacing-lg;
+    text-align: center;
+  }
+
+  .tableWrapper {
+    overflow-x: auto;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: $spacing-md;
+      border-bottom: 1px solid $color-border;
+      text-align: left;
+
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    th {
+      background-color: color.adjust($color-background-light, $lightness: 2%);
+      font-weight: 600;
+      color: $color-text-dark;
+      font-size: $font-size-sm;
+      text-transform: uppercase;
+    }
+
+    tbody tr {
+      &:last-child {
+        td {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

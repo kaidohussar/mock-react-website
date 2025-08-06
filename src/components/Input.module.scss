@@ -1,0 +1,35 @@
+@use '../../src/styles/variables' as *;
+@use "sass:color";
+
+.inputGroup {
+  margin-bottom: $spacing-md;
+  width: 100%;
+
+  .label {
+    display: block;
+    margin-bottom: $spacing-xs;
+    font-size: $font-size-sm;
+    color: $color-text-light;
+  }
+
+  .input {
+    width: 100%;
+    padding: $spacing-sm $spacing-md;
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+    font-size: $font-size-md;
+    color: $color-text-dark;
+    background-color: $color-background-card;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+    &:focus {
+      outline: none;
+      border-color: $color-primary;
+      box-shadow: 0 0 0 3px rgba($color-primary, 0.2);
+    }
+
+    &::placeholder {
+      color: color.adjust($color-text-light, $lightness: 15%);
+    }
+  }
+}

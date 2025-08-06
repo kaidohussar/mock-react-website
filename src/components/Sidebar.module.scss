@@ -1,0 +1,91 @@
+@use '../../src/styles/variables' as *;
+@use "sass:color";
+
+.sidebar {
+  width: 250px;
+  background-color: $color-background-card;
+  padding: $spacing-lg $spacing-md;
+  box-shadow: $box-shadow-sm;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; // Full height
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  @media (max-width: $breakpoint-md) {
+    width: 80px;
+    padding: $spacing-lg $spacing-sm;
+
+    .logo {
+      font-size: $font-size-lg;
+      text-align: center;
+      margin-bottom: $spacing-xl;
+      span {
+        display: none;
+      }
+    }
+
+    .navigation {
+      li {
+        a {
+          justify-content: center;
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .logo {
+    font-size: $font-size-xl;
+    font-weight: 700;
+    color: $color-primary;
+    text-align: center;
+    margin-bottom: $spacing-xl;
+  }
+
+  .navigation {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: $spacing-sm;
+
+        a {
+          display: flex;
+          align-items: center;
+          padding: $spacing-sm $spacing-md;
+          color: $color-text-dark;
+          text-decoration: none;
+          border-radius: $border-radius;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+          &:hover {
+            background-color: color.adjust($color-background-light, $lightness: 2%);
+            color: $color-primary;
+          }
+
+          svg {
+            margin-right: $spacing-sm;
+          }
+        }
+
+        &.active {
+          a {
+            background-color: $color-primary;
+            color: #fff;
+
+            &:hover {
+              background-color: $color-primary-dark;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

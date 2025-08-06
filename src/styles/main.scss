@@ -1,27 +1,65 @@
-@import '../components/NavigationBar.module.scss';
-@import '../components/HeroSection.module.scss';
-@import '../components/FeaturesSection.module.scss';
-@import '../components/FinalCTASection.module.scss';
-@import '../components/Header.module.scss';
-@import '../components/ProjectsSection.module.scss';
-@import '../components/RecentActivitySidebar.module.scss';
-@import '../pages/DashboardPage.module.scss';
-@import '../components/ProjectHeader.module.scss';
-@import '../components/TabbedNavigation.module.scss';
-@import '../components/TasksTabContent.module.scss';
-@import '../components/Container.module.scss';
-@import '../components/ProjectCard.module.scss';
-@import '../components/TaskCard.module.scss';
+@use './variables' as *;
 
-body {
-  font-family: 'Inter', sans-serif;
+/* Basic Reset & Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  color: #111827;
-  background-color: #F3F4F6;
 }
 
-* {
-  box-sizing: border-box;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $color-background-light;
+  color: $color-text-dark;
+  line-height: 1.6;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Utility Classes (Optional, but often useful) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing-md;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

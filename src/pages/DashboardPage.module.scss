@@ -1,6 +1,21 @@
-.dashboard {
-  .mainContent {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+@use '../../src/styles/variables' as *;
+
+.dashboardContent {
+  .welcomeTitle {
+    font-size: $font-size-xxl;
+    color: $color-text-dark;
+    margin-bottom: $spacing-xl;
+  }
+
+  .kpiCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; // Distribute items evenly
+    margin: -$spacing-sm; // Counteract card margins
+    margin-bottom: $spacing-lg;
+
+    @media (max-width: $breakpoint-md) {
+      justify-content: center;
+    }
   }
 }

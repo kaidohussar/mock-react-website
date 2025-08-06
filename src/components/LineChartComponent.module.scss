@@ -1,0 +1,16 @@
+@use '../../src/styles/variables' as *;
+
+.chartContainer {
+  background-color: $color-background-card;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-md;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-lg;
+
+  .chartTitle {
+    font-size: $font-size-lg;
+    color: $color-text-dark;
+    margin-bottom: $spacing-lg;
+    text-align: center;
+  }
+}

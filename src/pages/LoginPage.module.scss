@@ -1,0 +1,42 @@
+@use '../../src/styles/variables' as *;
+
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $color-background-light;
+  padding: $spacing-md;
+}
+
+.loginCard {
+  width: 100%;
+  max-width: 400px;
+  padding: $spacing-xl;
+  text-align: left;
+
+  .logo {
+    font-size: $font-size-xxl;
+    font-weight: 700;
+    color: $color-primary;
+    margin-bottom: $spacing-xl;
+  }
+
+  .loginButton {
+    width: 100%;
+    margin-top: $spacing-md;
+    padding: $spacing-md;
+  }
+
+  .forgotPassword {
+    display: block;
+    text-align: center;
+    margin-top: $spacing-md;
+    font-size: $font-size-sm;
+    color: $color-text-light;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

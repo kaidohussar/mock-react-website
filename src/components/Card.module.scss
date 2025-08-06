@@ -1,0 +1,10 @@
+@use '../../src/styles/variables' as *;
+
+.card {
+  background-color: $color-background-card;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-md;
+  padding: $spacing-lg;
+  display: flex;
+  flex-direction: column;
+}

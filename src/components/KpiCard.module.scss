@@ -1,0 +1,48 @@
+@use '../../src/styles/variables' as *;
+
+.kpiCard {
+  background-color: $color-background-card;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-sm;
+  padding: $spacing-md;
+  text-align: center;
+  flex: 1;
+  min-width: 180px;
+  max-width: 25%;
+  margin: $spacing-sm;
+
+  @media (max-width: $breakpoint-lg) {
+    max-width: 45%;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    max-width: 100%;
+    margin: $spacing-sm 0;
+  }
+
+  .title {
+    font-size: $font-size-md;
+    color: $color-text-light;
+    margin-bottom: $spacing-xs;
+  }
+
+  .value {
+    font-size: $font-size-xl;
+    font-weight: 700;
+    color: $color-text-dark;
+    margin-bottom: $spacing-xs;
+  }
+
+  .change {
+    font-size: $font-size-sm;
+    font-weight: 600;
+
+    &.positive {
+      color: $color-success;
+    }
+
+    &.negative {
+      color: $color-danger;
+    }
+  }
+}
