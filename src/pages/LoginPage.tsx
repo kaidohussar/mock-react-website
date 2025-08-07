@@ -19,7 +19,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
   }
 
   const emailLabelText = useGetText({ contentId: 'Login.Labels.Email' })
-  const passwordLabelText = useGetText({ contentId: 'Login.Labels.Email' })
+  const passwordLabelText = useGetText({ contentId: 'Login.Labels.Password' })
   const emailPlaceholderText = useGetText({
     contentId: 'Login.Labels.EmailPlaceholder',
   })
