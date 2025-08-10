@@ -12,28 +12,32 @@ const DashboardPage: React.FC = () => {
       title: 'Total Visitors',
       value: '24,803',
       change: '+12.5%',
-      changeType: 'positive' as const,
+      // eslint-disable-next-line
+      changeType: 'positive' as 'positive',
     },
     {
       title: 'Bounce Rate',
       value: '47.2%',
       change: '-2.1%',
-      changeType: 'negative' as const,
+      // eslint-disable-next-line
+      changeType: 'negative' as 'negative',
     },
     {
       title: 'New Signups',
       value: '1,204',
       change: '+5.8%',
-      changeType: 'positive' as const,
+      // eslint-disable-next-line
+      changeType: 'positive' as 'positive',
     },
     {
       title: 'Conversion Rate',
       value: '3.4%',
       change: '+0.7%',
-      changeType: 'positive' as const,
+      // eslint-disable-next-line
+      changeType: 'positive' as 'positive',
     },
   ]
-  const title = useGetText({ contentId: 'Dashboard.TrendingVisitors.Title' })
+
   const thisPeriodText = useGetText({
     contentId: 'Dashboard.TrendingVisitors.ThisPeriod',
   })
@@ -43,18 +47,18 @@ const DashboardPage: React.FC = () => {
 
   // Mock Data for Line Chart
   const chartData = [
-    { name: 'Jan', 'This Period': 4000, 'Previous Period': 2400 },
-    { name: 'Feb', 'This Period': 3000, 'Previous Period': 1398 },
-    { name: 'Mar', 'This Period': 2000, 'Previous Period': 9800 },
-    { name: 'Apr', 'This Period': 2780, 'Previous Period': 3908 },
-    { name: 'May', 'This Period': 1890, 'Previous Period': 4800 },
-    { name: 'Jun', 'This Period': 2390, 'Previous Period': 3800 },
-    { name: 'Jul', 'This Period': 3490, 'Previous Period': 4300 },
-    { name: 'Aug', 'This Period': 4000, 'Previous Period': 2400 },
-    { name: 'Sep', 'This Period': 3000, 'Previous Period': 1398 },
-    { name: 'Oct', 'This Period': 2000, 'Previous Period': 9800 },
-    { name: 'Nov', 'This Period': 2780, 'Previous Period': 3908 },
-    { name: 'Dec', 'This Period': 1890, 'Previous Period': 4800 },
+    { name: 'Jan', [thisPeriodText]: 4000, [previousPeriodText]: 2400 },
+    { name: 'Feb', [thisPeriodText]: 3000, [previousPeriodText]: 1398 },
+    { name: 'Mar', [thisPeriodText]: 2000, [previousPeriodText]: 9800 },
+    { name: 'Apr', [thisPeriodText]: 2780, [previousPeriodText]: 3908 },
+    { name: 'May', [thisPeriodText]: 1890, [previousPeriodText]: 4800 },
+    { name: 'Jun', [thisPeriodText]: 2390, [previousPeriodText]: 3800 },
+    { name: 'Jul', [thisPeriodText]: 3490, [previousPeriodText]: 4300 },
+    { name: 'Aug', [thisPeriodText]: 4000, [previousPeriodText]: 2400 },
+    { name: 'Sep', [thisPeriodText]: 3000, [previousPeriodText]: 1398 },
+    { name: 'Oct', [thisPeriodText]: 2000, [previousPeriodText]: 9800 },
+    { name: 'Nov', [thisPeriodText]: 2780, [previousPeriodText]: 3908 },
+    { name: 'Dec', [thisPeriodText]: 1890, [previousPeriodText]: 4800 },
   ]
 
   // Mock Data for Data Table
@@ -72,6 +76,8 @@ const DashboardPage: React.FC = () => {
     { source: 'Facebook', visitors: '2,800', conversionRate: '1.9%' },
     { source: 'LinkedIn', visitors: '1,900', conversionRate: '3.0%' },
   ]
+
+  const title = useGetText({ contentId: 'Dashboard.TrendingVisitors.Title' })
 
   return (
     <div className={styles.dashboardContent}>
