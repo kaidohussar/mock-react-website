@@ -1,8 +1,9 @@
-import React from 'react';
-import KpiCard from '../components/KpiCard';
-import LineChartComponent from '../components/LineChartComponent';
-import DataTable from '../components/DataTable';
-import styles from './DashboardPage.module.scss';
+import React from 'react'
+import KpiCard from '../components/KpiCard'
+import LineChartComponent from '../components/LineChartComponent'
+import DataTable from '../components/DataTable'
+import styles from './DashboardPage.module.scss'
+import { useGetText } from '@contentstorage/react'
 
 const DashboardPage: React.FC = () => {
   // Mock Data for KPI Cards
@@ -11,27 +12,34 @@ const DashboardPage: React.FC = () => {
       title: 'Total Visitors',
       value: '24,803',
       change: '+12.5%',
-      changeType: 'positive' as 'positive',
+      changeType: 'positive' as const,
     },
     {
       title: 'Bounce Rate',
       value: '47.2%',
       change: '-2.1%',
-      changeType: 'negative' as 'negative',
+      changeType: 'negative' as const,
     },
     {
       title: 'New Signups',
       value: '1,204',
       change: '+5.8%',
-      changeType: 'positive' as 'positive',
+      changeType: 'positive' as const,
     },
     {
       title: 'Conversion Rate',
       value: '3.4%',
       change: '+0.7%',
-      changeType: 'positive' as 'positive',
+      changeType: 'positive' as const,
     },
-  ];
+  ]
+
+  const thisPeriodText = useGetText({
+    contentId: 'Dashboard.TrendingVisitors.ThisPeriod',
+  })
+  const previousPeriodText = useGetText({
+    contentId: 'Dashboard.TrendingVisitors.PreviousPeriod',
+  })
 
   // Mock Data for Line Chart
   const chartData = [
@@ -47,14 +55,14 @@ const DashboardPage: React.FC = () => {
     { name: 'Oct', 'This Period': 2000, 'Previous Period': 9800 },
     { name: 'Nov', 'This Period': 2780, 'Previous Period': 3908 },
     { name: 'Dec', 'This Period': 1890, 'Previous Period': 4800 },
-  ];
+  ]
 
   // Mock Data for Data Table
   const tableColumns = [
     { key: 'source', header: 'Source' },
     { key: 'visitors', header: 'Visitors' },
     { key: 'conversionRate', header: 'Conversion Rate' },
-  ];
+  ]
 
   const tableData = [
     { source: 'Google', visitors: '15,000', conversionRate: '4.5%' },
@@ -63,7 +71,7 @@ const DashboardPage: React.FC = () => {
     { source: 'Direct', visitors: '3,500', conversionRate: '5.2%' },
     { source: 'Facebook', visitors: '2,800', conversionRate: '1.9%' },
     { source: 'LinkedIn', visitors: '1,900', conversionRate: '3.0%' },
-  ];
+  ]
 
   return (
     <div className={styles.dashboardContent}>
@@ -78,8 +86,8 @@ const DashboardPage: React.FC = () => {
       <LineChartComponent
         title="Visitor Trends (Last 30 Days)"
         data={chartData}
-        dataKey1="This Period"
-        dataKey2="Previous Period"
+        dataKey1={thisPeriodText}
+        dataKey2={previousPeriodText}
       />
 
       <DataTable
@@ -88,7 +96,7 @@ const DashboardPage: React.FC = () => {
         data={tableData}
       />
     </div>
-  );
-};
+  )
+}
 
-export default DashboardPage;
+export default DashboardPage

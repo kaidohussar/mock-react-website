@@ -7,4 +7,7 @@ export default defineConfig({
   optimizeDeps: {
     include: ['@contentstorage/react'],
   },
+  server: {
+    allowedHosts: true,
+  },
 })

@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "generate-types": "generate-types",
-    "pull-content": "pull-content"
+    "pull-content": "pull-content",
+    "start-tunnel": "ngrok http 5174"
   },
   "dependencies": {
     "@contentstorage/react": "1.0.2",
