@@ -33,7 +33,7 @@ const DashboardPage: React.FC = () => {
       changeType: 'positive' as const,
     },
   ]
-
+  const title = useGetText({ contentId: 'Dashboard.TrendingVisitors.Title' })
   const thisPeriodText = useGetText({
     contentId: 'Dashboard.TrendingVisitors.ThisPeriod',
   })
@@ -84,7 +84,7 @@ const DashboardPage: React.FC = () => {
       </div>
 
       <LineChartComponent
-        title="Visitor Trends (Last 30 Days)"
+        title={title}
         data={chartData}
         dataKey1={thisPeriodText}
         dataKey2={previousPeriodText}
