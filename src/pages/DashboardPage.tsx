@@ -77,7 +77,10 @@ const DashboardPage: React.FC = () => {
     { source: 'LinkedIn', visitors: '1,900', conversionRate: '3.0%' },
   ]
 
-  const title = useGetText({ contentId: 'Dashboard.TrendingVisitors.Title' })
+  const title = useGetText({
+    contentId: 'Dashboard.TrendingVisitors.Title',
+    variables: { days: 30 },
+  })
 
   return (
     <div className={styles.dashboardContent}>
