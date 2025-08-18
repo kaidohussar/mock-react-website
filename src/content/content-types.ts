@@ -9,6 +9,11 @@ export interface ContentRoot {
   'Dashboard.TrendingVisitors.ThisPeriod': string;
   'Dashboard.TrendingVisitors.PreviousPeriod': string;
   'Dashboard.Greeting': string;
+  'Dashboard.Infoboxes.TotalVisitors': string;
+  'Dashboard.Infoboxes.BounceRate': string;
+  'Dashboard.Infoboxes.NewSignups': string;
+  'Dashboard.Infoboxes.ConversionRate': string;
+  'Dashboard.Infoboxes.New_signups': string;
   'Sidebar.Analytics': string;
   'Sidebar.Untitled': string;
   'Sidebar.Dashboard': string;

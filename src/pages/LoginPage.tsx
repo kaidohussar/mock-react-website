@@ -4,7 +4,7 @@ import Input from '../components/Input'
 import Button from '../components/Button'
 import styles from './LoginPage.module.scss'
 import { useNavigate } from 'react-router-dom'
-import { useGetText } from '@contentstorage/react'
+import { Text, useGetText } from '@contentstorage/react'
 
 interface LoginPageProps {
   onLoginSuccess: () => void
@@ -45,11 +45,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
             required
           />
           <Button type="submit" className={styles.loginButton}>
-            Login
+            <Text contentId="Login.LoginButtonText" />
           </Button>
         </form>
         <a href="#" className={styles.forgotPassword}>
-          Forgot Password?
+          <Text contentId="Login.ForgotPassword" />
         </a>
       </Card>
     </div>

@@ -3,34 +3,47 @@ import KpiCard from '../components/KpiCard'
 import LineChartComponent from '../components/LineChartComponent'
 import DataTable from '../components/DataTable'
 import styles from './DashboardPage.module.scss'
-import { useGetText } from '@contentstorage/react'
+import { Text, useGetText } from '@contentstorage/react'
 
 const DashboardPage: React.FC = () => {
+  const totalVisitors = useGetText({
+    contentId: 'Dashboard.Infoboxes.TotalVisitors',
+  })
+  const bounceRate = useGetText({
+    contentId: 'Dashboard.Infoboxes.BounceRate',
+  })
+  const newSignups = useGetText({
+    contentId: 'Dashboard.Infoboxes.NewSignups',
+  })
+  const conversionRates = useGetText({
+    contentId: 'Dashboard.Infoboxes.ConversionRate',
+  })
+
   // Mock Data for KPI Cards
   const kpiData = [
     {
-      title: 'Total Visitors',
+      title: totalVisitors,
       value: '24,803',
       change: '+12.5%',
       // eslint-disable-next-line
       changeType: 'positive' as 'positive',
     },
     {
-      title: 'Bounce Rate',
+      title: bounceRate,
       value: '47.2%',
       change: '-2.1%',
       // eslint-disable-next-line
       changeType: 'negative' as 'negative',
     },
     {
-      title: 'New Signups',
+      title: newSignups,
       value: '1,204',
       change: '+5.8%',
       // eslint-disable-next-line
       changeType: 'positive' as 'positive',
     },
     {
-      title: 'Conversion Rate',
+      title: conversionRates,
       value: '3.4%',
       change: '+0.7%',
       // eslint-disable-next-line
@@ -84,7 +97,9 @@ const DashboardPage: React.FC = () => {
 
   return (
     <div className={styles.dashboardContent}>
-      <h1 className={styles.welcomeTitle}>Welcome Back, Alex!</h1>
+      <h1 className={styles.welcomeTitle}>
+        <Text contentId="Dashboard.Greeting" variables={{ name: 'Alex' }} />
+      </h1>
 
       <div className={styles.kpiCardsContainer}>
         {kpiData.map((kpi, index) => (
