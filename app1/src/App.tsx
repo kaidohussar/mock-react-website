@@ -14,6 +14,10 @@ import SettingsPage from './pages/SettingsPage'
 import Layout from './components/Layout'
 import './styles/main.scss'
 import { ContentProvider } from '@contentstorage/react' // Import global styles
+// import ENContent from './content/json/EN.json'
+// import ETContent from './content/json/ET.json'
+//
+// const isDevEnv = import.meta.env.DEV
 
 const App: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -24,10 +28,11 @@ const App: React.FC = () => {
 
   return (
     <ContentProvider
-      contentKey="108541025900791613826/f36b1b95-9b1a-4863-86de-884fd8ffe2ae"
+      contentKey="108541025900791613826/52697ca2-e4c3-4f92-97bb-698bcb917dfc"
       loadingFallback={<div>LOADING CONTENT</div>}
-      languageCodes={['EN', 'FR']}
+      languageCodes={['EN', 'ET']}
       contentMode="headless"
+      withPendingChanges
     >
       <Router>
         <div className="App">

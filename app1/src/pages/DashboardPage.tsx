@@ -3,7 +3,7 @@ import KpiCard from '../components/KpiCard'
 import LineChartComponent from '../components/LineChartComponent'
 import DataTable from '../components/DataTable'
 import styles from './DashboardPage.module.scss'
-import { Text, useGetText } from '@contentstorage/react'
+import { Image, Text, useGetText, Variation } from '@contentstorage/react'
 
 const DashboardPage: React.FC = () => {
   const totalVisitors = useGetText({
@@ -100,6 +100,15 @@ const DashboardPage: React.FC = () => {
       <h1 className={styles.welcomeTitle}>
         <Text contentId="Dashboard.Greeting" variables={{ name: 'Alex' }} />
       </h1>
+      <h2 className={styles.roleDisplay}>
+        <Variation contentId="Dashboard.RoleDisplay" variationId="user" />
+      </h2>
+
+      <h3>
+        <Variation contentId="Sidebar.Test" variationId="variation2" />
+      </h3>
+
+      <Image contentId="Sidebar.Settings" />
 
       <div className={styles.kpiCardsContainer}>
         {kpiData.map((kpi, index) => (
