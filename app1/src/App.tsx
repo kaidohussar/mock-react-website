@@ -17,6 +17,7 @@ import { ContentstorageIntlProvider } from '@contentstorage/react-intl-plugin'
 import enMessages from './messages/en.json'
 import etMessages from './messages/et.json'
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const LocaleContext = createContext<{
   locale: string
   setLocale: (locale: string) => void
@@ -59,7 +60,10 @@ const App: React.FC = () => {
                   <Route path="reports" element={<ReportsPage />} />
                   <Route path="integrations" element={<IntegrationsPage />} />
                   <Route path="settings" element={<SettingsPage />} />
-                  <Route path="*" element={<Navigate to="dashboard" replace />} />
+                  <Route
+                    path="*"
+                    element={<Navigate to="dashboard" replace />}
+                  />
                 </Route>
               ) : (
                 <Route path="*" element={<Navigate to="/login" replace />} />
