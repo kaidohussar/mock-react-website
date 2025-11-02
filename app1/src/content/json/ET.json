@@ -1,0 +1,45 @@
+{
+  "Login": {
+    "Labels": {
+      "Email": "Email",
+      "Password": "Password",
+      "EmailPlaceholder": "Sisesta oma email",
+      "PasswordPlaceholder": "Sisesta oma password"
+    }
+  },
+  "Dashboard": {
+    "TrendingVisitors": {
+      "Title": "Kasutajate trendid (Viimased {days} päeva)",
+      "ThisPeriod": "Praegune periood",
+      "PreviousPeriod": "Eelmine periood"
+    },
+    "Greeting": "Teretulemast tagasi, {name}!",
+    "Infoboxes": {
+      "TotalVisitors": "Külastuste arv",
+      "BounceRate": "Lahkumiste suhe",
+      "ConversionRate": "Eduka ostu protsent",
+      "NewSignups": "Uued kasutajad"
+    },
+    "RoleDisplay": {
+      "contentstorage_type": "variation",
+      "data": {
+        "user": "Sa oled kasutaja",
+        "admin": "Sa oled amin"
+      }
+    }
+  },
+  "Sidebar": {
+    "Analytics": "Analüütika",
+    "Dashboard": "Töölaud",
+    "Reports": "Raportid",
+    "Integrations": "Integratsioonid",
+    "Settings": "Seaded",
+    "Test": {
+      "contentstorage_type": "variation",
+      "data": {
+        "default": "TestEE",
+        "variation2": "var2EE"
+      }
+    }
+  }
+}

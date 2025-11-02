@@ -3,20 +3,22 @@ import KpiCard from '../components/KpiCard'
 import LineChartComponent from '../components/LineChartComponent'
 import DataTable from '../components/DataTable'
 import styles from './DashboardPage.module.scss'
-import { Image, Text, useGetText, Variation } from '@contentstorage/react'
+import { useIntl, FormattedMessage } from 'react-intl'
 
 const DashboardPage: React.FC = () => {
-  const totalVisitors = useGetText({
-    contentId: 'Dashboard.Infoboxes.TotalVisitors',
+  const intl = useIntl()
+
+  const totalVisitors = intl.formatMessage({
+    id: 'Dashboard.Infoboxes.TotalVisitors',
   })
-  const bounceRate = useGetText({
-    contentId: 'Dashboard.Infoboxes.BounceRate',
+  const bounceRate = intl.formatMessage({
+    id: 'Dashboard.Infoboxes.BounceRate',
   })
-  const newSignups = useGetText({
-    contentId: 'Dashboard.Infoboxes.NewSignups',
+  const newSignups = intl.formatMessage({
+    id: 'Dashboard.Infoboxes.NewSignups',
   })
-  const conversionRates = useGetText({
-    contentId: 'Dashboard.Infoboxes.ConversionRate',
+  const conversionRates = intl.formatMessage({
+    id: 'Dashboard.Infoboxes.ConversionRate',
   })
 
   // Mock Data for KPI Cards
@@ -51,11 +53,11 @@ const DashboardPage: React.FC = () => {
     },
   ]
 
-  const thisPeriodText = useGetText({
-    contentId: 'Dashboard.TrendingVisitors.ThisPeriod',
+  const thisPeriodText = intl.formatMessage({
+    id: 'Dashboard.TrendingVisitors.ThisPeriod',
   })
-  const previousPeriodText = useGetText({
-    contentId: 'Dashboard.TrendingVisitors.PreviousPeriod',
+  const previousPeriodText = intl.formatMessage({
+    id: 'Dashboard.TrendingVisitors.PreviousPeriod',
   })
 
   // Mock Data for Line Chart
@@ -90,25 +92,22 @@ const DashboardPage: React.FC = () => {
     { source: 'LinkedIn', visitors: '1,900', conversionRate: '3.0%' },
   ]
 
-  const title = useGetText({
-    contentId: 'Dashboard.TrendingVisitors.Title',
-    variables: { days: 30 },
-  })
+  const title = intl.formatMessage({
+    id: 'Dashboard.TrendingVisitors.Title',
+  }, { days: 30 })
 
   return (
     <div className={styles.dashboardContent}>
       <h1 className={styles.welcomeTitle}>
-        <Text contentId="Dashboard.Greeting" variables={{ name: 'Alex' }} />
+        <FormattedMessage id="Dashboard.Greeting" values={{ name: 'Alex' }} />
       </h1>
       <h2 className={styles.roleDisplay}>
-        <Variation contentId="Dashboard.RoleDisplay" variationId="user" />
+        <FormattedMessage id="Dashboard.RoleDisplay" />
       </h2>
 
       <h3>
-        <Variation contentId="Sidebar.Test" variationId="variation2" />
+        <FormattedMessage id="Sidebar.Test" />
       </h3>
-
-      <Image contentId="Sidebar.Settings" />
 
       <div className={styles.kpiCardsContainer}>
         {kpiData.map((kpi, index) => (

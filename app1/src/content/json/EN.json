@@ -1,0 +1,45 @@
+{
+  "Login": {
+    "Labels": {
+      "Email": "Your email",
+      "Password": "Your password",
+      "EmailPlaceholder": "Enter your email",
+      "PasswordPlaceholder": "Enter your password"
+    }
+  },
+  "Dashboard": {
+    "TrendingVisitors": {
+      "Title": "Visitor Trends (Last {days} Days)",
+      "ThisPeriod": "This period",
+      "PreviousPeriod": "Previous period"
+    },
+    "Greeting": "Welcome Back, {name}!",
+    "Infoboxes": {
+      "TotalVisitors": "Total visitors",
+      "BounceRate": "Bounce rate",
+      "ConversionRate": "Conversion rate",
+      "NewSignups": "New signups"
+    },
+    "RoleDisplay": {
+      "contentstorage_type": "variation",
+      "data": {
+        "user": "You are user",
+        "admin": "You are admin"
+      }
+    }
+  },
+  "Sidebar": {
+    "Analytics": "Analytics",
+    "Dashboard": "Dashboard",
+    "Reports": "Reports",
+    "Integrations": "Integrations",
+    "Settings": "Settings",
+    "Test": {
+      "contentstorage_type": "variation",
+      "data": {
+        "default": "TestEn",
+        "variation2": "var2en"
+      }
+    }
+  }
+}

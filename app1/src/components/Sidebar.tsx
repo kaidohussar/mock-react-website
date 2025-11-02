@@ -8,7 +8,7 @@ import {
   Puzzle,
   Settings,
 } from 'lucide-react'
-import { Text } from '@contentstorage/react'
+import { FormattedMessage } from 'react-intl'
 
 const Sidebar: React.FC = () => {
   const location = useLocation()
@@ -26,7 +26,7 @@ const Sidebar: React.FC = () => {
             <Link to="/dashboard">
               <LayoutDashboard size={20} />
               <span>
-                <Text contentId="Sidebar.Dashboard" />
+                <FormattedMessage id="Sidebar.Dashboard" />
               </span>
             </Link>
           </li>
@@ -34,7 +34,7 @@ const Sidebar: React.FC = () => {
             <Link to="/analytics">
               <BarChart2 size={20} />
               <span>
-                <Text contentId="Sidebar.Analytics" />
+                <FormattedMessage id="Sidebar.Analytics" />
               </span>
             </Link>
           </li>
@@ -42,7 +42,7 @@ const Sidebar: React.FC = () => {
             <Link to="/reports">
               <FileText size={20} />
               <span>
-                <Text contentId="Sidebar.Reports" />
+                <FormattedMessage id="Sidebar.Reports" />
               </span>
             </Link>
           </li>
@@ -50,7 +50,7 @@ const Sidebar: React.FC = () => {
             <Link to="/integrations">
               <Puzzle size={20} />
               <span>
-                <Text contentId="Sidebar.Integrations" />
+                <FormattedMessage id="Sidebar.Integrations" />
               </span>
             </Link>
           </li>
@@ -58,7 +58,7 @@ const Sidebar: React.FC = () => {
             <Link to="/settings">
               <Settings size={20} />
               <span>
-                <Text contentId="Sidebar.Settings" />
+                <FormattedMessage id="Sidebar.Settings" />
               </span>
             </Link>
           </li>

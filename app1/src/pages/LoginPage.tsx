@@ -4,7 +4,7 @@ import Input from '../components/Input'
 import Button from '../components/Button'
 import styles from './LoginPage.module.scss'
 import { useNavigate } from 'react-router-dom'
-import { Text, useGetText } from '@contentstorage/react'
+import { useIntl, FormattedMessage } from 'react-intl'
 
 interface LoginPageProps {
   onLoginSuccess: () => void
@@ -12,19 +12,21 @@ interface LoginPageProps {
 
 const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
   const navigate = useNavigate()
+  const intl = useIntl()
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     onLoginSuccess()
     navigate('/dashboard')
   }
 
-  const emailLabelText = useGetText({ contentId: 'Login.Labels.Email' })
-  const passwordLabelText = useGetText({ contentId: 'Login.Labels.Password' })
-  const emailPlaceholderText = useGetText({
-    contentId: 'Login.Labels.EmailPlaceholder',
+  const emailLabelText = intl.formatMessage({ id: 'Login.Labels.Email' })
+  const passwordLabelText = intl.formatMessage({ id: 'Login.Labels.Password' })
+  const emailPlaceholderText = intl.formatMessage({
+    id: 'Login.Labels.EmailPlaceholder',
   })
-  const passwordPlaceholderText = useGetText({
-    contentId: 'Login.Labels.PasswordPlaceholder',
+  const passwordPlaceholderText = intl.formatMessage({
+    id: 'Login.Labels.PasswordPlaceholder',
   })
 
   return (
@@ -45,11 +47,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
             required
           />
           <Button type="submit" className={styles.loginButton}>
-            <Text contentId="Login.LoginButtonText" />
+            <FormattedMessage id="Login.LoginButtonText" />
           </Button>
         </form>
         <a href="#" className={styles.forgotPassword}>
-          <Text contentId="Login.ForgotPassword" />
+          <FormattedMessage id="Login.ForgotPassword" />
         </a>
       </Card>
     </div>

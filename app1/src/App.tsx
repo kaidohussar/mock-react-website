@@ -13,26 +13,28 @@ import IntegrationsPage from './pages/IntegrationsPage'
 import SettingsPage from './pages/SettingsPage'
 import Layout from './components/Layout'
 import './styles/main.scss'
-import { ContentProvider } from '@contentstorage/react' // Import global styles
-// import ENContent from './content/json/EN.json'
-// import ETContent from './content/json/ET.json'
-//
-// const isDevEnv = import.meta.env.DEV
+import { ContentstorageIntlProvider } from '@contentstorage/react-intl-plugin'
+import enMessages from './messages/en.json'
+import etMessages from './messages/et.json'
 
 const App: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [locale, setLocale] = useState('en')
 
   const handleLoginSuccess = () => {
     setIsLoggedIn(true)
   }
 
+  const messages = {
+    en: enMessages,
+    et: etMessages,
+  }
+
   return (
-    <ContentProvider
-      contentKey="108541025900791613826/f36b1b95-9b1a-4863-86de-884fd8ffe2ae"
-      loadingFallback={<div>LOADING CONTENT</div>}
-      languageCodes={['EN', 'ET']}
-      contentMode="headless"
-      withPendingChanges
+    <ContentstorageIntlProvider
+      locale={locale}
+      messages={messages[locale as keyof typeof messages]}
+      debug={false}
     >
       <Router>
         <div className="App">
@@ -56,7 +58,7 @@ const App: React.FC = () => {
           </Routes>
         </div>
       </Router>
-    </ContentProvider>
+    </ContentstorageIntlProvider>
   )
 }
 
