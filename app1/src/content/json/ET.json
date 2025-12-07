@@ -1,45 +1,51 @@
 {
   "Login": {
     "Labels": {
-      "Email": "Email",
-      "Password": "Password",
-      "EmailPlaceholder": "Sisesta oma email",
-      "PasswordPlaceholder": "Sisesta oma password"
-    }
+      "Password": "Parool",
+      "Email": "dtdtdtccfdgdtdtdtccfdgdtdtdtccfdgdtdtd tccfdgdtdtdtccfdgdtdtdtccfdgdtdtdtccfdgdtdtdtccfdg",
+      "dsdfsdf": "Sisesta oma email",
+      "PasswordPlaceholder": "Parool",
+      "newtext": "newest",
+      "sdflksdf": "magus",
+      "asdasdasd": "1231231et",
+      "sdfsdfsf": "popopop",
+      "Test": "sdfsdfsf",
+      "NewLabel": "sdfsdfsdfsfsdfsdfsdfdsfsdfdsfdsf",
+      "LoginButtonText": "Logi sisse",
+      "ForgotPassword": "Unustasid parooli?"
+    },
+    "Item": "gfgfgfgdfgdfgg123"
   },
   "Dashboard": {
-    "TrendingVisitors": {
-      "Title": "Kasutajate trendid (Viimased {days} päeva)",
-      "ThisPeriod": "Praegune periood",
-      "PreviousPeriod": "Eelmine periood"
-    },
     "Greeting": "Teretulemast tagasi, {name}!",
-    "Infoboxes": {
-      "TotalVisitors": "Külastuste arv",
-      "BounceRate": "Lahkumiste suhe",
-      "ConversionRate": "Eduka ostu protsent",
-      "NewSignups": "Uued kasutajad"
-    },
     "RoleDisplay": {
       "contentstorage_type": "variation",
       "data": {
         "user": "Sa oled kasutaja",
         "admin": "Sa oled amin"
       }
+    },
+    "Infoboxes": {
+      "TotalVisitors": "Külastuste arv",
+      "BounceRate": "Lahkumiste suhe",
+      "ConversionRate": "Eduka ostu protsent2222",
+      "NewSignups": "Uued kasutajad"
+    },
+    "TrendingVisitors": {
+      "Title": "Kasutajate trendid (Viimased {days} päeva)",
+      "ThisPeriod": "Praegune periood",
+      "PreviousPeriod": "Eelmine periood"
     }
   },
   "Sidebar": {
-    "Analytics": "Analüütika",
     "Dashboard": "Töölaud",
     "Reports": "Raportid",
     "Integrations": "Integratsioonid",
-    "Settings": "Seaded",
-    "Test": {
-      "contentstorage_type": "variation",
-      "data": {
-        "default": "TestEE",
-        "variation2": "var2EE"
-      }
-    }
+    "Analytics": "Analüütika!",
+    "Lebo": "Ha123"
+  },
+  "Onboarding": {
+    "Tutorials": {},
+    "NewUserTutorial2": "Test2"
   }
 }

@@ -1,33 +1,36 @@
 export interface ContentRoot {
-  'Login.Labels.Email': string;
   'Login.Labels.Password': string;
-  'Login.Labels.EmailPlaceholder': string;
+  'Login.Labels.Email': string;
+  'Login.Labels.dsdfsdf': string;
   'Login.Labels.PasswordPlaceholder': string;
-  'Dashboard.TrendingVisitors.Title': string;
-  'Dashboard.TrendingVisitors.ThisPeriod': string;
-  'Dashboard.TrendingVisitors.PreviousPeriod': string;
+  'Login.Labels.newtext': string;
+  'Login.Labels.sdflksdf': string;
+  'Login.Labels.asdasdasd': string;
+  'Login.Labels.sdfsdfsf': string;
+  'Login.Labels.Test': string;
+  'Login.Labels.NewLabel': string;
+  'Login.Labels.LoginButtonText': string;
+  'Login.Labels.ForgotPassword': string;
+  'Login.Item': string;
   'Dashboard.Greeting': string;
+  'Dashboard.RoleDisplay': DashboardRoleDisplay;
   'Dashboard.Infoboxes.TotalVisitors': string;
   'Dashboard.Infoboxes.BounceRate': string;
   'Dashboard.Infoboxes.ConversionRate': string;
   'Dashboard.Infoboxes.NewSignups': string;
-  'Dashboard.RoleDisplay': DashboardRoleDisplay;
-  'Sidebar.Analytics': string;
+  'Dashboard.TrendingVisitors.Title': string;
+  'Dashboard.TrendingVisitors.ThisPeriod': string;
+  'Dashboard.TrendingVisitors.PreviousPeriod': string;
   'Sidebar.Dashboard': string;
   'Sidebar.Reports': string;
   'Sidebar.Integrations': string;
-  'Sidebar.Settings': string;
-  'Sidebar.Test': SidebarTest;
+  'Sidebar.Analytics': string;
+  'Sidebar.Lebo': string;
+  'Onboarding.Tutorials': OnboardingTutorials;
+  'Onboarding.NewUserTutorial2': string;
 }
 
-interface SidebarTest {
-  contentstorage_type: string;
-  data: Data2;
-}
-
-interface Data2 {
-  default: string;
-  variation2: string;
+interface OnboardingTutorials {
 }
 
 interface DashboardRoleDisplay {
