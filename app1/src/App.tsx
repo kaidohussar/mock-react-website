@@ -14,8 +14,8 @@ import SettingsPage from './pages/SettingsPage'
 import Layout from './components/Layout'
 import './styles/main.scss'
 import { ContentstorageIntlProvider } from '@contentstorage/react-intl-plugin'
-import enMessages from './messages/en.json'
-import etMessages from './messages/et.json'
+import enMessages from './content/json/EN.json'
+import etMessages from './content/json/ET.json'
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const LocaleContext = createContext<{
@@ -34,16 +34,13 @@ const App: React.FC = () => {
     setIsLoggedIn(true)
   }
 
-  const messages = {
-    en: enMessages,
-    et: etMessages,
-  }
+  const messages = locale === 'et' ? etMessages : enMessages
 
   return (
     <LocaleContext.Provider value={{ locale, setLocale }}>
       <ContentstorageIntlProvider
         locale={locale}
-        messages={messages[locale as keyof typeof messages]}
+        messages={messages}
         debug={false}
       >
         <Router>

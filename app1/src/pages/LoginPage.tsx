@@ -47,11 +47,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
             required
           />
           <Button type="submit" className={styles.loginButton}>
-            <FormattedMessage id="Login.LoginButtonText" />
+            <FormattedMessage id="Login.Labels.LoginButtonText" />
           </Button>
         </form>
         <a href="#" className={styles.forgotPassword}>
-          <FormattedMessage id="Login.ForgotPassword" />
+          <FormattedMessage id="Login.Labels.ForgotPassword" />
         </a>
       </Card>
     </div>

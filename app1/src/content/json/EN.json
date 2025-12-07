@@ -1,51 +1,29 @@
 {
-  "Login": {
-    "Labels": {
-      "Password": "Your passwordfgfg",
-      "Email": "Your email123",
-      "dsdfsdf": "Enter your emailsdfsdf1111",
-      "PasswordPlaceholder": "Password",
-      "newtext": "neweng111",
-      "sdflksdf": "sweet",
-      "asdasdasd": "123123en",
-      "sdfsdfsf": "gdfgdfg",
-      "Test": "Test",
-      "NewLabel": "New Label",
-      "LoginButtonText": "Login",
-      "ForgotPassword": "Forgot password?"
-    },
-    "Item": "tatat4343345345"
-  },
-  "Dashboard": {
-    "Greeting": "Welcome Back, {name}!",
-    "RoleDisplay": {
-      "contentstorage_type": "variation",
-      "data": {
-        "user": "You are user",
-        "admin": "You are admin"
-      }
-    },
-    "Infoboxes": {
-      "TotalVisitors": "Total visitors",
-      "BounceRate": "Bounce rate",
-      "ConversionRate": "Conversion rate",
-      "NewSignups": "New signups"
-    },
-    "TrendingVisitors": {
-      "Title": "Visitor Trends (Last {days} Days)",
-      "ThisPeriod": "This period",
-      "PreviousPeriod": "Previous period"
-    }
-  },
-  "Sidebar": {
-    "Dashboard": "Dashboard",
-    "Reports": "Reports",
-    "Integrations": "Integrations",
-    "Analytics": "Analytics!",
-    "Lebo": "Hu123"
-  },
-  "Onboarding": {
-    "Tutorials": {},
-    "NewUserTutorial2": "Test"
-  }
+  "Login.Labels.Password": "Your password",
+  "Login.Labels.Email": "Your email",
+  "Login.Labels.EmailPlaceholder": "Enter your email",
+  "Login.Labels.PasswordPlaceholder": "Password",
+  "Login.Labels.newtext": "neweng1112",
+  "Login.Labels.sdflksdf": "sweet",
+  "Login.Labels.asdasdasd": "123123en",
+  "Login.Labels.sdfsdfsf": "gdfgdfg",
+  "Login.Labels.Test": "Test",
+  "Login.Labels.NewLabel": "New Label",
+  "Login.Labels.LoginButtonText": "Login",
+  "Login.Labels.ForgotPassword": "Forgot password?",
+  "Login.Item": "tatat4343345345",
+  "Dashboard.Greeting": "Welcome Back, {name}!",
+  "Dashboard.Infoboxes.TotalVisitors": "Total visitors",
+  "Dashboard.Infoboxes.BounceRate": "Bounce rate",
+  "Dashboard.Infoboxes.ConversionRate": "Conversion rate",
+  "Dashboard.Infoboxes.NewSignups": "New signups",
+  "Dashboard.TrendingVisitors.Title": "Visitor Trends (Last {days} Days)",
+  "Dashboard.TrendingVisitors.ThisPeriod": "This period",
+  "Dashboard.TrendingVisitors.PreviousPeriod": "Previous period",
+  "Sidebar.Dashboard": "Dashboard",
+  "Sidebar.Reports": "Reports",
+  "Sidebar.Integrations": "Integrations",
+  "Sidebar.Analytics": "Analytics!",
+  "Sidebar.Lebo": "Hu123",
+  "Onboarding.NewUserTutorial2": "Test"
 }

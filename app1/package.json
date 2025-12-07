@@ -9,11 +9,11 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "generate-types": "contentstorage generate-types -- --pending-changes",
-    "pull-content": "contentstorage pull",
+    "pull-content": "contentstorage pull --flatten",
     "start-tunnel": "ngrok http 5174"
   },
   "dependencies": {
-    "@contentstorage/core": "^2.1.1",
+    "@contentstorage/core": "^2.2.1",
     "@contentstorage/react-intl-plugin": "^1.0.0",
     "lucide-react": "^0.536.0",
     "react": "^19.1.0",
