@@ -22,11 +22,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
 
   const emailLabelText = intl.formatMessage({ id: 'Login.Labels.Email' })
   const passwordLabelText = intl.formatMessage({ id: 'Login.Labels.Password' })
-  const emailPlaceholderText = intl.formatMessage({
-    id: 'Login.Labels.EmailPlaceholder',
-  })
   const passwordPlaceholderText = intl.formatMessage({
     id: 'Login.Labels.PasswordPlaceholder',
+  })
+  const emailPlaceholderText = intl.formatMessage({
+    id: 'Login.Labels.EmailPlaceholder',
   })
 
   return (
