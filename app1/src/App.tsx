@@ -56,8 +56,8 @@ const App: React.FC = () => {
               {isLoggedIn ? (
                 <Route path="/" element={<Layout />}>
                   <Route path="dashboard" element={<DashboardPage />} />
-                  <Route path="analytics" element={<AnalyticsPage />} />
                   <Route path="reports" element={<ReportsPage />} />
+                  <Route path="analytics" element={<AnalyticsPage />} />
                   <Route path="integrations" element={<IntegrationsPage />} />
                   <Route path="settings" element={<SettingsPage />} />
                   <Route
