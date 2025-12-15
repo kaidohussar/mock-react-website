@@ -6,8 +6,8 @@ const { t } = useI18n()
 const features = [
   { key: 'dashboard', icon: '📋' },
   { key: 'integrations', icon: '🔗' },
-  { key: 'security', icon: '🔒' },
   { key: 'api', icon: '🛠️' },
+  { key: 'security', icon: '🔒' },
   { key: 'mobile', icon: '📱' },
   { key: 'support', icon: '💬' },
 ]
