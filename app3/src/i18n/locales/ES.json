@@ -1,0 +1,165 @@
+{
+  "features": {
+    "hero": {
+      "subtitle": "Todo lo que necesitas para optimizar tus operaciones y aumentar la productividad.",
+      "title": "Funciones Potentes para Equipos Modernos"
+    },
+    "list": {
+      "api": {
+        "description": "Construye integraciones personalizadas con nuestra API REST completa. Documentación completa y SDKs disponibles.",
+        "title": "API para Desarrolladores"
+      },
+      "dashboard": {
+        "description": "Un panel limpio y personalizable que te da una visión completa de tus proyectos, tareas y actividad del equipo de un vistazo.",
+        "title": "Panel Intuitivo"
+      },
+      "integrations": {
+        "description": "Conéctate con más de 100 herramientas populares incluyendo Slack, GitHub, Jira y más. Mantén tu flujo de trabajo sin interrupciones.",
+        "title": "Integraciones Perfectas"
+      },
+      "mobile": {
+        "description": "Mantente conectado en movimiento con nuestras apps nativas para iOS y Android. Funcionalidad completa, en cualquier lugar.",
+        "title": "Apps Móviles"
+      },
+      "security": {
+        "description": "Encriptación de nivel bancario, soporte SSO y cumplimiento con estándares SOC 2, GDPR y HIPAA.",
+        "title": "Seguridad Empresarial"
+      },
+      "support": {
+        "description": "Nuestro equipo de soporte dedicado siempre está listo para ayudar. Tiempo de respuesta promedio menor a 2 horas.",
+        "title": "Soporte 24/7"
+      }
+    }
+  },
+  "footer": {
+    "company": {
+      "about": "Acerca de",
+      "blog": "Blog",
+      "careers": "Carreras",
+      "contact": "Contacto",
+      "title": "Empresa"
+    },
+    "copyright": "© 2024 SaaSify. Todos los derechos reservados.",
+    "description": "Empoderando equipos para hacer su mejor trabajo.",
+    "legal": {
+      "privacy": "Privacidad",
+      "security": "Seguridad",
+      "terms": "Términos",
+      "title": "Legal"
+    },
+    "product": {
+      "changelog": "Historial de cambios",
+      "features": "Funciones",
+      "integrations": "Integraciones",
+      "pricing": "Precios",
+      "title": "Producto"
+    }
+  },
+  "header": {
+    "getStarted": "Comenzar",
+    "logo": "SaaSify"
+  },
+  "home": {
+    "cta": {
+      "button": "Comienza Tu Prueba Gratis",
+      "subtitle": "Únete a miles de equipos que ya usan SaaSify para transformar su flujo de trabajo.",
+      "title": "¿Listo Para Comenzar?"
+    },
+    "features": {
+      "analytics": {
+        "description": "Obtén información en tiempo real sobre el rendimiento de tu equipo con paneles potentes.",
+        "title": "Analíticas Avanzadas"
+      },
+      "automation": {
+        "description": "Automatiza tareas repetitivas y enfócate en lo que más importa.",
+        "title": "Automatización Inteligente"
+      },
+      "collaboration": {
+        "description": "Trabaja en conjunto sin problemas con herramientas de comunicación integradas.",
+        "title": "Colaboración en Equipo"
+      },
+      "title": "Por Qué Los Equipos Nos Eligen"
+    },
+    "hero": {
+      "cta": "Prueba Gratis",
+      "secondaryCta": "Ver Demo",
+      "subtitle": "La plataforma todo en uno que ayuda a los equipos a colaborar, automatizar y escalar sus operaciones sin esfuerzo.",
+      "title": "Potencia Tu Flujo de Trabajo"
+    }
+  },
+  "nav": {
+    "features": "Funciones",
+    "home": "Inicio",
+    "pricing": "Precios"
+  },
+  "pricing": {
+    "faq": {
+      "q1": {
+        "answer": "Sí, puedes mejorar o reducir tu plan en cualquier momento. Los cambios se aplican inmediatamente.",
+        "question": "¿Puedo cambiar de plan después?"
+      },
+      "q2": {
+        "answer": "¡Sí! Todos los planes de pago incluyen una prueba gratuita de 14 días. No se requiere tarjeta de crédito.",
+        "question": "¿Hay una prueba gratuita?"
+      },
+      "q3": {
+        "answer": "Aceptamos todas las tarjetas de crédito principales, PayPal y transferencias bancarias para planes empresariales.",
+        "question": "¿Qué métodos de pago aceptan?"
+      },
+      "title": "Preguntas Frecuentes"
+    },
+    "hero": {
+      "subtitle": "Elige el plan que se adapte a tu equipo. Sin costos ocultos, cancela cuando quieras.",
+      "title": "Precios Simples y Transparentes"
+    },
+    "plans": {
+      "enterprise": {
+        "cta": "Contactar Ventas",
+        "description": "Para grandes organizaciones con necesidades específicas",
+        "features": [
+          "Todo lo de Pro",
+          "Almacenamiento ilimitado",
+          "Soporte dedicado",
+          "Contratos personalizados",
+          "Garantía SLA",
+          "Opción on-premise",
+          "Seguridad avanzada"
+        ],
+        "name": "Empresa",
+        "period": "",
+        "price": "Personalizado"
+      },
+      "free": {
+        "cta": "Comenzar",
+        "description": "Perfecto para individuos y proyectos pequeños",
+        "features": [
+          "Hasta 3 proyectos",
+          "Analíticas básicas",
+          "5GB de almacenamiento",
+          "Soporte comunitario",
+          "Notificaciones por email"
+        ],
+        "name": "Gratis",
+        "period": "/mes",
+        "price": "$0"
+      },
+      "pro": {
+        "cta": "Prueba Gratis",
+        "description": "Ideal para equipos en crecimiento y negocios",
+        "features": [
+          "Proyectos ilimitados",
+          "Analíticas avanzadas",
+          "100GB de almacenamiento",
+          "Soporte prioritario",
+          "Integraciones personalizadas",
+          "Colaboración en equipo",
+          "Acceso a API"
+        ],
+        "name": "Pro",
+        "period": "/mes",
+        "popular": "Más Popular",
+        "price": "$29"
+      }
+    }
+  }
+}

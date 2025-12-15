@@ -1,0 +1,165 @@
+{
+  "features": {
+    "hero": {
+      "subtitle": "Everything you need to streamline your operations and boost productivity.",
+      "title": "Powerful Features for Modern Teams"
+    },
+    "list": {
+      "api": {
+        "description": "Build custom integrations with our comprehensive REST API. Full documentation and SDKs available.",
+        "title": "Developer API"
+      },
+      "dashboard": {
+        "description": "A clean, customizable dashboard that gives you a complete overview of your projects, tasks, and team activity at a glance.",
+        "title": "Intuitive Dashboard"
+      },
+      "integrations": {
+        "description": "Connect with 100+ popular tools including Slack, GitHub, Jira, and more. Keep your workflow uninterrupted.",
+        "title": "Seamless Integrations"
+      },
+      "mobile": {
+        "description": "Stay connected on the go with our native iOS and Android apps. Full functionality, anywhere.",
+        "title": "Mobile Apps"
+      },
+      "security": {
+        "description": "Bank-level encryption, SSO support, and compliance with SOC 2, GDPR, and HIPAA standards.",
+        "title": "Enterprise Security"
+      },
+      "support": {
+        "description": "Our dedicated support team is always ready to help. Average response time under 2 hours.",
+        "title": "24/7 Support"
+      }
+    }
+  },
+  "footer": {
+    "company": {
+      "about": "About",
+      "blog": "Blog",
+      "careers": "Careers",
+      "contact": "Contact",
+      "title": "Company"
+    },
+    "copyright": "© 2024 SaaSify. All rights reserved.",
+    "description": "Empowering teams to do their best work.",
+    "legal": {
+      "privacy": "Privacy",
+      "security": "Security",
+      "terms": "Terms",
+      "title": "Legal"
+    },
+    "product": {
+      "changelog": "Changelog",
+      "features": "Features",
+      "integrations": "Integrations",
+      "pricing": "Pricing",
+      "title": "Product"
+    }
+  },
+  "header": {
+    "getStarted": "Get Started",
+    "logo": "SaaSify"
+  },
+  "home": {
+    "cta": {
+      "button": "Start Your Free Trial",
+      "subtitle": "Join thousands of teams already using SaaSify to transform their workflow.",
+      "title": "Ready to Get Started?"
+    },
+    "features": {
+      "analytics": {
+        "description": "Get real-time insights into your team's performance with powerful dashboards.",
+        "title": "Advanced Analytics"
+      },
+      "automation": {
+        "description": "Automate repetitive tasks and focus on what matters most.",
+        "title": "Smart Automation"
+      },
+      "collaboration": {
+        "description": "Work together seamlessly with built-in communication tools.",
+        "title": "Team Collaboration"
+      },
+      "title": "Why Teams Love Us"
+    },
+    "hero": {
+      "cta": "Start Free Trial",
+      "secondaryCta": "Watch Demo",
+      "subtitle": "The all-in-one platform that helps teams collaborate, automate, and scale their operations effortlessly.",
+      "title": "Supercharge Your Workflow"
+    }
+  },
+  "nav": {
+    "features": "Features",
+    "home": "Home",
+    "pricing": "Pricing"
+  },
+  "pricing": {
+    "faq": {
+      "q1": {
+        "answer": "Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.",
+        "question": "Can I change plans later?"
+      },
+      "q2": {
+        "answer": "Yes! All paid plans come with a 14-day free trial. No credit card required.",
+        "question": "Is there a free trial?"
+      },
+      "q3": {
+        "answer": "We accept all major credit cards, PayPal, and bank transfers for enterprise plans.",
+        "question": "What payment methods do you accept?"
+      },
+      "title": "Frequently Asked Questions"
+    },
+    "hero": {
+      "subtitle": "Choose the plan that fits your team. No hidden fees, cancel anytime.",
+      "title": "Simple, Transparent Pricing"
+    },
+    "plans": {
+      "enterprise": {
+        "cta": "Contact Sales",
+        "description": "For large organizations with specific needs",
+        "features": [
+          "Everything in Pro",
+          "Unlimited storage",
+          "Dedicated support",
+          "Custom contracts",
+          "SLA guarantee",
+          "On-premise option",
+          "Advanced security"
+        ],
+        "name": "Enterprise",
+        "period": "",
+        "price": "Custom"
+      },
+      "free": {
+        "cta": "Get Started",
+        "description": "Perfect for individuals and small projects",
+        "features": [
+          "Up to 3 projects",
+          "Basic analytics",
+          "5GB storage",
+          "Community support",
+          "Email notifications"
+        ],
+        "name": "Free",
+        "period": "/month",
+        "price": "$0"
+      },
+      "pro": {
+        "cta": "Start Free Trial",
+        "description": "Best for growing teams and businesses",
+        "features": [
+          "Unlimited projects",
+          "Advanced analytics",
+          "100GB storage",
+          "Priority support",
+          "Custom integrations",
+          "Team collaboration",
+          "API access"
+        ],
+        "name": "Pro",
+        "period": "/month",
+        "popular": "Most Popular",
+        "price": "$29"
+      }
+    }
+  }
+}

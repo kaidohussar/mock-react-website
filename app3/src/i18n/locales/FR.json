@@ -1,0 +1,165 @@
+{
+  "features": {
+    "hero": {
+      "subtitle": "Tout ce dont vous avez besoin pour optimiser vos opérations et augmenter la productivité.",
+      "title": "Fonctionnalités Puissantes pour Équipes Modernes"
+    },
+    "list": {
+      "api": {
+        "description": "Créez des intégrations personnalisées avec notre API REST complète. Documentation complète et SDKs disponibles.",
+        "title": "API Développeur"
+      },
+      "dashboard": {
+        "description": "Un tableau de bord propre et personnalisable qui vous donne une vue complète de vos projets, tâches et activités d'équipe en un coup d'œil.",
+        "title": "Tableau de Bord Intuitif"
+      },
+      "integrations": {
+        "description": "Connectez-vous avec plus de 100 outils populaires incluant Slack, GitHub, Jira et plus. Gardez votre flux de travail ininterrompu.",
+        "title": "Intégrations Transparentes"
+      },
+      "mobile": {
+        "description": "Restez connecté en déplacement avec nos applications natives iOS et Android. Fonctionnalité complète, partout.",
+        "title": "Applications Mobiles"
+      },
+      "security": {
+        "description": "Chiffrement de niveau bancaire, support SSO et conformité aux normes SOC 2, RGPD et HIPAA.",
+        "title": "Sécurité Entreprise"
+      },
+      "support": {
+        "description": "Notre équipe de support dédiée est toujours prête à aider. Temps de réponse moyen inférieur à 2 heures.",
+        "title": "Support 24/7"
+      }
+    }
+  },
+  "footer": {
+    "company": {
+      "about": "À propos",
+      "blog": "Blog",
+      "careers": "Carrières",
+      "contact": "Contact",
+      "title": "Entreprise"
+    },
+    "copyright": "© 2024 SaaSify. Tous droits réservés.",
+    "description": "Permettre aux équipes de donner le meilleur d'elles-mêmes.",
+    "legal": {
+      "privacy": "Confidentialité",
+      "security": "Sécurité",
+      "terms": "Conditions",
+      "title": "Légal"
+    },
+    "product": {
+      "changelog": "Journal des modifications",
+      "features": "Fonctionnalités",
+      "integrations": "Intégrations",
+      "pricing": "Tarifs",
+      "title": "Produit"
+    }
+  },
+  "header": {
+    "getStarted": "Commencer",
+    "logo": "SaaSify"
+  },
+  "home": {
+    "cta": {
+      "button": "Démarrer Votre Essai Gratuit",
+      "subtitle": "Rejoignez des milliers d'équipes qui utilisent déjà SaaSify pour transformer leur flux de travail.",
+      "title": "Prêt à Commencer?"
+    },
+    "features": {
+      "analytics": {
+        "description": "Obtenez des insights en temps réel sur la performance de votre équipe avec des tableaux de bord puissants.",
+        "title": "Analytiques Avancées"
+      },
+      "automation": {
+        "description": "Automatisez les tâches répétitives et concentrez-vous sur l'essentiel.",
+        "title": "Automatisation Intelligente"
+      },
+      "collaboration": {
+        "description": "Travaillez ensemble de manière transparente avec des outils de communication intégrés.",
+        "title": "Collaboration d'Équipe"
+      },
+      "title": "Pourquoi Les Équipes Nous Adorent"
+    },
+    "hero": {
+      "cta": "Essai Gratuit",
+      "secondaryCta": "Voir la Démo",
+      "subtitle": "La plateforme tout-en-un qui aide les équipes à collaborer, automatiser et développer leurs opérations sans effort.",
+      "title": "Boostez Votre Productivité"
+    }
+  },
+  "nav": {
+    "features": "Fonctionnalités",
+    "home": "Accueil",
+    "pricing": "Tarifs"
+  },
+  "pricing": {
+    "faq": {
+      "q1": {
+        "answer": "Oui, vous pouvez passer à un plan supérieur ou inférieur à tout moment. Les changements prennent effet immédiatement.",
+        "question": "Puis-je changer de plan plus tard?"
+      },
+      "q2": {
+        "answer": "Oui! Tous les plans payants incluent un essai gratuit de 14 jours. Aucune carte de crédit requise.",
+        "question": "Y a-t-il un essai gratuit?"
+      },
+      "q3": {
+        "answer": "Nous acceptons toutes les principales cartes de crédit, PayPal et les virements bancaires pour les plans entreprise.",
+        "question": "Quels modes de paiement acceptez-vous?"
+      },
+      "title": "Questions Fréquentes"
+    },
+    "hero": {
+      "subtitle": "Choisissez le plan qui convient à votre équipe. Pas de frais cachés, annulez à tout moment.",
+      "title": "Tarification Simple et Transparente"
+    },
+    "plans": {
+      "enterprise": {
+        "cta": "Contacter les Ventes",
+        "description": "Pour les grandes organisations avec des besoins spécifiques",
+        "features": [
+          "Tout dans Pro",
+          "Stockage illimité",
+          "Support dédié",
+          "Contrats personnalisés",
+          "Garantie SLA",
+          "Option on-premise",
+          "Sécurité avancée"
+        ],
+        "name": "Entreprise",
+        "period": "",
+        "price": "Sur mesure"
+      },
+      "free": {
+        "cta": "Commencer",
+        "description": "Parfait pour les individus et petits projets",
+        "features": [
+          "Jusqu'à 3 projets",
+          "Analytiques de base",
+          "5Go de stockage",
+          "Support communautaire",
+          "Notifications par email"
+        ],
+        "name": "Gratuit",
+        "period": "/mois",
+        "price": "0€"
+      },
+      "pro": {
+        "cta": "Essai Gratuit",
+        "description": "Idéal pour les équipes en croissance et entreprises",
+        "features": [
+          "Projets illimités",
+          "Analytiques avancées",
+          "100Go de stockage",
+          "Support prioritaire",
+          "Intégrations personnalisées",
+          "Collaboration d'équipe",
+          "Accès API"
+        ],
+        "name": "Pro",
+        "period": "/mois",
+        "popular": "Le Plus Populaire",
+        "price": "29€"
+      }
+    }
+  }
+}
