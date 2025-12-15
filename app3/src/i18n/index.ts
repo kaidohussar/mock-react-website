@@ -1,9 +1,9 @@
 import { createContentstorageI18n } from '@contentstorage/vue-i18n-plugin'
 import contentStorageConfig from '../../contentstorage.config.js'
 
-import en from './locales/en.json'
-import es from './locales/es.json'
-import fr from './locales/fr.json'
+import en from './locales/EN.json'
+import es from './locales/ES.json'
+import fr from './locales/FR.json'
 
 const savedLanguage = localStorage.getItem('selectedLanguage') || 'en'
 
