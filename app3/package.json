@@ -14,7 +14,7 @@
     "content:pull:draft": "contentstorage pull --pending-changes"
   },
   "dependencies": {
-    "@contentstorage/vue-i18n-plugin": "1.0.3",
+    "@contentstorage/vue-i18n-plugin": "1.0.4",
     "vue": "^3.5.13",
     "vue-i18n": "^10.0.5",
     "vue-router": "^4.5.0"
