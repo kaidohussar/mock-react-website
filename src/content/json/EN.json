@@ -1,0 +1,49 @@
+{
+  "Login": {
+    "Labels": {
+      "Password": "Your password",
+      "Email": "Your email!",
+      "EmailPlaceholder": "Enter your email",
+      "PasswordPlaceholder": "Password",
+      "newtext": "neweng1112",
+      "sdflksdf": "sweet",
+      "asdasdasd": "123123en",
+      "sdfsdfsf": "gdfgdfg",
+      "Test": "Test",
+      "NewLabel": "New Label",
+      "LoginButtonText": "Login",
+      "ForgotPassword": "Forgot password?",
+      "test123": "eng test123",
+      "dsfsdfsdf": "sdfsdf"
+    },
+    "Item": "tatat4343345345"
+  },
+  "Dashboard": {
+    "Greeting": "Welcome Back, {name}!",
+    "Infoboxes": {
+      "TotalVisitors": "Total visitors",
+      "BounceRate": "Bounce rate",
+      "ConversionRate": "Conversion rate",
+      "NewSignups": "New signups"
+    },
+    "TrendingVisitors": {
+      "Title": "Visitor Trends (Last {days} Days)",
+      "ThisPeriod": "This period",
+      "PreviousPeriod": "Previous period"
+    }
+  },
+  "Sidebar": {
+    "Dashboard": "Dashboard",
+    "Reports": "Reports",
+    "Integrations": "Integrations",
+    "Analytics": "Analytics!",
+    "Lebo": "Hu123"
+  },
+  "Onboarding": {
+    "Tutorials": {},
+    "NewUserTutorial2": "Test"
+  },
+  "dsfsdfasfdsf": {
+    "dfgdfgdfg": "dfgdfgfdg"
+  }
+}

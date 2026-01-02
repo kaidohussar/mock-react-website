@@ -1,0 +1,49 @@
+{
+  "Login": {
+    "Labels": {
+      "Password": "Parool",
+      "Email": "Sinu email",
+      "EmailPlaceholder": "Sisesta oma email",
+      "PasswordPlaceholder": "Parool",
+      "newtext": "newest",
+      "sdflksdf": "magus",
+      "asdasdasd": "1231231et",
+      "sdfsdfsf": "popopop",
+      "Test": "sdfsdfsf",
+      "NewLabel": "sdfsdfsdfsfsdfsdfsdfdsfsdfdsfdsf",
+      "LoginButtonText": "Logi sisse",
+      "ForgotPassword": "Unustasid parooli?",
+      "test123": "est test 123",
+      "dsfsdfsdf": "sdgfsdf"
+    },
+    "Item": "gfgfgfgdfgdfgg123"
+  },
+  "Dashboard": {
+    "Greeting": "Teretulemast tagasi, {name}!",
+    "Infoboxes": {
+      "TotalVisitors": "Külastuste arv",
+      "BounceRate": "Lahkumiste suhe",
+      "ConversionRate": "Eduka ostu protsent2222",
+      "NewSignups": "Uued kasutajad"
+    },
+    "TrendingVisitors": {
+      "Title": "Kasutajate trendid (Viimased {days} päeva)",
+      "ThisPeriod": "Praegune periood",
+      "PreviousPeriod": "Eelmine periood"
+    }
+  },
+  "Sidebar": {
+    "Dashboard": "Töölaud",
+    "Reports": "Raportid",
+    "Integrations": "Integratsioonid",
+    "Analytics": "Analüütika!",
+    "Lebo": "Ha123"
+  },
+  "Onboarding": {
+    "Tutorials": {},
+    "NewUserTutorial2": "Test2"
+  },
+  "dsfsdfasfdsf": {
+    "dfgdfgdfg": "dfgdfgdg"
+  }
+}
