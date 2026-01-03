@@ -11,6 +11,8 @@
   "Login.Labels.NewLabel": "sdfsdfsdfsfsdfsdfsdfdsfsdfdsfdsf",
   "Login.Labels.LoginButtonText": "Logi sisse",
   "Login.Labels.ForgotPassword": "Unustasid parooli?",
+  "Login.Labels.test123": "est test 123",
+  "Login.Labels.dsfsdfsdf": "sdgfsdf",
   "Login.Item": "gfgfgfgdfgdfgg123",
   "Dashboard.Greeting": "Teretulemast tagasi, {name}!",
   "Dashboard.Infoboxes.TotalVisitors": "Külastuste arv",
@@ -25,5 +27,6 @@
   "Sidebar.Integrations": "Integratsioonid",
   "Sidebar.Analytics": "Analüütika!",
   "Sidebar.Lebo": "Ha123",
-  "Onboarding.NewUserTutorial2": "Test2"
+  "Onboarding.NewUserTutorial2": "Test2",
+  "dsfsdfasfdsf.dfgdfgdfg": "dfgdfgdg"
 }
