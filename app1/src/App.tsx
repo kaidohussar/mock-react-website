@@ -40,7 +40,7 @@ const App: React.FC = () => {
     <LocaleContext.Provider value={{ locale, setLocale }}>
       <ContentstorageIntlProvider
         locale={locale}
-        messages={messages}
+        messages={messages as any}
         debug={false}
       >
         <Router>

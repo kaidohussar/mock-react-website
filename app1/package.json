@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "generate-types": "contentstorage generate-types -- --pending-changes",
-    "pull-content": "contentstorage pull --flatten",
+    "pull-content": "contentstorage pull",
     "start-tunnel": "ngrok http 5174"
   },
   "dependencies": {
