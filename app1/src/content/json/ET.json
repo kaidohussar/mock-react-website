@@ -1,29 +1,49 @@
 {
-  "Login.Labels.Password": "Parool",
-  "Login.Labels.Email": "Sinu email",
-  "Login.Labels.EmailPlaceholder": "Sisesta oma email",
-  "Login.Labels.PasswordPlaceholder": "Parool",
-  "Login.Labels.newtext": "newest",
-  "Login.Labels.sdflksdf": "magus",
-  "Login.Labels.asdasdasd": "1231231et",
-  "Login.Labels.sdfsdfsf": "popopop",
-  "Login.Labels.Test": "sdfsdfsf",
-  "Login.Labels.NewLabel": "sdfsdfsdfsfsdfsdfsdfdsfsdfdsfdsf",
-  "Login.Labels.LoginButtonText": "Logi sisse",
-  "Login.Labels.ForgotPassword": "Unustasid parooli?",
-  "Login.Item": "gfgfgfgdfgdfgg123",
-  "Dashboard.Greeting": "Teretulemast tagasi, {name}!",
-  "Dashboard.Infoboxes.TotalVisitors": "Külastuste arv",
-  "Dashboard.Infoboxes.BounceRate": "Lahkumiste suhe",
-  "Dashboard.Infoboxes.ConversionRate": "Eduka ostu protsent2222",
-  "Dashboard.Infoboxes.NewSignups": "Uued kasutajad",
-  "Dashboard.TrendingVisitors.Title": "Kasutajate trendid (Viimased {days} päeva)",
-  "Dashboard.TrendingVisitors.ThisPeriod": "Praegune periood",
-  "Dashboard.TrendingVisitors.PreviousPeriod": "Eelmine periood",
-  "Sidebar.Dashboard": "Töölaud",
-  "Sidebar.Reports": "Raportid",
-  "Sidebar.Integrations": "Integratsioonid",
-  "Sidebar.Analytics": "Analüütika!",
-  "Sidebar.Lebo": "Ha123",
-  "Onboarding.NewUserTutorial2": "Test2"
+  "Login": {
+    "Labels": {
+      "Password": "Parool",
+      "Email": "Sinu email",
+      "EmailPlaceholder": "Sisesta oma email",
+      "PasswordPlaceholder": "Parool",
+      "newtext": "newest",
+      "sdflksdf": "magus",
+      "asdasdasd": "1231231et",
+      "sdfsdfsf": "popopop",
+      "Test": "sdfsdfsf",
+      "NewLabel": "sdfsdfsdfsfsdfsdfsdfdsfsdfdsfdsf",
+      "LoginButtonText": "Logi sisse",
+      "ForgotPassword": "Unustasid parooli?",
+      "test123": "est test 123",
+      "dsfsdfsdf": "sdgfsdf"
+    },
+    "Item": "gfgfgfgdfgdfgg123"
+  },
+  "Dashboard": {
+    "Greeting": "Teretulemast tagasi, {name}!",
+    "Infoboxes": {
+      "TotalVisitors": "Külastuste arv",
+      "BounceRate": "Lahkumiste suhe",
+      "ConversionRate": "Eduka ostu protsent2222",
+      "NewSignups": "Uued kasutajad"
+    },
+    "TrendingVisitors": {
+      "Title": "Kasutajate trendid (Viimased {days} päeva)",
+      "ThisPeriod": "Praegune periood",
+      "PreviousPeriod": "Eelmine periood"
+    }
+  },
+  "Sidebar": {
+    "Dashboard": "Töölaud",
+    "Reports": "Raportid",
+    "Integrations": "Integratsioonid",
+    "Analytics": "Analüütika!",
+    "Lebo": "Ha123"
+  },
+  "Onboarding": {
+    "Tutorials": {},
+    "NewUserTutorial2": "Test2"
+  },
+  "dsfsdfasfdsf": {
+    "dfgdfgdfg": "dfgdfgdg"
+  }
 }
