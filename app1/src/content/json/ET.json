@@ -1,6 +1,6 @@
 {
   "Login.Labels.Password": "Parool",
-  "Login.Labels.Email": "Sinu email",
+  "Login.Labels.Email": "Sinu email!",
   "Login.Labels.EmailPlaceholder": "Sisesta oma email",
   "Login.Labels.PasswordPlaceholder": "Parool",
   "Login.Labels.newtext": "newest",
@@ -11,6 +11,7 @@
   "Login.Labels.NewLabel": "sdfsdfsdfsfsdfsdfsdfdsfsdfdsfdsf",
   "Login.Labels.LoginButtonText": "Logi sisse",
   "Login.Labels.ForgotPassword": "Unustasid parooli?",
+  "Login.Labels.kaka": "asdasdasd213 fefefefefefef225",
   "Login.Item": "gfgfgfgdfgdfgg123",
   "Dashboard.Greeting": "Teretulemast tagasi, {name}!",
   "Dashboard.Infoboxes.TotalVisitors": "Külastuste arv",
@@ -25,5 +26,6 @@
   "Sidebar.Integrations": "Integratsioonid",
   "Sidebar.Analytics": "Analüütika!",
   "Sidebar.Lebo": "Ha123",
-  "Onboarding.NewUserTutorial2": "Test2"
+  "Onboarding.NewUserTutorial2": "Test2",
+  "dsfsdfasfdsf.dfgdfgdfg": "dfgdfgdg"
 }
