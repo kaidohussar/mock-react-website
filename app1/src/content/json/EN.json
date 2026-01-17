@@ -1,6 +1,6 @@
 {
   "Login.Labels.Password": "Your password",
-  "Login.Labels.Email": "Your email",
+  "Login.Labels.Email": "Your email!",
   "Login.Labels.EmailPlaceholder": "Enter your email",
   "Login.Labels.PasswordPlaceholder": "Password",
   "Login.Labels.newtext": "neweng1112",
@@ -11,6 +11,8 @@
   "Login.Labels.NewLabel": "New Label",
   "Login.Labels.LoginButtonText": "Login",
   "Login.Labels.ForgotPassword": "Forgot password?",
+  "Login.Labels.test123": "eng test123",
+  "Login.Labels.dsfsdfsdf": "sdfsdf",
   "Login.Item": "tatat4343345345",
   "Dashboard.Greeting": "Welcome Back, {name}!",
   "Dashboard.Infoboxes.TotalVisitors": "Total visitors",
@@ -25,5 +27,6 @@
   "Sidebar.Integrations": "Integrations",
   "Sidebar.Analytics": "Analytics!",
   "Sidebar.Lebo": "Hu123",
-  "Onboarding.NewUserTutorial2": "Test"
+  "Onboarding.NewUserTutorial2": "Test",
+  "dsfsdfasfdsf.dfgdfgdfg": "dfgdfgfdg"
 }
