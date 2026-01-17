@@ -1,22 +1,25 @@
-import { createContentstorageI18n } from '@contentstorage/vue-i18n-plugin'
-import contentStorageConfig from '../../contentstorage.config.js'
+import { createI18n } from 'vue-i18n'
 
-import en from './locales/EN.json'
-import es from './locales/ES.json'
-import fr from './locales/FR.json'
-
-const savedLanguage = localStorage.getItem('selectedLanguage') || 'en'
-
-const i18n = createContentstorageI18n({
-  contentKey: contentStorageConfig.contentKey,
-  legacy: false,
-  locale: savedLanguage,
-  fallbackLocale: 'en',
-  messages: {
-    en,
-    es,
-    fr,
-  },
+const fileNameToLocaleModuleDict = import.meta.glob<{ default: Record<string, string> }>('./locales/*.json', {
+  eager: true,
 })
 
-export default i18n
+const messages: { [P: string]: Record<string, string> } = {}
+Object.entries(fileNameToLocaleModuleDict)
+  .map(([fileName, localeModule]) => {
+    const fileNameParts = fileName.split('/')
+    const fileNameWithoutPath = fileNameParts[fileNameParts.length - 1]
+    const localeName = fileNameWithoutPath.split('.json')[0]
+
+    return [localeName, localeModule.default] as const
+  })
+  .forEach((localeNameLocaleMessagesTuple) => {
+    messages[localeNameLocaleMessagesTuple[0]] = localeNameLocaleMessagesTuple[1]
+  })
+
+export default createI18n({
+  legacy: false,
+  locale: 'EN',
+  fallbackLocale: 'EN',
+  messages,
+})

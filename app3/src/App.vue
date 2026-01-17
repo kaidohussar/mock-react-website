@@ -1,14 +1,16 @@
-<script setup lang="ts">
-import AppHeader from './components/AppHeader.vue'
-import AppFooter from './components/AppFooter.vue'
-</script>
-
 <template>
-  <div class="layout">
-    <AppHeader />
-    <main class="main">
-      <router-view />
-    </main>
-    <AppFooter />
-  </div>
+  <RouterView />
 </template>
+
+<style lang="scss">
+#app {
+  font-family: 'Inter', Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 20rem;
+}
+</style>
