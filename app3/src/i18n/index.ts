@@ -1,4 +1,4 @@
-import { createI18n } from 'vue-i18n'
+import { createContentstorageI18n } from '@contentstorage/vue-i18n-plugin'
 
 const fileNameToLocaleModuleDict = import.meta.glob<{ default: Record<string, string> }>('./locales/*.json', {
   eager: true,
@@ -17,7 +17,8 @@ Object.entries(fileNameToLocaleModuleDict)
     messages[localeNameLocaleMessagesTuple[0]] = localeNameLocaleMessagesTuple[1]
   })
 
-export default createI18n({
+export default createContentstorageI18n({
+  contentKey: '4b74b66d-6deb-446b-b0a2-45abd6ca2851/24b7414c-560b-4984-a32b-3a8219e17dc1',
   legacy: false,
   locale: 'EN',
   fallbackLocale: 'EN',

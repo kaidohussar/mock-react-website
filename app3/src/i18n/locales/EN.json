@@ -1,4 +1,9 @@
 {
+  "404": {
+    "back_button": "Back to dashboard",
+    "text": "If you feel that it’s not right, please send us a message at ",
+    "title": "This page’s gone fishing."
+  },
   "features": {
     "hero": {
       "subtitle": "Everything you need to streamline your operations and boost productivity.",
@@ -39,7 +44,7 @@
       "contact": "Contact",
       "title": "Company"
     },
-    "copyright": "© 2026 SaaSify. All rights reserved.",
+    "copyright": "© 2024 SaaSify. All rights reserved.",
     "description": "Empowering teams to do their best work.",
     "legal": {
       "privacy": "Privacy",
@@ -161,5 +166,243 @@
         "price": "$29"
       }
     }
+  },
+  "aboutVuesticAdmin": "About Vuestic Admin",
+  "auth": {
+    "agree": "I agree to",
+    "createAccount": "Create account",
+    "createNewAccount": "Create New Account",
+    "email": "Email",
+    "keep_logged_in": "Keep me logged in",
+    "login": "Login",
+    "password": "Password",
+    "recover_password": "Recover password",
+    "reset_password": "Reset password",
+    "sign_up": "Sign Up",
+    "termsOfUse": "Terms of Use."
+  },
+  "buttonSelect": {
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "cards": {
+    "button": {
+      "cancel": "Cancel",
+      "main": "Main",
+      "readMore": "Show More",
+      "showMore": "Show More"
+    },
+    "cards": "Cards",
+    "contentText": "The unique stripes of zebras make them one of the animals most familiar to people.",
+    "contentTextLong": "The unique stripes of zebras make them one of the animals most familiar to people. They occur in a variety of habitats, such as grasslands, savannas, woodlands, thorny scrublands, mountains, and coastal hills. Various anthropogenic factors have had a severe impact on zebra populations, in particular hunting for skins and habitat destruction. Grévy's zebra and the mountain zebra are endangered. While plains zebras are much more plentiful, one subspecies, the quagga.",
+    "fixed": "Fixed",
+    "floating": "Floating",
+    "link": {
+      "action1": "Action 1",
+      "action2": "Action 2",
+      "delete": "Delete",
+      "edit": "Edit",
+      "feedback": "Leave feedback",
+      "france": "France",
+      "readFull": "Read full article",
+      "review": "Review",
+      "secondaryAction": "Secondary action",
+      "setAsDefault": "Set as default",
+      "traveling": "Traveling"
+    },
+    "rowHeight": "Row height",
+    "title": {
+      "customHeader": "Custom header",
+      "default": "Default",
+      "withBackground": "With background",
+      "withControls": "With controls",
+      "withCustomTitleOnImage": "With custom title on image",
+      "withImage": "With Image",
+      "withStripe": "With stripe",
+      "withTitleOnImage": "With title on image",
+      "withoutHeader": "Without header"
+    }
+  },
+  "chat": {
+    "sendButton": "Send",
+    "title": "Chat"
+  },
+  "colors": {
+    "extraColors": "Extra Colors",
+    "gradients": {
+      "basic": {
+        "title": "Button Gradients"
+      },
+      "hovered": {
+        "text": "Lighten 15% applied to an original style (gradient or flat color) for hover state.",
+        "title": "Hovered Button Gradients"
+      },
+      "pressed": {
+        "text": "Darken 15% applied to an original style (gradient or flat color) for pressed state.",
+        "title": "Pressed Button Gradients"
+      }
+    },
+    "themeColors": "Theme Colors"
+  },
+  "dashboard": {
+    "currentVisitors": "Current Visitors",
+    "navigationLayout": "navigation layout",
+    "setupRemoteConnections": "Setup Remote Connections",
+    "sideBarButton": "Side Bar",
+    "topBarButton": "Top Bar",
+    "versions": "Versions"
+  },
+  "helpAndSupport": "Help & support",
+  "language": {
+    "brazilian_portuguese": "Português",
+    "english": "English",
+    "persian": "Persian",
+    "simplified_chinese": "Simplified Chinese",
+    "spanish": "Spanish"
+  },
+  "menu": {
+    "404": "404",
+    "auth": "Auth",
+    "billing": "Billing",
+    "buttons": "Buttons",
+    "dashboard": "Dashboard",
+    "faq": "FAQ",
+    "login": "Login",
+    "payment-methods": "Payment methods",
+    "payments": "Payments",
+    "preferences": "Account preferences",
+    "pricing-plans": "Pricing plans",
+    "projects": "Projects",
+    "recover-password": "Recover password",
+    "recover-password-email": "Recover password email",
+    "settings": "Application settings",
+    "signup": "Signup",
+    "timelines": "Timelines",
+    "users": "Users"
+  },
+  "messages": {
+    "all": "See all messages",
+    "mark_as_read": "Mark As Read",
+    "new": "New messages from {name}"
+  },
+  "navbar": {
+    "messageUs": "Web development inquiries:",
+    "repository": "GitHub Repo"
+  },
+  "notifications": {
+    "all": "See all notifications",
+    "less": "See less notifications",
+    "mark_as_read": "Mark as read",
+    "sentMessage": "sent you a message",
+    "startedTopic": "started a new topic",
+    "uploadedZip": "uploaded a new Zip file with {type}"
+  },
+  "search": {
+    "placeholder": "Search..."
+  },
+  "spacing": {
+    "title": "Spacing"
+  },
+  "spacingPlayground": {
+    "margin": "Margin",
+    "padding": "Padding",
+    "value": "Value"
+  },
+  "supportAndConsulting": "Support & Consulting",
+  "tabs": {
+    "alignment": "Tabs alignment",
+    "grow": "Tabs grow",
+    "hidden": "Tabs with hidden slider",
+    "overflow": "Tabs overflow"
+  },
+  "treeView": {
+    "advanced": "Advanced",
+    "basic": "Basic",
+    "editable": "Editable",
+    "icons": "Icons",
+    "selectable": "Selectable"
+  },
+  "typography": {
+    "primary": "Primary text styles",
+    "secondary": "Secondary text styles"
+  },
+  "user": {
+    "account": "Account",
+    "billing": "Billing",
+    "explore": "Explore",
+    "faq": "FAQ",
+    "helpAndSupport": "Help & support",
+    "language": "Change language",
+    "logout": "Logout",
+    "profile": "Profile",
+    "projects": "Projects",
+    "settings": "Settings"
+  },
+  "vuestic": {
+    "back": "Previous",
+    "backToTop": "back to top",
+    "breadcrumbs": "breadcrumbs",
+    "cancel": "Cancel",
+    "carousel": "carousel",
+    "close": "close",
+    "closeAlert": "close alert",
+    "closeToast": "close toast",
+    "color": "color",
+    "colorName": "color {color}",
+    "colorSelection": "color selection",
+    "counterValue": "counter value",
+    "currentRating": "current rating {value} of {max}",
+    "decreaseCounter": "decrease counter",
+    "dropzone": "Drop files here to upload",
+    "fileDeleted": "File deleted",
+    "fileTypeIncorrect": "File type is incorrect",
+    "finish": "Finish",
+    "goLastPage": "go last page",
+    "goNextPage": "go next page",
+    "goNextSlide": "go next slide",
+    "goPreviousSlide": "go previous slide",
+    "goSlide": "go slide {index}",
+    "goToPreviousPage": "go to the previous page",
+    "goToSpecificPage": "go to the {page} page",
+    "goToSpecificPageInput": "enter the page number to go",
+    "goToTheFirstPage": "go to the first page",
+    "increaseCounter": "increase counter",
+    "inputField": "Input field",
+    "loading": "Loading",
+    "movePaginationLeft": "move pagination left",
+    "movePaginationRight": "move pagination right",
+    "next": "Next",
+    "nextPeriod": "next period",
+    "noOptions": "Items not found",
+    "noSelectedOption": "Option is not selected",
+    "ok": "OK",
+    "openColorPicker": "open color picker",
+    "optionsFilter": "options filter",
+    "pagination": "pagination",
+    "previousPeriod": "previous period",
+    "progress": "progress",
+    "progressState": "progress state",
+    "removeFile": "remove file",
+    "reset": "reset",
+    "resetDate": "reset date",
+    "resetTime": "reset time",
+    "search": "Search",
+    "select": "Select an option",
+    "selectAllRows": "select all rows",
+    "selectRowByIndex": "select row {index}",
+    "selectedDate": "selected date",
+    "selectedOption": "Selected option",
+    "selectedTime": "selected time",
+    "slideOf": "slide {index} of {length}",
+    "sliderValue": "Current slider value is {value}",
+    "sortColumnBy": "sort column by {name}",
+    "splitPanels": "split panels",
+    "step": "step",
+    "switch": "Switch",
+    "switchView": "switch view",
+    "toggleDropdown": "toggle dropdown",
+    "undo": "Undo",
+    "uploadFile": "Upload file",
+    "voteRating": "vote rating {value} of {max}"
   }
 }
