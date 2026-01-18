@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "build:ci": "npm run content:pull && npm run build",
     "preview": "vite preview",
     "lint": "eslint \"./src/**/*.{ts,js,vue}\" --fix",
     "format": "prettier --write .",
