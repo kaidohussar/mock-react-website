@@ -1,7 +1,7 @@
 <template>
   <VaCard class="mb-6">
     <VaCardContent>
-      <h2 class="page-sub-title">Invoices</h2>
+      <h2 class="page-sub-title">{{ t('pages.billing.invoices') }}</h2>
       <template v-for="(item, index) in itemsInView" :key="item.id">
         <div class="flex items-center justify-between md:justify-items-stretch">
           <div class="flex items-center w-48">
@@ -11,7 +11,7 @@
             {{ item.amount }}
           </div>
           <div>
-            <VaButton preset="primary" @click="download">Download</VaButton>
+            <VaButton preset="primary" @click="download">{{ t('common.download') }}</VaButton>
           </div>
         </div>
 
@@ -20,9 +20,9 @@
     </VaCardContent>
     <VaCardActions vertical class="flex flex-wrap content-center mt-4">
       <VaButton v-if="numberOfInvoicesInVIew < maxNumberOfInvoices" preset="primary" @click="increaseNumberOfInvoices()"
-        >Show more
+        >{{ t('common.showMore') }}
       </VaButton>
-      <VaButton v-else preset="primary" @click="numberOfInvoicesInVIew = minNumberOfInvoices">Show less </VaButton>
+      <VaButton v-else preset="primary" @click="numberOfInvoicesInVIew = minNumberOfInvoices">{{ t('common.showLess') }}</VaButton>
     </VaCardActions>
   </VaCard>
 </template>
@@ -33,7 +33,7 @@ import { useToast } from 'vuestic-ui'
 import { useI18n } from 'vue-i18n'
 
 const { init } = useToast()
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const minNumberOfInvoices = 7
 const maxNumberOfInvoices = 20
@@ -87,7 +87,7 @@ const itemsInView = computed(() => {
 
 const download = () => {
   init({
-    message: "Request received. We'll email your invoice once we've completed data collection.",
+    message: t('pages.billing.toasts.invoiceDownload'),
     color: 'success',
   })
 }

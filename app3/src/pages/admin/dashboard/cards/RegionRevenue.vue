@@ -1,20 +1,20 @@
 <template>
   <VaCard>
     <VaCardTitle class="flex justify-between">
-      <h1 class="card-title text-secondary font-bold uppercase">Revenue by Top Regions</h1>
+      <h1 class="card-title text-secondary font-bold uppercase">{{ t('pages.dashboard.revenueByTopRegions') }}</h1>
     </VaCardTitle>
     <VaCardContent class="flex flex-col gap-1">
       <div class="flex justify-between">
         <VaButtonToggle v-model="selectedPeriod" :options="periods" color="background-element" size="small" />
 
-        <VaButton preset="primary" size="small" @click="exportAsCSV"> Export </VaButton>
+        <VaButton preset="primary" size="small" @click="exportAsCSV">{{ t('common.export') }}</VaButton>
       </div>
 
       <VaDataTable
         class="region-revenue-table"
         :columns="[
-          { key: 'name', label: 'Top Region' },
-          { key: 'revenue', label: 'Revenue', align: 'right' },
+          { key: 'name', label: t('pages.dashboard.topRegion') },
+          { key: 'revenue', label: t('pages.dashboard.revenue'), align: 'right' },
         ]"
         :items="data"
       >
@@ -26,10 +26,17 @@
 
 <script setup lang="ts">
 import { ref, Ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { downloadAsCSV } from '../../../../services/toCSV'
 
+const { t } = useI18n()
+
 const selectedPeriod = ref('Today') as Ref<'Today' | 'Week' | 'Month'>
-const periods = ['Today', 'Week', 'Month'].map((period) => ({ label: period, value: period }))
+const periods = [
+  { label: t('pages.dashboard.periods.today'), value: 'Today' },
+  { label: t('pages.dashboard.periods.week'), value: 'Week' },
+  { label: t('pages.dashboard.periods.month'), value: 'Month' },
+]
 
 const data = [
   {

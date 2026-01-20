@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, provide } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useLocalStorage } from '@vueuse/core'
 import { useProjects } from './composables/useProjects'
 import ProjectCards from './widgets/ProjectCards.vue'
@@ -9,6 +10,7 @@ import { Project } from './types'
 import { useModal, useToast } from 'vuestic-ui'
 import { useProjectUsers } from './composables/useProjectUsers'
 
+const { t } = useI18n()
 const doShowAsCards = useLocalStorage('projects-view', true)
 
 const { projects, update, add, isLoading, remove, pagination, sorting } = useProjects()
@@ -41,13 +43,13 @@ const onProjectSaved = async (project: Project) => {
   if ('id' in project) {
     await update(project as Project)
     notify({
-      message: 'Project updated',
+      message: t('pages.projects.toasts.updated'),
       color: 'success',
     })
   } else {
     await add(project as Project)
     notify({
-      message: 'Project created',
+      message: t('pages.projects.toasts.created'),
       color: 'success',
     })
   }
@@ -57,9 +59,9 @@ const { confirm } = useModal()
 
 const onProjectDeleted = async (project: Project) => {
   const response = await confirm({
-    title: 'Delete project',
-    message: `Are you sure you want to delete project "${project.project_name}"?`,
-    okText: 'Delete',
+    title: t('pages.projects.deleteProject'),
+    message: t('pages.projects.deleteProjectConfirm', { name: project.project_name }),
+    okText: t('common.delete'),
     size: 'small',
     maxWidth: '380px',
   })
@@ -70,7 +72,7 @@ const onProjectDeleted = async (project: Project) => {
 
   await remove(project)
   notify({
-    message: 'Project deleted',
+    message: t('pages.projects.toasts.deleted'),
     color: 'success',
   })
 }
@@ -81,7 +83,7 @@ const beforeEditFormModalClose = async (hide: () => unknown) => {
   if (editFormRef.value.isFormHasUnsavedChanges) {
     const agreed = await confirm({
       maxWidth: '380px',
-      message: 'Form has unsaved changes. Are you sure you want to close it?',
+      message: t('common.unsavedChanges'),
       size: 'small',
     })
     if (agreed) {
@@ -94,7 +96,7 @@ const beforeEditFormModalClose = async (hide: () => unknown) => {
 </script>
 
 <template>
-  <h1 class="page-title">Projects</h1>
+  <h1 class="page-title">{{ t('pages.projects.title') }}</h1>
 
   <VaCard>
     <VaCardContent>
@@ -105,12 +107,12 @@ const beforeEditFormModalClose = async (hide: () => unknown) => {
             color="background-element"
             border-color="background-element"
             :options="[
-              { label: 'Cards', value: true },
-              { label: 'Table', value: false },
+              { label: t('pages.projects.cards'), value: true },
+              { label: t('pages.projects.table'), value: false },
             ]"
           />
         </div>
-        <VaButton icon="add" @click="createNewProject">Project</VaButton>
+        <VaButton icon="add" @click="createNewProject">{{ t('pages.projects.project') }}</VaButton>
       </div>
 
       <ProjectCards
@@ -142,12 +144,12 @@ const beforeEditFormModalClose = async (hide: () => unknown) => {
       hide-default-actions
       :before-cancel="beforeEditFormModalClose"
     >
-      <h1 v-if="projectToEdit === null" class="va-h5 mb-4">Add project</h1>
-      <h1 v-else class="va-h5 mb-4">Edit project</h1>
+      <h1 v-if="projectToEdit === null" class="va-h5 mb-4">{{ t('pages.projects.addProject') }}</h1>
+      <h1 v-else class="va-h5 mb-4">{{ t('pages.projects.editProject') }}</h1>
       <EditProjectForm
         ref="editFormRef"
         :project="projectToEdit"
-        :save-button-label="projectToEdit === null ? 'Add' : 'Save'"
+        :save-button-label="projectToEdit === null ? t('common.add') : t('common.save')"
         @close="cancel"
         @save="
           (project) => {

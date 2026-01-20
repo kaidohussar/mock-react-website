@@ -1,18 +1,18 @@
 <template>
   <div class="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-6 min-h-[36px] leading-5">
-    <p class="font-bold w-[200px]">Name</p>
+    <p class="font-bold w-[200px]">{{ t('pages.preferences.name') }}</p>
     <div class="flex-1">
       <div class="max-w-[748px]">
         {{ store.userName }}
       </div>
     </div>
     <VaButton :style="buttonStyles" class="w-fit h-fit" preset="primary" @click="emits('openNameModal')">
-      Edit
+      {{ t('common.edit') }}
     </VaButton>
   </div>
   <VaDivider />
   <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 min-h-[36px] leading-5">
-    <p class="font-bold w-[200px]">Email</p>
+    <p class="font-bold w-[200px]">{{ t('pages.preferences.email') }}</p>
     <div class="flex-1">
       <div class="max-w-[748px]">
         {{ store.email }}
@@ -20,17 +20,17 @@
     </div>
   </div>
   <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 min-h-[36px] leading-5">
-    <p class="font-bold w-[200px]">Password</p>
+    <p class="font-bold w-[200px]">{{ t('pages.preferences.password') }}</p>
     <div class="flex-1">
       <div class="max-w-[748px]">•••••••••••••</div>
     </div>
     <VaButton :style="buttonStyles" class="w-fit h-fit" preset="primary" @click="emits('openResetPasswordModal')">
-      Reset Password
+      {{ t('pages.preferences.resetPassword') }}
     </VaButton>
   </div>
   <VaDivider />
   <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 min-h-[36px] leading-5">
-    <p class="font-bold w-[200px]">Two-factor authentication</p>
+    <p class="font-bold w-[200px]">{{ t('pages.preferences.twoFactorAuth') }}</p>
     <div class="flex-1">
       <div class="max-w-[748px]">
         {{ twoFA.content }}
@@ -42,12 +42,12 @@
   </div>
   <VaDivider />
   <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 min-h-[36px] leading-5">
-    <p class="font-bold w-[200px]">Email subscriptions</p>
+    <p class="font-bold w-[200px]">{{ t('pages.preferences.emailSubscriptions') }}</p>
     <div class="flex-1">
       <div class="max-w-[748px]">
-        <p>To manage what emails you get, visit the</p>
+        <p>{{ t('pages.preferences.emailSubscriptionsText') }}</p>
         <div class="flex space-x-1 w-fit">
-          <RouterLink :to="{ name: 'settings' }" class="font-semibold text-primary">Notification settings</RouterLink>
+          <RouterLink :to="{ name: 'settings' }" class="font-semibold text-primary">{{ t('pages.preferences.notificationSettings') }}</RouterLink>
         </div>
       </div>
     </div>
@@ -55,6 +55,7 @@
 </template>
 <script lang="ts" setup>
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 import { useToast } from 'vuestic-ui'
 
@@ -62,26 +63,25 @@ import { useUserStore } from '../../../stores/user-store'
 
 import { buttonStyles } from '../styles'
 
+const { t } = useI18n()
 const store = useUserStore()
 
 const { init } = useToast()
 
-const toastMessage = computed(() => (store.is2FAEnabled ? '2FA successfully enabled' : '2FA successfully disabled'))
+const toastMessage = computed(() => (store.is2FAEnabled ? t('pages.preferences.twoFAEnabled') : t('pages.preferences.twoFADisabled')))
 
 const twoFA = computed(() => {
   if (store.is2FAEnabled) {
     return {
       color: 'danger',
-      button: 'Disable 2FA',
-      content:
-        'Two-Factor Authentication (2FA) is now enabled for your account, adding an extra layer of security to your sign-ins.',
+      button: t('pages.preferences.disable2FA'),
+      content: t('pages.preferences.twoFAEnabledContent'),
     }
   } else {
     return {
       color: 'primary',
-      button: 'Set up 2FA',
-      content:
-        'Add an extra layer of security to your account. To sign in, you’ll need to provide a code along with your username and password.',
+      button: t('pages.preferences.setup2FA'),
+      content: t('pages.preferences.twoFADisabledContent'),
     }
   }
 })

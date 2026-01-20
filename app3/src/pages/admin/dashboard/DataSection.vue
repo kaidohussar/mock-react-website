@@ -19,8 +19,11 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useColors } from 'vuestic-ui'
 import DataSectionItem from './DataSectionItem.vue'
+
+const { t } = useI18n()
 
 interface DashboardMetric {
   id: string
@@ -38,7 +41,7 @@ const { getColor } = useColors()
 const dashboardMetrics = computed<DashboardMetric[]>(() => [
   {
     id: 'openInvoices',
-    title: 'Open invoices',
+    title: t('pages.dashboard.metrics.openInvoices'),
     value: '$35,548',
     icon: 'mso-attach_money',
     changeText: '$1, 450',
@@ -48,7 +51,7 @@ const dashboardMetrics = computed<DashboardMetric[]>(() => [
   },
   {
     id: 'ongoingProjects',
-    title: 'Ongoing project',
+    title: t('pages.dashboard.metrics.ongoingProject'),
     value: '15',
     icon: 'mso-folder_open',
     changeText: '25.36%',
@@ -58,7 +61,7 @@ const dashboardMetrics = computed<DashboardMetric[]>(() => [
   },
   {
     id: 'employees',
-    title: 'Employees',
+    title: t('pages.dashboard.metrics.employees'),
     value: '25',
     icon: 'mso-account_circle',
     changeText: '2.5%',
@@ -68,7 +71,7 @@ const dashboardMetrics = computed<DashboardMetric[]>(() => [
   },
   {
     id: 'newProfit',
-    title: 'New profit',
+    title: t('pages.dashboard.metrics.newProfit'),
     value: '27%',
     icon: 'mso-grade',
     changeText: '4%',

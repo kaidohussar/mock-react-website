@@ -1,5 +1,5 @@
 <template>
-  <VaInput v-model="searchValue" class="mb-4" placeholder="Search">
+  <VaInput v-model="searchValue" class="mb-4" :placeholder="t('common.search')">
     <template #appendInner>
       <VaIcon color="secondary" name="mso-search" />
     </template>
@@ -16,14 +16,16 @@
     </template>
   </section>
   <VaAlert v-else class="mb-4 leading-5" color="info" outline>
-    No matches found. Try refining your search or browse through the categories to find the help you need.
+    {{ t('pages.faq.noMatchesFound') }}
   </VaAlert>
 </template>
 
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n'
 import categories from '../data/popularCategories.json'
 import { ref, computed } from 'vue'
 
+const { t } = useI18n()
 const searchValue = ref('')
 
 const filteredCategories = computed(() => {

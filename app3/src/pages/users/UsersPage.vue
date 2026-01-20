@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue'
+import { useI18n } from 'vue-i18n'
 import UsersTable from './widgets/UsersTable.vue'
 import EditUserForm from './widgets/EditUserForm.vue'
 import { User } from './types'
@@ -7,6 +8,7 @@ import { useUsers } from './composables/useUsers'
 import { useModal, useToast } from 'vuestic-ui'
 import { useProjects } from '../projects/composables/useProjects'
 
+const { t } = useI18n()
 const doShowEditUserModal = ref(false)
 
 const { users, isLoading, filters, sorting, pagination, error, ...usersApi } = useUsers()
@@ -46,7 +48,7 @@ const onUserSaved = async (user: User) => {
     await usersApi.update(user)
     if (!error.value) {
       notify({
-        message: `${user.fullname} has been updated`,
+        message: t('pages.users.toasts.updated', { name: user.fullname }),
         color: 'success',
       })
     }
@@ -55,7 +57,7 @@ const onUserSaved = async (user: User) => {
 
     if (!error.value) {
       notify({
-        message: `${user.fullname} has been created`,
+        message: t('pages.users.toasts.created', { name: user.fullname }),
         color: 'success',
       })
     }
@@ -65,7 +67,7 @@ const onUserSaved = async (user: User) => {
 const onUserDelete = async (user: User) => {
   await usersApi.remove(user)
   notify({
-    message: `${user.fullname} has been deleted`,
+    message: t('pages.users.toasts.deleted', { name: user.fullname }),
     color: 'success',
   })
 }
@@ -78,7 +80,7 @@ const beforeEditFormModalClose = async (hide: () => unknown) => {
   if (editFormRef.value.isFormHasUnsavedChanges) {
     const agreed = await confirm({
       maxWidth: '380px',
-      message: 'Form has unsaved changes. Are you sure you want to close it?',
+      message: t('common.unsavedChanges'),
       size: 'small',
     })
     if (agreed) {
@@ -91,7 +93,7 @@ const beforeEditFormModalClose = async (hide: () => unknown) => {
 </script>
 
 <template>
-  <h1 class="page-title">Users</h1>
+  <h1 class="page-title">{{ t('pages.users.title') }}</h1>
 
   <VaCard>
     <VaCardContent>
@@ -102,17 +104,17 @@ const beforeEditFormModalClose = async (hide: () => unknown) => {
             color="background-element"
             border-color="background-element"
             :options="[
-              { label: 'Active', value: true },
-              { label: 'Inactive', value: false },
+              { label: t('common.active'), value: true },
+              { label: t('common.inactive'), value: false },
             ]"
           />
-          <VaInput v-model="filters.search" placeholder="Search">
+          <VaInput v-model="filters.search" :placeholder="t('common.search')">
             <template #prependInner>
               <VaIcon name="search" color="secondary" size="small" />
             </template>
           </VaInput>
         </div>
-        <VaButton @click="showAddUserModal">Add User</VaButton>
+        <VaButton @click="showAddUserModal">{{ t('pages.users.addUser') }}</VaButton>
       </div>
 
       <UsersTable
@@ -137,11 +139,11 @@ const beforeEditFormModalClose = async (hide: () => unknown) => {
     hide-default-actions
     :before-cancel="beforeEditFormModalClose"
   >
-    <h1 class="va-h5">{{ userToEdit ? 'Edit user' : 'Add user' }}</h1>
+    <h1 class="va-h5">{{ userToEdit ? t('pages.users.editUser') : t('pages.users.addUser') }}</h1>
     <EditUserForm
       ref="editFormRef"
       :user="userToEdit"
-      :save-button-label="userToEdit ? 'Save' : 'Add'"
+      :save-button-label="userToEdit ? t('common.save') : t('common.add')"
       @close="cancel"
       @save="
         (user) => {

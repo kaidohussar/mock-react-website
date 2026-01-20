@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { type PropType, inject } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { type Project } from '../types'
 import ProjectStatusBadge from '../components/ProjectStatusBadge.vue'
+
+const { t } = useI18n()
 
 defineProps({
   projects: {
@@ -41,7 +44,7 @@ const { getUserById, getTeamOptions } = inject<any>('ProjectsPage')
             {{ project.project_name }}
           </h4>
           <p>
-            <span class="text-[var(--va-secondary)]">Owner: </span>
+            <span class="text-[var(--va-secondary)]">{{ t('pages.projects.form.owner') }}: </span>
             <span v-if="getUserById(project.project_owner)">{{ getUserById(project.project_owner)!.fullname }}</span>
           </p>
           <VaAvatarGroup class="my-4" :options="getTeamOptions(project.team)" :max="5" />
@@ -55,5 +58,5 @@ const { getUserById, getTeamOptions } = inject<any>('ProjectsPage')
       </VaCardContent>
     </VaCard>
   </VaInnerLoading>
-  <div v-else class="p-4 flex justify-center items-center text-[var(--va-secondary)]">No projects</div>
+  <div v-else class="p-4 flex justify-center items-center text-[var(--va-secondary)]">{{ t('pages.projects.noProjects') }}</div>
 </template>

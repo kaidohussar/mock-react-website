@@ -1,15 +1,15 @@
 <template>
   <VaForm ref="form" @submit.prevent="submit">
-    <h1 class="font-semibold text-4xl mb-4">Sign up</h1>
+    <h1 class="font-semibold text-4xl mb-4">{{ t('pages.auth.signup.title') }}</h1>
     <p class="text-base mb-4 leading-5">
-      Have an account?
-      <RouterLink :to="{ name: 'login' }" class="font-semibold text-primary">Login</RouterLink>
+      {{ t('pages.auth.signup.haveAccount') }}
+      <RouterLink :to="{ name: 'login' }" class="font-semibold text-primary">{{ t('pages.auth.signup.login') }}</RouterLink>
     </p>
     <VaInput
       v-model="formData.email"
-      :rules="[(v) => !!v || 'Email field is required', (v) => /.+@.+\..+/.test(v) || 'Email should be valid']"
+      :rules="[(v) => !!v || t('validation.emailRequired'), (v) => /.+@.+\..+/.test(v) || t('validation.emailValid')]"
       class="mb-4"
-      label="Email"
+      :label="t('common.email')"
       type="email"
     />
     <VaValue v-slot="isPasswordVisible" :default-value="false">
@@ -19,8 +19,8 @@
         :rules="passwordRules"
         :type="isPasswordVisible.value ? 'text' : 'password'"
         class="mb-4"
-        label="Password"
-        messages="Password should be 8+ characters: letters, numbers, and special characters."
+        :label="t('common.password')"
+        :messages="t('pages.auth.signup.passwordHint')"
         @clickAppendInner.stop="isPasswordVisible.value = !isPasswordVisible.value"
       >
         <template #appendInner>
@@ -35,12 +35,12 @@
         ref="password2"
         v-model="formData.repeatPassword"
         :rules="[
-          (v) => !!v || 'Repeat Password field is required',
-          (v) => v === formData.password || 'Passwords don\'t match',
+          (v) => !!v || t('validation.repeatPasswordRequired'),
+          (v) => v === formData.password || t('validation.passwordsDontMatch'),
         ]"
         :type="isPasswordVisible.value ? 'text' : 'password'"
         class="mb-4"
-        label="Repeat Password"
+        :label="t('pages.auth.signup.repeatPassword')"
         @clickAppendInner.stop="isPasswordVisible.value = !isPasswordVisible.value"
       >
         <template #appendInner>
@@ -54,7 +54,7 @@
     </VaValue>
 
     <div class="flex justify-center mt-4">
-      <VaButton class="w-full" @click="submit"> Create account</VaButton>
+      <VaButton class="w-full" @click="submit">{{ t('pages.auth.signup.createAccount') }}</VaButton>
     </div>
   </VaForm>
 </template>
@@ -62,8 +62,10 @@
 <script lang="ts" setup>
 import { reactive } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useForm, useToast } from 'vuestic-ui'
 
+const { t } = useI18n()
 const { validate } = useForm('form')
 const { push } = useRouter()
 const { init } = useToast()
@@ -77,7 +79,7 @@ const formData = reactive({
 const submit = () => {
   if (validate()) {
     init({
-      message: "You've successfully signed up",
+      message: t('pages.auth.signup.success'),
       color: 'success',
     })
     push({ name: 'dashboard' })
@@ -85,10 +87,10 @@ const submit = () => {
 }
 
 const passwordRules: ((v: string) => boolean | string)[] = [
-  (v) => !!v || 'Password field is required',
-  (v) => (v && v.length >= 8) || 'Password must be at least 8 characters long',
-  (v) => (v && /[A-Za-z]/.test(v)) || 'Password must contain at least one letter',
-  (v) => (v && /\d/.test(v)) || 'Password must contain at least one number',
-  (v) => (v && /[!@#$%^&*(),.?":{}|<>]/.test(v)) || 'Password must contain at least one special character',
+  (v) => !!v || t('validation.passwordRequired'),
+  (v) => (v && v.length >= 8) || t('validation.password8Chars'),
+  (v) => (v && /[A-Za-z]/.test(v)) || t('validation.passwordLetter'),
+  (v) => (v && /\d/.test(v)) || t('validation.passwordNumber'),
+  (v) => (v && /[!@#$%^&*(),.?":{}|<>]/.test(v)) || t('validation.passwordSpecial'),
 ]
 </script>

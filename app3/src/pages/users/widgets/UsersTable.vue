@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { defineVaDataTableColumns, useModal } from 'vuestic-ui'
+import { useI18n } from 'vue-i18n'
 import { User, UserRole } from '../types'
 import UserAvatar from './UserAvatar.vue'
 import { PropType, computed, toRef } from 'vue'
@@ -7,12 +8,14 @@ import { Pagination, Sorting } from '../../../data/pages/users'
 import { useVModel } from '@vueuse/core'
 import { Project } from '../../projects/types'
 
+const { t } = useI18n()
+
 const columns = defineVaDataTableColumns([
-  { label: 'Full Name', key: 'fullname', sortable: true },
-  { label: 'Email', key: 'email', sortable: true },
-  { label: 'Username', key: 'username', sortable: true },
-  { label: 'Role', key: 'role', sortable: true },
-  { label: 'Projects', key: 'projects', sortable: true },
+  { label: t('pages.users.table.fullName'), key: 'fullname', sortable: true },
+  { label: t('common.email'), key: 'email', sortable: true },
+  { label: t('pages.users.table.username'), key: 'username', sortable: true },
+  { label: t('pages.users.table.role'), key: 'role', sortable: true },
+  { label: t('pages.users.table.projects'), key: 'projects', sortable: true },
   { label: ' ', key: 'actions', align: 'right' },
 ])
 
@@ -54,10 +57,10 @@ const { confirm } = useModal()
 
 const onUserDelete = async (user: User) => {
   const agreed = await confirm({
-    title: 'Delete user',
-    message: `Are you sure you want to delete ${user.fullname}?`,
-    okText: 'Delete',
-    cancelText: 'Cancel',
+    title: t('pages.users.deleteUser'),
+    message: t('pages.users.deleteUserConfirm', { name: user.fullname }),
+    okText: t('common.delete'),
+    cancelText: t('common.cancel'),
     size: 'small',
     maxWidth: '380px',
   })
@@ -77,7 +80,7 @@ const formatProjectNames = (projects: Project['id'][]) => {
 
     return acc
   }, [] as string[])
-  if (names.length === 0) return 'No projects'
+  if (names.length === 0) return t('pages.users.noProjects')
   if (names.length <= 2) {
     return names.map((name) => name).join(', ')
   }
@@ -89,7 +92,8 @@ const formatProjectNames = (projects: Project['id'][]) => {
       .join(', ') +
     ' + ' +
     (names.length - 2) +
-    ' more'
+    ' ' +
+    t('common.more')
   )
 }
 </script>
@@ -154,8 +158,8 @@ const formatProjectNames = (projects: Project['id'][]) => {
 
   <div class="flex flex-col-reverse md:flex-row gap-2 justify-between items-center py-2">
     <div>
-      <b>{{ $props.pagination.total }} results.</b>
-      Results per page
+      <b>{{ $props.pagination.total }} {{ t('common.results') }}.</b>
+      {{ t('common.resultsPerPage') }}
       <VaSelect v-model="$props.pagination.perPage" class="!w-20" :options="[10, 50, 100]" />
     </div>
 

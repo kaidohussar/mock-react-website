@@ -1,7 +1,7 @@
 <template>
   <VaCard class="mb-6">
     <VaCardContent>
-      <h2 class="page-sub-title">Membership tier</h2>
+      <h2 class="page-sub-title">{{ t('pages.billing.membershipTier') }}</h2>
       <template v-for="(plan, index) in plans" :key="plan.id">
         <div class="flex items-center justify-between md:justify-items-stretch">
           <div
@@ -9,24 +9,24 @@
           >
             <div class="flex items-center md:w-48">
               <div class="font-bold">{{ plan.name }}</div>
-              <VaBadge v-if="plan.type === 'current'" class="ml-2" color="success" text="Selected" />
+              <VaBadge v-if="plan.type === 'current'" class="ml-2" color="success" :text="t('pages.billing.selected')" />
             </div>
             <div class="md:w-48">
-              <p class="mb-1">{{ plan.padletsTotal }} padlets</p>
-              <p>{{ plan.uploadLimit }}&nbsp;/upload</p>
+              <p class="mb-1">{{ plan.padletsTotal }} {{ t('pages.billing.padlets') }}</p>
+              <p>{{ plan.uploadLimit }}&nbsp;/{{ t('pages.billing.upload') }}</p>
             </div>
             <div class="md:w-48">
               <template v-if="plan.priceMonth">
-                <p class="mb-1">{{ plan.priceMonth }}&nbsp;/month</p>
-                <p>{{ plan.priceYear }}&nbsp;/year</p>
+                <p class="mb-1">{{ plan.priceMonth }}&nbsp;/{{ t('pages.billing.month') }}</p>
+                <p>{{ plan.priceYear }}&nbsp;/{{ t('pages.billing.year') }}</p>
               </template>
-              <p v-else>Free</p>
+              <p v-else>{{ t('pages.billing.free') }}</p>
             </div>
           </div>
           <div class="md:w-48 flex justify-end">
-            <div v-if="plan.type === 'current'" class="font-bold">{{ plan.padletsUsed }} padlets used</div>
-            <VaButton v-else-if="plan.type === 'upgrade'" @click="switchPlan(plan.id)">Upgrade</VaButton>
-            <VaButton v-else preset="primary" @click="switchPlan(plan.id)">Downgrade</VaButton>
+            <div v-if="plan.type === 'current'" class="font-bold">{{ plan.padletsUsed }} {{ t('pages.billing.padletsUsed') }}</div>
+            <VaButton v-else-if="plan.type === 'upgrade'" @click="switchPlan(plan.id)">{{ t('pages.billing.upgrade') }}</VaButton>
+            <VaButton v-else preset="primary" @click="switchPlan(plan.id)">{{ t('pages.billing.downgrade') }}</VaButton>
           </div>
         </div>
 
@@ -37,9 +37,11 @@
 </template>
 
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n'
 import { useToast } from 'vuestic-ui'
 import { reactive } from 'vue'
 
+const { t } = useI18n()
 const { init } = useToast()
 
 type MembershipTier = {
@@ -98,7 +100,7 @@ const switchPlan = (planId: string) => {
     }
   })
   init({
-    message: "You've successfully changed the membership tier",
+    message: t('pages.billing.toasts.membershipChanged'),
     color: 'success',
   })
 }

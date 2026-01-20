@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import { defineVaDataTableColumns } from 'vuestic-ui'
 import UserAvatar from '../../../users/widgets/UserAvatar.vue'
 import ProjectStatusBadge from '../../../projects/components/ProjectStatusBadge.vue'
@@ -7,10 +8,12 @@ import { Pagination } from '../../../../data/pages/projects'
 import { ref } from 'vue'
 import { useProjectUsers } from '../../../projects/composables/useProjectUsers'
 
+const { t } = useI18n()
+
 const columns = defineVaDataTableColumns([
-  { label: 'Name', key: 'project_name', sortable: true },
-  { label: 'Status', key: 'status', sortable: true },
-  { label: 'Team', key: 'team', sortable: true },
+  { label: t('pages.dashboard.table.name'), key: 'project_name', sortable: true },
+  { label: t('pages.dashboard.table.status'), key: 'status', sortable: true },
+  { label: t('pages.dashboard.table.team'), key: 'team', sortable: true },
 ])
 
 const pagination = ref<Pagination>({ page: 1, perPage: 5, total: 0 })
@@ -24,8 +27,8 @@ const { getTeamOptions, getUserById } = useProjectUsers()
 <template>
   <VaCard>
     <VaCardTitle class="flex items-start justify-between">
-      <h1 class="card-title text-secondary font-bold uppercase">Projects</h1>
-      <VaButton preset="primary" size="small" to="/projects">View all projects</VaButton>
+      <h1 class="card-title text-secondary font-bold uppercase">{{ t('pages.projects.title') }}</h1>
+      <VaButton preset="primary" size="small" to="/projects">{{ t('pages.dashboard.viewAllProjects') }}</VaButton>
     </VaCardTitle>
     <VaCardContent>
       <div v-if="projects.length > 0">
@@ -59,7 +62,7 @@ const { getTeamOptions, getUserById } = useProjectUsers()
           </template>
         </VaDataTable>
       </div>
-      <div v-else class="p-4 flex justify-center items-center text-[var(--va-secondary)]">No projects</div>
+      <div v-else class="p-4 flex justify-center items-center text-[var(--va-secondary)]">{{ t('pages.projects.noProjects') }}</div>
     </VaCardContent>
   </VaCard>
 </template>

@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n'
 import RevenueUpdates from './cards/RevenueReport.vue'
 import ProjectTable from './cards/ProjectTable.vue'
 import RevenueByLocationMap from './cards/RevenueByLocationMap.vue'
@@ -7,10 +8,12 @@ import YearlyBreakup from './cards/YearlyBreakup.vue'
 import MonthlyEarnings from './cards/MonthlyEarnings.vue'
 import RegionRevenue from './cards/RegionRevenue.vue'
 import Timeline from './cards/Timeline.vue'
+
+const { t } = useI18n()
 </script>
 
 <template>
-  <h1 class="page-title font-bold">Dashboard</h1>
+  <h1 class="page-title font-bold">{{ t('pages.dashboard.title') }}</h1>
   <section class="flex flex-col gap-4">
     <div class="flex flex-col sm:flex-row gap-4">
       <RevenueUpdates class="w-full sm:w-[70%]" />

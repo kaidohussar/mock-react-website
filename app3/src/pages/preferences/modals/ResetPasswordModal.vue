@@ -7,14 +7,14 @@
     close-button
     @update:modelValue="emits('cancel')"
   >
-    <h1 class="va-h5 mb-4">Reset password</h1>
+    <h1 class="va-h5 mb-4">{{ t('pages.preferences.modals.resetPassword.title') }}</h1>
     <VaForm ref="form" class="space-y-6" @submit.prevent="submit">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <VaInput
           v-model="oldPassowrd"
           :rules="oldPasswordRules"
-          label="Old password"
-          placeholder="Old password"
+          :label="t('pages.preferences.modals.resetPassword.oldPassword')"
+          :placeholder="t('pages.preferences.modals.resetPassword.oldPassword')"
           required-mark
           type="password"
         />
@@ -22,16 +22,16 @@
         <VaInput
           v-model="newPassword"
           :rules="newPasswordRules"
-          label="New password"
-          placeholder="New password"
+          :label="t('pages.preferences.modals.resetPassword.newPassword')"
+          :placeholder="t('pages.preferences.modals.resetPassword.newPassword')"
           required-mark
           type="password"
         />
         <VaInput
           v-model="repeatNewPassword"
           :rules="repeatNewPasswordRules"
-          label="Repeat new password"
-          placeholder="Repeat new password"
+          :label="t('pages.preferences.modals.resetPassword.repeatNewPassword')"
+          :placeholder="t('pages.preferences.modals.resetPassword.repeatNewPassword')"
           required-mark
           type="password"
         />
@@ -41,27 +41,30 @@
           <div>
             <VaIcon :name="newPassword?.length! >= 8 ? 'mso-check' : 'mso-close'" color="secondary" size="20px" />
           </div>
-          <p>Must be at least 8 characters long</p>
+          <p>{{ t('pages.preferences.modals.resetPassword.rule8Chars') }}</p>
         </div>
         <div class="flex space-x-2 items-center">
           <div>
             <VaIcon :name="new Set(newPassword).size >= 6 ? 'mso-check' : 'mso-close'" color="secondary" size="20px" />
           </div>
-          <p>Must contain at least 6 unique characters</p>
+          <p>{{ t('pages.preferences.modals.resetPassword.rule6Unique') }}</p>
         </div>
       </div>
       <div class="flex flex-col-reverse md:justify-end md:flex-row md:space-x-4">
-        <VaButton :style="buttonStyles" preset="secondary" color="secondary" @click="emits('cancel')"> Cancel</VaButton>
-        <VaButton :style="buttonStyles" class="mb-4 md:mb-0" type="submit" @click="submit"> Update Password</VaButton>
+        <VaButton :style="buttonStyles" preset="secondary" color="secondary" @click="emits('cancel')">{{ t('common.cancel') }}</VaButton>
+        <VaButton :style="buttonStyles" class="mb-4 md:mb-0" type="submit" @click="submit">{{ t('pages.preferences.modals.resetPassword.updatePassword') }}</VaButton>
       </div>
     </VaForm>
   </VaModal>
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useForm, useToast } from 'vuestic-ui'
 
 import { buttonStyles } from '../styles'
+
+const { t } = useI18n()
 
 const oldPassowrd = ref<string>()
 const newPassword = ref<string>()
@@ -74,23 +77,23 @@ const emits = defineEmits(['cancel'])
 
 const submit = () => {
   if (validate()) {
-    init({ message: "You've successfully changed your password", color: 'success' })
+    init({ message: t('pages.preferences.modals.resetPassword.success'), color: 'success' })
     emits('cancel')
   }
 }
 
-const oldPasswordRules = [(v: string) => !!v || 'Old password field is required']
+const oldPasswordRules = [(v: string) => !!v || t('pages.preferences.modals.resetPassword.oldPasswordRequired')]
 
 const newPasswordRules = [
-  (v: string) => !!v || 'New password field is required',
-  (v: string) => v?.length >= 8 || 'Must be at least 8 characters long',
-  (v: string) => new Set(v).size >= 6 || 'Must contain at least 6 unique characters',
-  (v: string) => v !== oldPassowrd.value || 'New password cannot be the same',
+  (v: string) => !!v || t('pages.preferences.modals.resetPassword.newPasswordRequired'),
+  (v: string) => v?.length >= 8 || t('pages.preferences.modals.resetPassword.rule8Chars'),
+  (v: string) => new Set(v).size >= 6 || t('pages.preferences.modals.resetPassword.rule6Unique'),
+  (v: string) => v !== oldPassowrd.value || t('pages.preferences.modals.resetPassword.newPasswordSame'),
 ]
 
 const repeatNewPasswordRules = [
-  (v: string) => !!v || 'Repeat new password field is required',
-  (v: string) => v === newPassword.value || 'Confirm password does not match new password',
+  (v: string) => !!v || t('pages.preferences.modals.resetPassword.repeatPasswordRequired'),
+  (v: string) => v === newPassword.value || t('pages.preferences.modals.resetPassword.passwordMismatch'),
 ]
 </script>
 

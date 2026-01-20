@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { PropType, computed, inject } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { defineVaDataTableColumns } from 'vuestic-ui'
 import { Project } from '../types'
 import UserAvatar from '../../users/widgets/UserAvatar.vue'
@@ -7,12 +8,14 @@ import ProjectStatusBadge from '../components/ProjectStatusBadge.vue'
 import { Pagination, Sorting } from '../../../data/pages/projects'
 import { useVModel } from '@vueuse/core'
 
+const { t } = useI18n()
+
 const columns = defineVaDataTableColumns([
-  { label: 'Project name', key: 'project_name', sortable: true },
-  { label: 'Project owner', key: 'project_owner', sortable: true },
-  { label: 'Team', key: 'team', sortable: true },
-  { label: 'Status', key: 'status', sortable: true },
-  { label: 'Creation Date', key: 'created_at', sortable: true },
+  { label: t('pages.projects.table.projectName'), key: 'project_name', sortable: true },
+  { label: t('pages.projects.table.projectOwner'), key: 'project_owner', sortable: true },
+  { label: t('pages.projects.table.team'), key: 'team', sortable: true },
+  { label: t('pages.projects.table.status'), key: 'status', sortable: true },
+  { label: t('pages.projects.table.creationDate'), key: 'created_at', sortable: true },
   { label: ' ', key: 'actions' },
 ])
 
@@ -105,8 +108,8 @@ const { getUserById, getTeamOptions } = inject<any>('ProjectsPage')
     </VaDataTable>
     <div class="flex flex-col-reverse md:flex-row gap-2 justify-between items-center py-2">
       <div>
-        <b>{{ $props.pagination.total }} results.</b>
-        Results per page
+        <b>{{ $props.pagination.total }} {{ t('common.results') }}.</b>
+        {{ t('common.resultsPerPage') }}
         <VaSelect v-model="$props.pagination.perPage" class="!w-20" :options="[10, 50, 100]" />
       </div>
 

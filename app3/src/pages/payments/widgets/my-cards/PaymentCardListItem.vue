@@ -5,28 +5,30 @@
     <div class="flex flex-col gap-2 flex-grow">
       <div class="flex items-center">
         <div class="text-lg font-bold">{{ card.name }}</div>
-        <VaBadge v-if="card.isPrimary" class="ml-2" color="danger" text="Primary" />
+        <VaBadge v-if="card.isPrimary" class="ml-2" color="danger" :text="t('pages.payments.primary')" />
       </div>
       <div class="flex gap-4 items-center">
         <PaymentSystem :type="card.paymentSystem" />
         <div>
           <div class="text-[15px] font-bold mb-2 capitalize">{{ card.paymentSystem }} {{ card.cardNumberMasked }}</div>
-          <div class="text-secondary">Card expires at {{ expirationDateString }}</div>
+          <div class="text-secondary">{{ t('pages.payments.cardExpiresAt') }} {{ expirationDateString }}</div>
         </div>
       </div>
     </div>
     <div class="w-full sm:w-auto flex-none flex sm:block">
-      <VaButton class="mr-2 flex-grow" preset="primary" @click="emits('edit')">Edit</VaButton>
-      <VaButton icon="mso-delete" preset="primary" aria-label="Remove" @click="emits('remove')" />
+      <VaButton class="mr-2 flex-grow" preset="primary" @click="emits('edit')">{{ t('common.edit') }}</VaButton>
+      <VaButton icon="mso-delete" preset="primary" :aria-label="t('common.remove')" @click="emits('remove')" />
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import PaymentSystem from '../../payment-system/PaymentSystem.vue'
 import { PaymentCard } from '../../types'
 
+const { t } = useI18n()
 const emits = defineEmits(['edit', 'remove'])
 
 const props = defineProps<{

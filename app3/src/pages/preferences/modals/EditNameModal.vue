@@ -8,23 +8,25 @@
     close-button
     @update:modelValue="emits('cancel')"
   >
-    <h1 class="va-h5 mb-4">Reset password</h1>
+    <h1 class="va-h5 mb-4">{{ t('pages.preferences.modals.editName.title') }}</h1>
     <VaForm ref="form" @submit.prevent="submit">
-      <VaInput v-model="Name" class="mb-4" label="Name" placeholder="Name" />
+      <VaInput v-model="Name" class="mb-4" :label="t('pages.preferences.name')" :placeholder="t('pages.preferences.name')" />
       <div class="flex flex-col-reverse md:flex-row md:items-center md:justify-end md:space-x-4">
-        <VaButton :style="buttonStyles" preset="secondary" color="secondary" @click="emits('cancel')"> Cancel</VaButton>
-        <VaButton :style="buttonStyles" class="mb-4 md:mb-0" type="submit" @click="submit"> Save</VaButton>
+        <VaButton :style="buttonStyles" preset="secondary" color="secondary" @click="emits('cancel')">{{ t('common.cancel') }}</VaButton>
+        <VaButton :style="buttonStyles" class="mb-4 md:mb-0" type="submit" @click="submit">{{ t('common.save') }}</VaButton>
       </div>
     </VaForm>
   </VaModal>
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useUserStore } from '../../../stores/user-store'
 
 import { buttonStyles } from '../styles'
 import { useToast } from 'vuestic-ui'
 
+const { t } = useI18n()
 const store = useUserStore()
 
 const { init } = useToast()
@@ -39,7 +41,7 @@ const submit = () => {
   }
 
   store.changeUserName(Name.value)
-  init({ message: "You've successfully changed your name", color: 'success' })
+  init({ message: t('pages.preferences.modals.editName.success'), color: 'success' })
   emits('cancel')
 }
 </script>

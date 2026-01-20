@@ -1,9 +1,9 @@
 <template>
   <VaModal hide-default-actions model-value size="small" close-button @cancel="emits('close')">
-    <h3 class="va-h4 mb-4">Add Billing Address</h3>
+    <h3 class="va-h4 mb-4">{{ t('pages.payments.addBillingAddress') }}</h3>
     <BillingAddressEdit
       :billing-address="billingAddress"
-      submit-text="Add Address"
+      :submit-text="t('pages.payments.addAddress')"
       @cancel="emits('close')"
       @save="update"
     />
@@ -12,11 +12,13 @@
 
 <script lang="ts" setup>
 import { ref, reactive } from 'vue'
+import { useI18n } from 'vue-i18n'
 import BillingAddressEdit from './BillingAddressEdit.vue'
 import { BillingAddress } from '../../types'
 import { useToast } from 'vuestic-ui'
 import { useBillingAddressesStore } from '../../../../stores/billing-addresses'
 
+const { t } = useI18n()
 const isModalOpen = ref(false)
 
 const emits = defineEmits(['close'])
@@ -37,7 +39,7 @@ const billingAddress = reactive({
 const update = (address: BillingAddress) => {
   isModalOpen.value = false
   store.create(address)
-  init({ message: "You've successfully created a new Billing Address", color: 'success' })
+  init({ message: t('pages.payments.toasts.addressCreated'), color: 'success' })
   emits('close')
 }
 </script>

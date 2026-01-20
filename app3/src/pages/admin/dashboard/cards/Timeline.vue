@@ -1,11 +1,14 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import VaTimelineItem from '../../../../components/va-timeline-item.vue'
+
+const { t } = useI18n()
 </script>
 
 <template>
   <VaCard>
     <VaCardTitle class="flex justify-between">
-      <h1 class="card-title text-secondary font-bold uppercase">Timeline</h1>
+      <h1 class="card-title text-secondary font-bold uppercase">{{ t('pages.dashboard.timeline') }}</h1>
     </VaCardTitle>
     <VaCardContent>
       <table class="mt-4">

@@ -28,13 +28,12 @@
         :style="{ backgroundColor: colorToRgba(getColor('primary'), 0.07) }"
       >
         <div class="flex flex-col gap-2 flex-grow">
-          <div class="text-lg font-bold leading-relaxed">Important note</div>
+          <div class="text-lg font-bold leading-relaxed">{{ t('pages.payments.importantNote') }}</div>
           <div class="text-secondary text-sm leading-tight">
-            Please ensure the provided billing address matches the information on file with your financial institution
-            to avoid any processing delays.
+            {{ t('pages.payments.addressNote') }}
           </div>
         </div>
-        <VaButton class="flex-none w-full sm:w-auto" @click="showCreate = true">New address</VaButton>
+        <VaButton class="flex-none w-full sm:w-auto" @click="showCreate = true">{{ t('pages.payments.newAddress') }}</VaButton>
       </div>
     </template>
   </div>
@@ -43,6 +42,7 @@
 </template>
 
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n'
 import CardListItem from './BillingAddressListItem.vue'
 import { computed, ref } from 'vue'
 import { useModal, useToast } from 'vuestic-ui'
@@ -52,6 +52,7 @@ import { useBillingAddressesStore } from '../../../../stores/billing-addresses'
 import { BillingAddress } from '../../types'
 import { useColors } from 'vuestic-ui'
 
+const { t } = useI18n()
 const store = useBillingAddressesStore()
 
 const list = computed(() => store.allBillingAddresses)
@@ -65,13 +66,13 @@ const { init } = useToast()
 store.load()
 const remove = async (card: BillingAddress) => {
   confirm({
-    message: 'Are you really sure you want to delete this address?',
+    message: t('pages.payments.deleteAddressConfirm'),
     size: 'small',
     maxWidth: '380px',
   }).then((ok) => {
     if (!ok) return
     store.remove(card.id)
-    init({ message: 'Billing Address has been deleted', color: 'success' })
+    init({ message: t('pages.payments.toasts.addressDeleted'), color: 'success' })
   })
 }
 

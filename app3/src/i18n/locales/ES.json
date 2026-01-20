@@ -4,6 +4,395 @@
     "text": "Si crees que esto no es correcto, por favor envíanos un mensaje a ",
     "title": "Esta página se ha ido a pescar"
   },
+  "common": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "remove": "Eliminar",
+    "add": "Añadir",
+    "create": "Crear",
+    "update": "Actualizar",
+    "search": "Buscar",
+    "email": "Email",
+    "name": "Nombre",
+    "yes": "Sí",
+    "no": "No",
+    "ok": "Aceptar",
+    "select": "Seleccionar",
+    "actions": "Acciones",
+    "status": "Estado",
+    "view": "Ver",
+    "back": "Volver"
+  },
+  "validation": {
+    "emailRequired": "El email es obligatorio",
+    "emailValid": "El email debe ser válido",
+    "passwordRequired": "La contraseña es obligatoria",
+    "passwordLength": "La contraseña debe tener al menos 8 caracteres",
+    "passwordUppercase": "La contraseña debe contener al menos una letra mayúscula",
+    "passwordNumber": "La contraseña debe contener al menos un número",
+    "nameRequired": "El nombre es obligatorio",
+    "required": "Este campo es obligatorio"
+  },
+  "pages": {
+    "settings": {
+      "title": "Configuración",
+      "theme": "Tema",
+      "appearance": "Apariencia",
+      "notifications": "Notificaciones",
+      "notificationSettings": "Configuración de notificaciones",
+      "receiveEmailNotifications": "Recibir notificaciones por email",
+      "receivePushNotifications": "Recibir notificaciones push"
+    },
+    "preferences": {
+      "title": "Preferencias",
+      "personalInfo": "Información personal",
+      "editName": "Editar nombre",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Email",
+      "password": "Contraseña",
+      "changePassword": "Cambiar contraseña",
+      "currentPassword": "Contraseña actual",
+      "newPassword": "Nueva contraseña",
+      "confirmPassword": "Confirmar contraseña",
+      "twoFactorAuth": "Autenticación de dos factores",
+      "enable2FA": "Habilitar 2FA",
+      "disable2FA": "Deshabilitar 2FA",
+      "toasts": {
+        "nameUpdated": "Nombre actualizado correctamente",
+        "passwordUpdated": "Contraseña actualizada correctamente",
+        "2faEnabled": "Autenticación de dos factores habilitada",
+        "2faDisabled": "Autenticación de dos factores deshabilitada"
+      }
+    },
+    "auth": {
+      "login": {
+        "title": "Iniciar sesión",
+        "email": "Email",
+        "password": "Contraseña",
+        "keepLoggedIn": "Mantenerme conectado",
+        "forgotPassword": "¿Olvidaste tu contraseña?",
+        "submit": "Iniciar sesión",
+        "noAccount": "¿No tienes cuenta?",
+        "createAccount": "Crear cuenta"
+      },
+      "signup": {
+        "title": "Registrarse",
+        "email": "Email",
+        "password": "Contraseña",
+        "agreeToTerms": "Acepto los",
+        "termsOfService": "términos de servicio",
+        "submit": "Crear cuenta",
+        "haveAccount": "¿Ya tienes cuenta?",
+        "login": "Iniciar sesión"
+      },
+      "recoverPassword": {
+        "title": "Recuperar contraseña",
+        "description": "Ingresa tu email y te enviaremos instrucciones para restablecer tu contraseña",
+        "email": "Email",
+        "submit": "Enviar instrucciones",
+        "backToLogin": "Volver al inicio de sesión"
+      },
+      "checkEmail": {
+        "title": "Revisa tu email",
+        "description": "Te hemos enviado instrucciones para restablecer tu contraseña",
+        "backToLogin": "Volver al inicio de sesión"
+      }
+    },
+    "users": {
+      "title": "Usuarios",
+      "addUser": "Añadir usuario",
+      "editUser": "Editar usuario",
+      "deleteUser": "Eliminar usuario",
+      "confirmDelete": "¿Estás seguro de que deseas eliminar este usuario?",
+      "table": {
+        "name": "Nombre",
+        "email": "Email",
+        "role": "Rol",
+        "status": "Estado",
+        "actions": "Acciones"
+      },
+      "form": {
+        "name": "Nombre completo",
+        "email": "Email",
+        "role": "Rol",
+        "nameRequired": "El nombre es obligatorio",
+        "emailRequired": "El email es obligatorio",
+        "emailValid": "El email debe ser válido",
+        "roleRequired": "El rol es obligatorio"
+      },
+      "roles": {
+        "admin": "Administrador",
+        "user": "Usuario",
+        "owner": "Propietario"
+      },
+      "toasts": {
+        "created": "Usuario creado correctamente",
+        "updated": "Usuario actualizado correctamente",
+        "deleted": "Usuario eliminado correctamente"
+      }
+    },
+    "projects": {
+      "title": "Proyectos",
+      "addProject": "Añadir proyecto",
+      "editProject": "Editar proyecto",
+      "deleteProject": "Eliminar proyecto",
+      "confirmDelete": "¿Estás seguro de que deseas eliminar este proyecto?",
+      "table": {
+        "name": "Nombre",
+        "status": "Estado",
+        "team": "Equipo",
+        "actions": "Acciones"
+      },
+      "form": {
+        "name": "Nombre del proyecto",
+        "status": "Estado",
+        "team": "Equipo",
+        "nameRequired": "El nombre es obligatorio",
+        "statusRequired": "El estado es obligatorio",
+        "teamRequired": "El equipo es obligatorio"
+      },
+      "status": {
+        "inProgress": "En progreso",
+        "completed": "Completado",
+        "archived": "Archivado",
+        "important": "Importante"
+      },
+      "toasts": {
+        "created": "Proyecto creado correctamente",
+        "updated": "Proyecto actualizado correctamente",
+        "deleted": "Proyecto eliminado correctamente"
+      }
+    },
+    "dashboard": {
+      "title": "Tablero",
+      "welcomeBack": "Bienvenido de nuevo",
+      "metrics": {
+        "revenue": "Ingresos",
+        "expenses": "Gastos",
+        "profit": "Beneficio",
+        "visitors": "Visitantes"
+      },
+      "revenueReport": "Informe de ingresos",
+      "yearlyBreakup": "Desglose anual",
+      "monthlyEarnings": "Ganancias mensuales",
+      "regionRevenue": "Ingresos por región",
+      "projectTable": "Proyectos recientes",
+      "timeline": "Línea de tiempo",
+      "table": {
+        "project": "Proyecto",
+        "leader": "Líder",
+        "team": "Equipo",
+        "progress": "Progreso"
+      },
+      "region": {
+        "spain": "España",
+        "mexico": "México",
+        "argentina": "Argentina",
+        "colombia": "Colombia",
+        "peru": "Perú"
+      }
+    },
+    "billing": {
+      "title": "Facturación",
+      "membership": "Membresía",
+      "currentPlan": "Plan actual",
+      "changePlan": "Cambiar plan",
+      "cancelPlan": "Cancelar plan",
+      "paymentInfo": "Información de pago",
+      "paymentMethod": "Método de pago",
+      "cardEndingIn": "Tarjeta terminada en",
+      "expires": "Vence",
+      "changePaymentMethod": "Cambiar método de pago",
+      "invoices": "Facturas",
+      "invoiceHistory": "Historial de facturas",
+      "downloadInvoice": "Descargar factura",
+      "plans": {
+        "basic": "Básico",
+        "pro": "Pro",
+        "enterprise": "Empresa"
+      },
+      "modal": {
+        "title": "Cambiar tu plan de pago",
+        "selectPlan": "Selecciona un plan",
+        "confirm": "Confirmar cambio"
+      },
+      "toasts": {
+        "planChanged": "Plan cambiado correctamente"
+      }
+    },
+    "payments": {
+      "title": "Pagos",
+      "myCards": "Mis tarjetas",
+      "addCard": "Añadir tarjeta",
+      "editCard": "Editar tarjeta",
+      "deleteCard": "Eliminar tarjeta",
+      "confirmDeleteCard": "¿Estás seguro de que deseas eliminar esta tarjeta?",
+      "billingAddresses": "Direcciones de facturación",
+      "addAddress": "Añadir dirección",
+      "editBillingAddress": "Editar dirección de facturación",
+      "deleteAddress": "Eliminar dirección",
+      "confirmDeleteAddress": "¿Estás seguro de que deseas eliminar esta dirección?",
+      "primary": "Principal",
+      "cardExpiresAt": "Vence",
+      "saveCard": "Guardar tarjeta",
+      "saveAddress": "Guardar dirección",
+      "form": {
+        "cardName": "Nombre en la tarjeta",
+        "cardNameRequired": "El nombre en la tarjeta es obligatorio",
+        "cardNumber": "Número de tarjeta",
+        "cardNumberRequired": "El número de tarjeta es obligatorio",
+        "expirationDate": "Fecha de vencimiento",
+        "expirationDateRequired": "La fecha de vencimiento es obligatoria",
+        "expirationDateFormat": "Formato: MMAA",
+        "paymentSystem": "Sistema de pago",
+        "paymentSystemRequired": "El sistema de pago es obligatorio",
+        "primaryCard": "Tarjeta principal",
+        "name": "Nombre",
+        "nameRequired": "El nombre es obligatorio",
+        "street": "Calle",
+        "streetRequired": "La calle es obligatoria",
+        "city": "Ciudad",
+        "cityRequired": "La ciudad es obligatoria",
+        "state": "Estado/Provincia",
+        "stateRequired": "El estado es obligatorio",
+        "postalCode": "Código postal",
+        "postalCodeRequired": "El código postal es obligatorio",
+        "country": "País",
+        "countryRequired": "El país es obligatorio",
+        "primaryAddress": "Dirección principal"
+      },
+      "toasts": {
+        "cardAdded": "Tarjeta añadida correctamente",
+        "cardUpdated": "Tarjeta actualizada correctamente",
+        "cardDeleted": "Tarjeta eliminada correctamente",
+        "addressAdded": "Dirección añadida correctamente",
+        "addressUpdated": "Dirección actualizada correctamente",
+        "addressDeleted": "Dirección eliminada correctamente"
+      }
+    },
+    "pricingPlans": {
+      "title": "Elige tu plan",
+      "moreInfo": "Si necesitas más información sobre nuestros precios, consulta",
+      "pricingGuidelines": "Guía de precios",
+      "monthly": "Mensual",
+      "annual": "Anual",
+      "year": "año",
+      "month": "mes",
+      "confirmChangePlan": "¿Estás seguro de que deseas cambiar de plan?",
+      "plans": {
+        "Startup": {
+          "title": "Startup",
+          "description": "Óptimo para equipos de 10+ y nuevas startups"
+        },
+        "Advanced": {
+          "title": "Avanzado",
+          "description": "Óptimo para equipos de 100+ y empresas en crecimiento"
+        },
+        "Enterprise": {
+          "title": "Empresa",
+          "description": "Óptimo para equipos de 1000+ y grandes empresas"
+        }
+      },
+      "badges": {
+        "popularChoice": "Opción popular"
+      },
+      "features": {
+        "activeUsers": "Hasta 10 usuarios activos",
+        "projectIntegrations": "Hasta 30 integraciones de proyectos",
+        "analyticsModule": "Módulo de analíticas",
+        "financeModule": "Módulo de finanzas",
+        "accountingModule": "Módulo de contabilidad",
+        "networkPlatform": "Plataforma de red",
+        "unlimitedCloudSpace": "Espacio en la nube ilimitado"
+      },
+      "toasts": {
+        "planChanged": "¡Plan de pago cambiado correctamente!"
+      }
+    },
+    "faq": {
+      "title": "¿Cómo podemos ayudarte?",
+      "noMatchesFound": "No se encontraron coincidencias. Intenta refinar tu búsqueda o navega por las categorías para encontrar la ayuda que necesitas.",
+      "popularQuestions": "Preguntas populares",
+      "questions": {
+        "reloadPage": {
+          "title": "¿Cómo recargo una página?",
+          "intro": "¡Prepárate para algo de sabiduría sobre actualización de páginas! Estamos a punto de sumergirnos en el mágico mundo de recargar páginas web. Aquí hay algunas técnicas:",
+          "tip1": "Presiona la tecla F5 o Ctrl + R (Windows/Linux) o Comando + R (Mac) para recargar manualmente la página actual.",
+          "tip2": "Haz clic en el botón de recarga en tu navegador. Normalmente parece una flecha circular y está ubicado en la barra de direcciones.",
+          "tip3": "Usa JavaScript para recargar la página programáticamente: location.reload();"
+        },
+        "secureKey": {
+          "title": "¿Qué es una Clave Segura?",
+          "paragraph1": "Una Clave Segura es una capa extra de seguridad que ayuda a protegerte a ti y a tu dinero generando un código de seguridad único y de un solo uso cada vez que inicias sesión o autorizas un pago. Hay dos tipos de Clave Segura: una versión Digital que funciona como parte de la App de Banca Móvil, perfecta si tienes un smartphone o tablet. O puedes usar una versión Física que es un pequeño llavero que parece una mini calculadora.",
+          "paragraph2": "Recomendamos configurar una Clave Segura Digital. Está integrada en la primera App de Banca directa, y si tienes el tipo correcto de smartphone puedes usar tu huella digital o reconocimiento facial para iniciar sesión o autorizar pagos sin problemas.",
+          "learnMore": "Más información sobre Claves Seguras"
+        },
+        "reportFraud": {
+          "title": "¿Cómo reporto un fraude?",
+          "intro": "Reportar fraude es un asunto serio, y es importante tomar las medidas apropiadas para abordar y prevenir actividades fraudulentas. El proceso específico para reportar fraude puede variar según tu ubicación y la naturaleza del fraude, pero aquí hay una guía general:",
+          "tip1Title": "Reportar a las Autoridades Relevantes:",
+          "tip1Text": "Dependiendo de la naturaleza del fraude, puede que necesites reportar a otras autoridades relevantes, como la Comisión de Valores y Bolsa (SEC) para fraude relacionado con inversiones o el Better Business Bureau (BBB) para estafas y prácticas engañosas.",
+          "tip2Title": "Documentar Todos los Detalles:",
+          "tip2Text": "Asegúrate de documentar todos los detalles relevantes sobre el fraude, incluyendo fechas, horas, nombres de las personas involucradas (si se conocen), transacciones financieras y cualquier comunicación relacionada con el fraude.",
+          "tip3Title": "Reportar a Organizaciones de Delitos en Internet:",
+          "tip3Text": "Si el fraude involucra actividades en línea, considera reportar a organizaciones que tratan con delitos en internet, como el Centro de Quejas de Delitos en Internet (IC3). IC3 es una asociación entre el FBI y el Centro Nacional de Delitos de Cuello Blanco.",
+          "conclusion": "Recuerda actuar con prontitud y seguir los procedimientos de reporte específicos relevantes para tu ubicación y el tipo de fraude que hayas encontrado. Tomar acción rápida puede ayudar a mitigar el daño potencial y prevenir más actividades fraudulentas."
+        },
+        "downloadStatements": {
+          "title": "¿Cómo descargo estados de cuenta?",
+          "intro": "Descargar estados de cuenta puede variar dependiendo del tipo de estados a los que te refieras (por ejemplo, estados bancarios, estados de tarjeta de crédito, estados de servicios). A continuación se presentan pasos generales para descargar estados de cuenta desde varias plataformas:",
+          "tip1Title": "Asegurar Conexión Segura:",
+          "tip1Text": "Siempre accede y descarga estados de cuenta desde una red segura y confiable para proteger tu información financiera sensible.",
+          "tip2Title": "Revisar Estados Regularmente:",
+          "tip2Text": "Revisa tus estados regularmente para verificar transacciones, detectar errores o identificar cualquier actividad sospechosa con prontitud.",
+          "tip3Title": "Verificar Detalles de la Cuenta:",
+          "tip3Text": "Asegúrate de que los estados que descargues correspondan a la cuenta correcta, incluyendo números de cuenta y nombres de cuenta.",
+          "tip4Title": "Usar Canales Oficiales:",
+          "tip4Text": "Descarga estados solo desde plataformas oficiales y autorizadas, como el sitio web oficial de tu banco o los portales en línea seguros de los proveedores de servicios.",
+          "conclusion": "Siempre asegúrate de seguir los pasos e instrucciones específicas proporcionadas por el respectivo proveedor de servicios para descargar estados de cuenta de manera segura y precisa. Si encuentras dificultades o tienes preguntas específicas, considera comunicarte con el soporte al cliente de la respectiva institución o servicio."
+        }
+      },
+      "demo": {
+        "gotQuestions": "¿Tienes preguntas?",
+        "description": "Solicita una demo gratuita para que un experto responda todas tus preguntas.",
+        "requestDemo": "Solicitar demo",
+        "imageAlt": "Enviar un mensaje",
+        "modalTitle": "Solicitar demo gratuita",
+        "modalDescription": "¡Reserva tu lugar ahora e impulsa la innovación con nuestra excepcional solución de software!",
+        "toasts": {
+          "submitted": "¡Solicitud de demo enviada!",
+          "expertContact": "Un experto se pondrá en contacto pronto"
+        }
+      }
+    },
+    "notFound": {
+      "title": "Página no encontrada",
+      "description": "La página que estás buscando puede haber sido eliminada, su nombre cambió o no está disponible temporalmente.",
+      "goToHomepage": "Ir a la página principal",
+      "createGitHubIssue": "Crear un issue en GitHub"
+    }
+  },
+  "notifications": {
+    "all": "Ver todas las notificaciones",
+    "less": "Ver menos",
+    "mark_as_read": "Marcar como leída",
+    "sentMessage": "{name} te envió un mensaje",
+    "startedTopic": "{name} inició un nuevo tema",
+    "uploadedZip": "{name} subió un archivo Zip con {type}",
+    "messages": {
+      "pendingRequests": "4 solicitudes pendientes",
+      "newReports": "3 nuevos informes",
+      "trialExpired": "¡Ups! Tu período de prueba ha expirado.",
+      "timezoneIncorrect": "Parece que tu zona horaria está configurada incorrectamente, por favor cámbiala para evitar problemas con la Memoria.",
+      "newTeamMembers": "2 nuevos miembros del equipo añadidos",
+      "budgetExceeded": "Presupuesto mensual excedido en un 10%",
+      "tasksApproachingDeadlines": "7 tareas se acercan a sus fechas límite",
+      "softwareUpdateAvailable": "Nueva actualización de software disponible"
+    }
+  },
   "features": {
     "hero": {
       "subtitle": "Todo lo que necesitas para optimizar tus operaciones y aumentar la productividad.",
@@ -168,6 +557,7 @@
     }
   },
   "aboutVuesticAdmin": "Acerca de Vuestic Admin",
+  "supportAndConsulting": "Soporte y Consultoría",
   "auth": {
     "agree": "Acepto",
     "createAccount": "Crear cuenta",
@@ -263,6 +653,9 @@
     "payments": "Pagos",
     "preferences": "Preferencias",
     "pricing-plans": "Planes de precios",
+    "settings": "Configuración",
+    "users": "Usuarios",
+    "projects": "Proyectos",
     "timelines": "Líneas de tiempo"
   },
   "messages": {
@@ -273,13 +666,6 @@
   "navbar": {
     "messageUs": "Preguntas sobre desarrollo web:",
     "repository": "Repositorio GitHub"
-  },
-  "notifications": {
-    "all": "Ver todas las notificaciones",
-    "mark_as_read": "Marcar como leída",
-    "sentMessage": "{name} te envió un mensaje",
-    "startedTopic": "{name} inició un nuevo tema",
-    "uploadedZip": "{name} subió un archivo Zip con {type}"
   },
   "search": {
     "placeholder": "Buscar..."
