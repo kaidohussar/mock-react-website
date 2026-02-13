@@ -353,6 +353,9 @@
         "reduceMotion": {
           "label": "",
           "description": ""
+        },
+        "highContrast": {
+          "label": ""
         }
       }
     }
