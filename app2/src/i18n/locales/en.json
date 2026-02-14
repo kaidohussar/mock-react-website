@@ -22,7 +22,7 @@
   },
   "stats": {
     "totalRevenue": "Total Revenue",
-    "activeUsers": "Active Users",
+    "activeUsers": "Active team members",
     "conversionRate": "Conversion Rate",
     "monthlyGrowth": "Monthly Growth",
     "revenueDescription": "Your revenue increased by <strong>{{percentage}}%</strong> compared to last month",
