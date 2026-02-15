@@ -20,7 +20,7 @@ const Chart: React.FC = () => {
   return (
     <div className="chart-container">
       <div className="chart-header">
-        <h3>{t('chart.title')}</h3>
+        <h3 data-testid="rev-stats">{t('chart.title')}</h3>
         <div className="chart-period">
           <span className="period-label">{t('chart.period')}</span>
         </div>
