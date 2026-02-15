@@ -21,7 +21,7 @@
     }
   },
   "stats": {
-    "totalRevenue": "Total Revenue",
+    "totalRevenue": "Total Expenses",
     "activeUsers": "Active Users",
     "conversionRate": "Conversion Rate",
     "monthlyGrowth": "Monthly Growth",
