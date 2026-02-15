@@ -70,7 +70,8 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
           ))}
-        </ul>
+        </ul
+        data-testid={item.path === '/customers' ? 'btn-customers' : undefined}>
       </nav>
       <div className="sidebar-footer">
         <div className="upgrade-card">
