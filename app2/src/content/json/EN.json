@@ -341,7 +341,7 @@
         "company": "Company",
         "email": "Email",
         "fullName": "Full Name",
-        "saveChanges": "Save Changes",
+        "saveChanges": "Save",
         "title": "Profile Information"
       },
       "subtitle": "Manage your account preferences and settings",
