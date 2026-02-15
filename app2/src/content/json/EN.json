@@ -43,7 +43,7 @@
   },
   "stats": {
     "activeUsers": "Active Users",
-    "conversionRate": "Conversion Rate",
+    "conversionRate": "Conversion Rate!!!",
     "monthlyGrowth": "Monthly Growth",
     "revenueDescription": "Your revenue increased by <strong>{{percentage}}%</strong> compared to last month",
     "totalRevenue": "Total Revenue",
