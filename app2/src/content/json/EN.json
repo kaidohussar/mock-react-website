@@ -248,7 +248,7 @@
     },
     "dashboard": {
       "title": "Dashboard",
-      "welcomeBack": "Welcome back, {{userName}}! Here's what's happening with your business today."
+      "welcomeBack": "Welcome back, {{userName}}! Here's what is happening with your business today!!!!"
     },
     "reports": {
       "actions": {
