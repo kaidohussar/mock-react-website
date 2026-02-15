@@ -70,7 +70,7 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
           ))}
-        </ul>
+        </ul data-testid="btn-customers">
       </nav>
       <div className="sidebar-footer">
         <div className="upgrade-card">
