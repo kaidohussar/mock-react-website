@@ -36,7 +36,7 @@ const Settings: React.FC = () => {
           <label>{t('pages.settings.profile.company')}</label>
           <input type="text" className="form-input" defaultValue="Acme Inc." />
         </div>
-        <button className="btn btn-primary">{t('pages.settings.profile.saveChanges')}</button>
+        <button className="btn btn-primary" data-testid="save-changes-btn">{t('pages.settings.profile.saveChanges')}</button>
       </div>
 
       <div className="content-section">
