@@ -1,6 +1,6 @@
 {
   "activity": {
-    "newUser": "<strong>{{userName}}</strong> registered",
+    "newUser": "<strong>{{userName}}</strong> registered now",
     "paymentReceived": "Payment of <strong>{{amount}}</strong> received from <link>{{company}}</link>",
     "serverAlert": "Server response time increased. <link>View details</link>",
     "subscriptionRenewed": "Subscription renewed for <strong>{{company}}</strong>",
