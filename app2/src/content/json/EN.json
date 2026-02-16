@@ -1,6 +1,6 @@
 {
   "activity": {
-    "newUser": "<strong>{{userName}}</strong> registered",
+    "newUser": "<div class=\"activity-message\"><strong>Sarah Johnson</strong> registered!!!</div>",
     "paymentReceived": "Payment of <strong>{{amount}}</strong> received from <link>{{company}}</link>",
     "serverAlert": "Server response time increased. <link>View details</link>",
     "subscriptionRenewed": "Subscription renewed for <strong>{{company}}</strong>",
