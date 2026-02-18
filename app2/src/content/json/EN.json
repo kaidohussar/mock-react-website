@@ -64,7 +64,7 @@
   "analytics": {
     "chartPlaceholder": "Traffic sources chart visualization would go here",
     "metrics": {
-      "avgSession": "Avg. Session",
+      "avgSession": "Avg. Session!",
       "bounceRate": "Bounce Rate",
       "pageViews": "Page Views",
       "uniqueVisitors": "Unique Visitors"
