@@ -353,6 +353,9 @@
         "reduceMotion": {
           "label": "Vähenda liikumist",
           "description": "Minimeeri animatsioone ja üleminekuid"
+        },
+        "highContrast": {
+          "label": "Kõrge kontrastsuse režiim"
         }
       }
     }
