@@ -174,21 +174,6 @@
     "subtitle": "Ühendage oma lemmiktööriistad ja -teenused",
     "title": "Integratsioonid"
   },
-  "login": {
-    "errorGeneric": "Sisselogimine ebaõnnestus",
-    "errorInvalidEmail": "Vigane e-posti aadress",
-    "errorPasswordRequired": "Parool on kohustuslik",
-    "emailLabel": "E-post",
-    "emailPlaceholder": "Sisesta oma e-post",
-    "hint": "Demo kasutajaandmed: <code>test@example.com</code> suvalise parooliga",
-    "passwordLabel": "Parool",
-    "passwordPlaceholder": "Sisesta oma parool",
-    "signIn": "Logi sisse",
-    "signingIn": "Sisselogimine...",
-    "signOut": "Logi välja",
-    "subtitle": "Jätkamiseks logi oma kontole sisse",
-    "title": "Tere tulemast tagasi"
-  },
   "notifications": {
     "digest": "Päevane kokkuvõte",
     "email": "E-posti teavitused",
@@ -245,7 +230,8 @@
       "stats": {
         "active": "Aktiivsed",
         "avgOrders": "Keskm. tellimusi",
-        "totalCustomers": "Kliente kokku"
+        "totalCustomers": "Kliente kokku",
+        "test": "sdsdfdsgg"
       },
       "status": {
         "active": "Aktiivne",
@@ -368,6 +354,9 @@
         "reduceMotion": {
           "label": "Vähenda liikumist",
           "description": "Minimeeri animatsioone ja üleminekuid"
+        },
+        "highContrast": {
+          "label": "Kõrge kontrastsuse režiim"
         }
       }
     }
@@ -404,6 +393,22 @@
     "pending": "Ootel kutsed",
     "roleChanged": "<strong>{{userName}}</strong> on nüüd <em>{{role}}</em>",
     "teamSize": "Teie meeskonnas on <strong>{{count}}</strong> liiget <em>{{departments}} osakonnas</em>",
-    "title": "Meeskonna haldus"
+    "title": "Meeskonna haldus",
+    "dgdfgdfgg": "dfgdfgdg"
+  },
+  "login": {
+    "emailLabel": "E-post",
+    "emailPlaceholder": "Sisesta oma e-post",
+    "errorGeneric": "Sisselogimine ebaõnnestus",
+    "errorInvalidEmail": "Vigane e-posti aadress",
+    "errorPasswordRequired": "Parool on kohustuslik",
+    "hint": "Demo kasutajaandmed: <code>test@example.com</code> suvalise parooliga",
+    "passwordLabel": "Parool",
+    "passwordPlaceholder": "Sisesta oma parool",
+    "signIn": "Logi sisse",
+    "signOut": "Logi välja",
+    "signingIn": "Sisselogimine...",
+    "subtitle": "Jätkamiseks logi oma kontole sisse",
+    "title": "Tere tulemast tagasi"
   }
 }
