@@ -104,7 +104,8 @@
     "title": "sdfsdfsdf",
     "upload": "spanis22",
     "uploadFailed": "spanish",
-    "uploadSuccess": "dfgdfgdg"
+    "uploadSuccess": "dfgdfgdg",
+    "fileSize": "espanja"
   },
   "inbox": {
     "attachments": "<strong>{{count}}</strong> adjuntos",
@@ -164,21 +165,6 @@
     "subtitle": "Conecta tus herramientas y servicios favoritos",
     "title": "Integraciones"
   },
-  "login": {
-    "errorGeneric": "Error de inicio de sesión",
-    "errorInvalidEmail": "Dirección de correo inválida",
-    "errorPasswordRequired": "La contraseña es obligatoria",
-    "emailLabel": "Correo electrónico",
-    "emailPlaceholder": "Introduce tu correo electrónico",
-    "hint": "Credenciales de demostración: <code>test@example.com</code> con cualquier contraseña",
-    "passwordLabel": "Contraseña",
-    "passwordPlaceholder": "Introduce tu contraseña",
-    "signIn": "Iniciar sesión",
-    "signingIn": "Iniciando sesión...",
-    "signOut": "Cerrar sesión",
-    "subtitle": "Inicia sesión en tu cuenta para continuar",
-    "title": "Bienvenido de nuevo"
-  },
   "onboarding": {
     "step": "Paso <strong>{{current}}</strong> de <strong>{{total}}</strong>",
     "tutorial": "¿Necesitas ayuda para empezar? <link>Ver nuestro tutorial</link>",
@@ -218,7 +204,8 @@
       "stats": {
         "active": "Activos",
         "avgOrders": "Pedidos promedio",
-        "totalCustomers": "Total de clientes"
+        "totalCustomers": "Total de clientes",
+        "test": "dfgdfg"
       },
       "status": {
         "active": "Activo",
@@ -341,6 +328,9 @@
         "reduceMotion": {
           "label": "",
           "description": ""
+        },
+        "highContrast": {
+          "label": ""
         }
       }
     }
@@ -361,5 +351,148 @@
     "subtasks": "<strong>{{completed}}</strong> de <strong>{{total}}</strong> subtareas completadas",
     "taskCompleted": "<strong>{{userName}}</strong> completó <em>{{taskName}}</em>",
     "title": "Tareas"
+  },
+  "team": {
+    "dgdfgdfgg": "sdfsdfsf"
+  },
+  "login": {
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "Introduce tu correo electrónico",
+    "errorGeneric": "Error de inicio de sesión",
+    "errorInvalidEmail": "Dirección de correo inválida",
+    "errorPasswordRequired": "La contraseña es obligatoria",
+    "hint": "Credenciales de demostración: <code>test@example.com</code> con cualquier contraseña",
+    "passwordLabel": "Contraseña",
+    "passwordPlaceholder": "Introduce tu contraseña",
+    "signIn": "Iniciar sesión",
+    "signOut": "Cerrar sesión",
+    "signingIn": "Iniciando sesión...",
+    "subtitle": "Inicia sesión en tu cuenta para continuar",
+    "title": "Bienvenido de nuevo",
+    "forgotPassword": "¿Olvidaste tu contraseña?"
+  },
+  "forgotPassword": {
+    "backToLogin": "← Volver a Iniciar Sesión",
+    "emailLabel": "Correo Electrónico",
+    "emailPlaceholder": "Ingresa tu correo electrónico",
+    "sending": "Enviando...",
+    "submit": "Enviar Enlace de Restablecimiento",
+    "subtitle": "¡No te preocupes! Ingresa el correo electrónico asociado con tu cuenta y te enviaremos un enlace para restablecer tu contraseña.",
+    "success": {
+      "backToLogin": "Volver a Iniciar Sesión",
+      "hint": "¿No recibiste el correo? Revisa tu carpeta de spam o intenta de nuevo con otra dirección de correo.",
+      "message": "Hemos enviado un enlace de restablecimiento de contraseña a <strong>{{email}}</strong>. Haz clic en el enlace del correo para crear una nueva contraseña.",
+      "title": "Revisa tu Correo"
+    },
+    "title": "¿Olvidaste tu Contraseña?"
+  },
+  "landing": {
+    "cta": {
+      "button": "Comienza tu Prueba Gratuita",
+      "description": "Únete a más de <strong>10.000</strong> equipos que ya usan FinanceB para hacer crecer su negocio.",
+      "title": "¿Listo para Tomar el Control de tus Finanzas?"
+    },
+    "features": {
+      "analytics": {
+        "description": "Obtén información detallada sobre el rendimiento de tu negocio con gráficos en tiempo real, tendencias e informes personalizables.",
+        "title": "Análisis Avanzados"
+      },
+      "global": {
+        "description": "Gestiona finanzas internacionales con soporte para más de 50 monedas y actualizaciones automáticas de tipos de cambio.",
+        "title": "Soporte Multi-Moneda"
+      },
+      "mobile": {
+        "description": "Accede a tu panel desde cualquier lugar. Diseño totalmente responsivo que funciona perfectamente en teléfonos, tablets y escritorios.",
+        "title": "Listo para Móvil"
+      },
+      "performance": {
+        "description": "Optimizado para velocidad con tiempos de carga inferiores a un segundo. Tu panel se actualiza en tiempo real, sin necesidad de refrescar.",
+        "title": "Ultra Rápido"
+      },
+      "security": {
+        "description": "Cifrado de nivel bancario y autenticación de dos factores mantienen tus datos financieros seguros en todo momento.",
+        "title": "Seguridad Empresarial"
+      },
+      "subtitle": "Herramientas potentes diseñadas para ayudarte a gestionar tus finanzas, seguir el rendimiento y tomar decisiones basadas en datos.",
+      "support": {
+        "description": "Nuestro equipo de soporte dedicado siempre está disponible para ayudar. Obtén respuestas por chat, email o teléfono en cualquier momento.",
+        "title": "Soporte 24/7"
+      },
+      "title": "Todo lo que Necesitas para Triunfar"
+    },
+    "footer": {
+      "about": "Sobre Nosotros",
+      "company": "Empresa",
+      "contact": "Contacto",
+      "copyright": "© 2026 FinanceB. Todos los derechos reservados.",
+      "description": "Gestión financiera inteligente para equipos modernos.",
+      "legal": "Legal",
+      "privacy": "Política de Privacidad",
+      "product": "Producto",
+      "terms": "Términos de Servicio"
+    },
+    "hero": {
+      "cta": "Comenzar Gratis",
+      "learnMore": "Saber Más",
+      "note": "Sin tarjeta de crédito. Prueba gratuita de 14 días.",
+      "preview": {
+        "revenue": "Ingresos",
+        "users": "Usuarios Activos"
+      },
+      "subtitle": "Controla ingresos, gestiona clientes y haz crecer tu negocio con análisis potentes e información en tiempo real. Todo lo que necesitas en un solo panel.",
+      "title": "Gestión Financiera Inteligente para Equipos Modernos"
+    },
+    "nav": {
+      "features": "Funciones",
+      "login": "Iniciar Sesión",
+      "pricing": "Precios",
+      "testimonials": "Testimonios"
+    },
+    "pricing": {
+      "cta": "Comenzar",
+      "enterprise": {
+        "feature1": "Miembros del equipo ilimitados",
+        "feature2": "Suite completa de análisis",
+        "feature3": "Gerente de cuenta dedicado",
+        "feature4": "SLA personalizado e incorporación",
+        "name": "Empresa"
+      },
+      "period": "mes",
+      "popular": "Más Popular",
+      "pro": {
+        "feature1": "Hasta 25 miembros del equipo",
+        "feature2": "Análisis avanzados e informes",
+        "feature3": "Soporte prioritario",
+        "feature4": "Integraciones personalizadas",
+        "name": "Profesional"
+      },
+      "starter": {
+        "feature1": "Hasta 5 miembros del equipo",
+        "feature2": "Panel de análisis básico",
+        "feature3": "Soporte por email",
+        "name": "Inicial"
+      },
+      "subtitle": "Elige el plan que se adapte a tu equipo. Mejora o reduce en cualquier momento.",
+      "title": "Precios Simples y Transparentes"
+    },
+    "testimonials": {
+      "subtitle": "Descubre lo que nuestros clientes dicen sobre su experiencia con FinanceB.",
+      "testimonial1": {
+        "name": "Jane Doe",
+        "quote": "FinanceB transformó cómo manejamos nuestras operaciones financieras. Los análisis son increíblemente detallados y la interfaz es un placer de usar.",
+        "role": "CFO en TechStart Inc."
+      },
+      "testimonial2": {
+        "name": "Sam Kim",
+        "quote": "Pasamos de tres herramientas diferentes a solo FinanceB. Maneja todo: facturación, informes y gestión de clientes en un solo lugar.",
+        "role": "Gerente de Operaciones en GrowthCo"
+      },
+      "testimonial3": {
+        "name": "María Rodríguez",
+        "quote": "El panel en tiempo real nos da visibilidad instantánea de nuestra salud financiera. La mejor inversión que hemos hecho para nuestro equipo financiero.",
+        "role": "Directora de Finanzas en ScaleUp Ltd."
+      },
+      "title": "Confiado por Equipos en Todo el Mundo"
+    }
   }
 }
