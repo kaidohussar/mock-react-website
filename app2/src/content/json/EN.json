@@ -1,4 +1,113 @@
 {
+  "landing": {
+    "cta": {
+      "button": "Start Your Free Trial",
+      "description": "Join <strong>10,000+</strong> teams already using FinanceB to grow their business.",
+      "title": "Ready to Take Control of Your Finances?"
+    },
+    "features": {
+      "analytics": {
+        "description": "Gain deep insights into your business performance with real-time charts, trends, and customizable reports.",
+        "title": "Advanced Analytics"
+      },
+      "global": {
+        "description": "Manage finances across borders with support for 50+ currencies and automatic exchange rate updates.",
+        "title": "Multi-Currency Support"
+      },
+      "mobile": {
+        "description": "Access your dashboard anywhere. Fully responsive design works perfectly on phones, tablets, and desktops.",
+        "title": "Mobile Ready"
+      },
+      "performance": {
+        "description": "Optimized for speed with sub-second load times. Your dashboard updates in real-time, no refreshing needed.",
+        "title": "Lightning Fast"
+      },
+      "security": {
+        "description": "Bank-grade encryption and two-factor authentication keep your financial data safe and secure at all times.",
+        "title": "Enterprise Security"
+      },
+      "subtitle": "Powerful tools designed to help you manage your finances, track performance, and make data-driven decisions.",
+      "support": {
+        "description": "Our dedicated support team is always available to help. Get answers via chat, email, or phone anytime.",
+        "title": "24/7 Support"
+      },
+      "title": "Everything You Need to Succeed"
+    },
+    "footer": {
+      "about": "About Us",
+      "company": "Company",
+      "contact": "Contact",
+      "copyright": "© 2026 FinanceB. All rights reserved.",
+      "description": "Smart financial management for modern teams.",
+      "legal": "Legal",
+      "privacy": "Privacy Policy",
+      "product": "Product",
+      "terms": "Terms of Service"
+    },
+    "hero": {
+      "cta": "Get Started Free",
+      "learnMore": "Learn More",
+      "note": "No credit card required. Free 14-day trial.",
+      "preview": {
+        "revenue": "Revenue",
+        "users": "Active Users"
+      },
+      "subtitle": "Track revenue, manage customers, and grow your business with powerful analytics and real-time insights. Everything you need in one dashboard.",
+      "title": "Smart Financial Management for Modern Teams"
+    },
+    "nav": {
+      "features": "Features",
+      "login": "Sign In",
+      "pricing": "Pricing",
+      "testimonials": "Testimonials"
+    },
+    "pricing": {
+      "cta": "Get Started",
+      "enterprise": {
+        "feature1": "Unlimited team members",
+        "feature2": "Full analytics suite",
+        "feature3": "Dedicated account manager",
+        "feature4": "Custom SLA & onboarding",
+        "name": "Enterprise"
+      },
+      "period": "month",
+      "popular": "Most Popular",
+      "pro": {
+        "feature1": "Up to 25 team members",
+        "feature2": "Advanced analytics & reports",
+        "feature3": "Priority support",
+        "feature4": "Custom integrations",
+        "name": "Professional"
+      },
+      "starter": {
+        "feature1": "Up to 5 team members",
+        "feature2": "Basic analytics dashboard",
+        "feature3": "Email support",
+        "name": "Starter"
+      },
+      "subtitle": "Choose the plan that fits your team. Upgrade or downgrade at any time.",
+      "title": "Simple, Transparent Pricing"
+    },
+    "testimonials": {
+      "subtitle": "See what our customers have to say about their experience with FinanceB.",
+      "testimonial1": {
+        "name": "Jane Doe",
+        "quote": "FinanceB transformed how we handle our financial operations. The analytics are incredibly detailed and the interface is a joy to use.",
+        "role": "CFO at TechStart Inc."
+      },
+      "testimonial2": {
+        "name": "Sam Kim",
+        "quote": "We switched from three different tools to just FinanceB. It handles everything — billing, reports, and customer management in one place.",
+        "role": "Operations Manager at GrowthCo"
+      },
+      "testimonial3": {
+        "name": "Maria Rodriguez",
+        "quote": "The real-time dashboard gives us instant visibility into our financial health. Best investment we've made for our finance team.",
+        "role": "Finance Director at ScaleUp Ltd."
+      },
+      "title": "Trusted by Teams Worldwide"
+    }
+  },
   "activity": {
     "newUser": "<strong>{{userName}}</strong> registered",
     "paymentReceived": "Payment of <strong>{{amount}}</strong> received from <link>{{company}}</link>",
@@ -37,17 +146,9 @@
     "upgrade": {
       "description": "Unlock <strong>unlimited access</strong> to all premium features. <link>Learn more</link>",
       "subtitle": "Get more features",
-      "title": "Upgrade to Pro"
-    },
-    "account": "Account",
-    "calendar": "Calendar",
-    "files": "Files",
-    "inbox": "Messages",
-    "notifications": "Notifications",
-    "onboarding": "Onboarding",
-    "projects": "Projects",
-    "tasks": "Tasks",
-    "team": "Team"
+      "title": "Upgrade to Pro",
+      "asdasda": "fgfdgdfgdg"
+    }
   },
   "stats": {
     "activeUsers": "Active Users",
@@ -182,146 +283,6 @@
     "subtitle": "Connect your favorite tools and services",
     "title": "Integrations"
   },
-  "login": {
-    "errorGeneric": "Login failed",
-    "errorInvalidEmail": "Invalid email address",
-    "errorPasswordRequired": "Password is required",
-    "emailLabel": "Email",
-    "emailPlaceholder": "Enter your email",
-    "hint": "Demo credentials: <code>test@example.com</code> with any password",
-    "passwordLabel": "Password",
-    "passwordPlaceholder": "Enter your password",
-    "signIn": "Sign In",
-    "signingIn": "Signing in...",
-    "signOut": "Sign Out",
-    "subtitle": "Sign in to your account to continue",
-    "title": "Welcome Back",
-    "forgotPassword": "Forgot password?"
-  },
-  "landing": {
-    "nav": {
-      "features": "Features",
-      "testimonials": "Testimonials",
-      "pricing": "Pricing",
-      "login": "Sign In"
-    },
-    "hero": {
-      "title": "Smart Financial Management for Modern Teams",
-      "subtitle": "Track revenue, manage customers, and grow your business with powerful analytics and real-time insights. Everything you need in one dashboard.",
-      "cta": "Get Started Free",
-      "learnMore": "Learn More",
-      "note": "No credit card required. Free 14-day trial.",
-      "preview": {
-        "revenue": "Revenue",
-        "users": "Active Users"
-      }
-    },
-    "features": {
-      "title": "Everything You Need to Succeed",
-      "subtitle": "Powerful tools designed to help you manage your finances, track performance, and make data-driven decisions.",
-      "analytics": {
-        "title": "Advanced Analytics",
-        "description": "Gain deep insights into your business performance with real-time charts, trends, and customizable reports."
-      },
-      "security": {
-        "title": "Enterprise Security",
-        "description": "Bank-grade encryption and two-factor authentication keep your financial data safe and secure at all times."
-      },
-      "performance": {
-        "title": "Lightning Fast",
-        "description": "Optimized for speed with sub-second load times. Your dashboard updates in real-time, no refreshing needed."
-      },
-      "global": {
-        "title": "Multi-Currency Support",
-        "description": "Manage finances across borders with support for 50+ currencies and automatic exchange rate updates."
-      },
-      "mobile": {
-        "title": "Mobile Ready",
-        "description": "Access your dashboard anywhere. Fully responsive design works perfectly on phones, tablets, and desktops."
-      },
-      "support": {
-        "title": "24/7 Support",
-        "description": "Our dedicated support team is always available to help. Get answers via chat, email, or phone anytime."
-      }
-    },
-    "testimonials": {
-      "title": "Trusted by Teams Worldwide",
-      "subtitle": "See what our customers have to say about their experience with FinanceB.",
-      "testimonial1": {
-        "quote": "FinanceB transformed how we handle our financial operations. The analytics are incredibly detailed and the interface is a joy to use.",
-        "name": "Jane Doe",
-        "role": "CFO at TechStart Inc."
-      },
-      "testimonial2": {
-        "quote": "We switched from three different tools to just FinanceB. It handles everything — billing, reports, and customer management in one place.",
-        "name": "Sam Kim",
-        "role": "Operations Manager at GrowthCo"
-      },
-      "testimonial3": {
-        "quote": "The real-time dashboard gives us instant visibility into our financial health. Best investment we've made for our finance team.",
-        "name": "Maria Rodriguez",
-        "role": "Finance Director at ScaleUp Ltd."
-      }
-    },
-    "pricing": {
-      "title": "Simple, Transparent Pricing",
-      "subtitle": "Choose the plan that fits your team. Upgrade or downgrade at any time.",
-      "period": "month",
-      "popular": "Most Popular",
-      "cta": "Get Started",
-      "starter": {
-        "name": "Starter",
-        "feature1": "Up to 5 team members",
-        "feature2": "Basic analytics dashboard",
-        "feature3": "Email support"
-      },
-      "pro": {
-        "name": "Professional",
-        "feature1": "Up to 25 team members",
-        "feature2": "Advanced analytics & reports",
-        "feature3": "Priority support",
-        "feature4": "Custom integrations"
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "feature1": "Unlimited team members",
-        "feature2": "Full analytics suite",
-        "feature3": "Dedicated account manager",
-        "feature4": "Custom SLA & onboarding"
-      }
-    },
-    "cta": {
-      "title": "Ready to Take Control of Your Finances?",
-      "description": "Join <strong>10,000+</strong> teams already using FinanceB to grow their business.",
-      "button": "Start Your Free Trial"
-    },
-    "footer": {
-      "description": "Smart financial management for modern teams.",
-      "product": "Product",
-      "company": "Company",
-      "legal": "Legal",
-      "about": "About Us",
-      "contact": "Contact",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
-      "copyright": "© 2026 FinanceB. All rights reserved."
-    }
-  },
-  "forgotPassword": {
-    "title": "Forgot Your Password?",
-    "subtitle": "No worries! Enter the email address associated with your account and we'll send you a link to reset your password.",
-    "emailLabel": "Email Address",
-    "emailPlaceholder": "Enter your email address",
-    "submit": "Send Reset Link",
-    "sending": "Sending...",
-    "backToLogin": "← Back to Sign In",
-    "success": {
-      "title": "Check Your Email",
-      "message": "We've sent a password reset link to <strong>{{email}}</strong>. Click the link in the email to create a new password.",
-      "hint": "Didn't receive the email? Check your spam folder or try again with a different email address.",
-      "backToLogin": "Back to Sign In"
-    }
-  },
   "notifications": {
     "digest": "Daily Digest",
     "email": "Email Notifications",
@@ -378,7 +339,8 @@
       "stats": {
         "active": "Active",
         "avgOrders": "Avg Orders",
-        "totalCustomers": "Total Customers"
+        "totalCustomers": "Total Customers",
+        "test": ""
       },
       "status": {
         "active": "Active",
@@ -494,56 +456,16 @@
       },
       "subtitle": "Manage your account preferences and settings",
       "title": "Settings",
-      "language": {
-        "title": "Language & Region",
-        "locale": "Select your preferred language and locale settings",
-        "timezone": "Set your timezone for accurate scheduling"
-      },
-      "privacy": {
-        "title": "Privacy & Security",
-        "twoFactor": {
-          "label": "Two-Factor Authentication",
-          "description": "Add an extra layer of security to your account"
-        },
-        "sessionTimeout": {
-          "label": "Session Timeout",
-          "description": "Automatically log out after a period of inactivity"
-        },
-        "activityLog": {
-          "label": "Activity Log",
-          "description": "Track and review all account activity"
-        }
-      },
-      "dataStorage": {
-        "title": "Data & Storage",
-        "autoBackup": {
-          "label": "Automatic Backup",
-          "description": "Automatically back up your data on a regular schedule"
-        },
-        "dataExport": {
-          "label": "Export Data",
-          "description": "Download a copy of all your data",
-          "button": "Export"
-        },
-        "clearCache": {
-          "label": "Clear Cache",
-          "description": "Remove cached data to free up storage",
-          "button": "Clear"
-        }
-      },
       "accessibility": {
-        "title": "Accessibility",
-        "highContrast": {
-          "label": "High Contrast",
-          "description": "Increase contrast for better visibility"
-        },
         "fontSize": {
-          "label": "Large Text",
-          "description": "Increase the default font size for easier reading"
+          "description": ""
         },
         "reduceMotion": {
-          "label": "Reduce Motion",
-          "description": "Minimize animations and transitions"
+          "label": "",
+          "description": ""
+        },
+        "highContrast": {
+          "label": ""
         }
       }
     }
@@ -580,6 +502,38 @@
     "pending": "Pending Invites",
     "roleChanged": "<strong>{{userName}}</strong> is now a <em>{{role}}</em>",
     "teamSize": "Your team has <strong>{{count}}</strong> members across <em>{{departments}} departments</em>",
-    "title": "Team Management"
+    "title": "Team Management",
+    "dgdfgdfgg": ""
+  },
+  "login": {
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "errorGeneric": "Login failed",
+    "errorInvalidEmail": "Invalid email address",
+    "errorPasswordRequired": "Password is required",
+    "hint": "Demo credentials: <code>test@example.com</code> with any password",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "signingIn": "Signing in...",
+    "subtitle": "Sign in to your account to continue",
+    "title": "Welcome Back",
+    "forgotPassword": "Forgot password?"
+  },
+  "forgotPassword": {
+    "backToLogin": "← Back to Sign In",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "Enter your email address",
+    "sending": "Sending...",
+    "submit": "Send Reset Link",
+    "subtitle": "No worries! Enter the email address associated with your account and we'll send you a link to reset your password.",
+    "success": {
+      "backToLogin": "Back to Sign In",
+      "hint": "Didn't receive the email? Check your spam folder or try again with a different email address.",
+      "message": "We've sent a password reset link to <strong>{{email}}</strong>. Click the link in the email to create a new password.",
+      "title": "Check Your Email"
+    },
+    "title": "Forgot Your Password?"
   }
 }

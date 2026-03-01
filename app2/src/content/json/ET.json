@@ -1,4 +1,9 @@
 {
+  "chart": {
+    "description": "Andmed kuvatakse perioodil <strong>{{startDate}}</strong> kuni <strong>{{endDate}}</strong>",
+    "period": "Viimased 7 kuud",
+    "title": "Tulude statistika"
+  },
   "activity": {
     "newUser": "<strong>{{userName}}</strong> registreerus",
     "paymentReceived": "Makse summas <strong>{{amount}}</strong> saadud ettevõttelt <link>{{company}}</link>",
@@ -7,11 +12,6 @@
     "title": "Hiljutine tegevus",
     "userUpgrade": "<strong>{{userName}}</strong> uuendas plaanile <em>Pro</em>",
     "viewAll": "Vaata kõiki"
-  },
-  "chart": {
-    "description": "Andmed kuvatakse perioodil <strong>{{startDate}}</strong> kuni <strong>{{endDate}}</strong>",
-    "period": "Viimased 7 kuud",
-    "title": "Tulude statistika"
   },
   "common": {
     "error": "Viga andmete laadimisel",
@@ -174,21 +174,6 @@
     "subtitle": "Ühendage oma lemmiktööriistad ja -teenused",
     "title": "Integratsioonid"
   },
-  "login": {
-    "errorGeneric": "Sisselogimine ebaõnnestus",
-    "errorInvalidEmail": "Vigane e-posti aadress",
-    "errorPasswordRequired": "Parool on kohustuslik",
-    "emailLabel": "E-post",
-    "emailPlaceholder": "Sisesta oma e-post",
-    "hint": "Demo kasutajaandmed: <code>test@example.com</code> suvalise parooliga",
-    "passwordLabel": "Parool",
-    "passwordPlaceholder": "Sisesta oma parool",
-    "signIn": "Logi sisse",
-    "signingIn": "Sisselogimine...",
-    "signOut": "Logi välja",
-    "subtitle": "Jätkamiseks logi oma kontole sisse",
-    "title": "Tere tulemast tagasi"
-  },
   "notifications": {
     "digest": "Päevane kokkuvõte",
     "email": "E-posti teavitused",
@@ -201,9 +186,9 @@
     "unsubscribe": "Ei soovi neid e-kirju? <link>Halda eelistusi</link>"
   },
   "onboarding": {
-    "celebration": "Suurepärane töö, <strong>{{userName}}</strong>! Teie tööruum on valmis.",
-    "complete": "Lõpeta seadistamine",
-    "inviteTeam": "Kutsu oma meeskonnaliikmed tööruumi <em>{{workspaceName}}</em>",
+    "celebration": "Hästi tehtud, <strong>{{userName}}</strong>! Sinu tööruum on valmis.",
+    "complete": "Lõpeta seadistus",
+    "inviteTeam": "Kutsuge oma meeskonnaliikmed tööruumi <em>{{workspaceName}}</em>",
     "progressMessage": "Olete seadistamisega <strong>{{percentage}}%</strong> valmis",
     "setupProfile": "Seadistame teie profiili, <strong>{{userName}}</strong>",
     "skip": "Jäta praegu vahele",
@@ -245,7 +230,8 @@
       "stats": {
         "active": "Aktiivsed",
         "avgOrders": "Keskm. tellimusi",
-        "totalCustomers": "Kliente kokku"
+        "totalCustomers": "Kliente kokku",
+        "test": "sdsdfdsgg"
       },
       "status": {
         "active": "Aktiivne",
@@ -368,6 +354,9 @@
         "reduceMotion": {
           "label": "Vähenda liikumist",
           "description": "Minimeeri animatsioone ja üleminekuid"
+        },
+        "highContrast": {
+          "label": "Kõrge kontrastsuse režiim"
         }
       }
     }
@@ -397,13 +386,40 @@
   },
   "team": {
     "invite": "Kutsu liige",
-    "inviteExpired": "Kutse aadressile <strong>{{email}}</strong> on aegunud. <link>Saada kutse uuesti</link>",
+    "inviteExpired": "Kutse kasutajale <strong>{{email}}</strong> on aegunud. <link>Saada kutse uuesti</link>",
     "inviteSent": "Kutse saadetud aadressile <strong>{{email}}</strong>",
     "memberJoined": "<strong>{{userName}}</strong> liitus meeskonnaga",
     "memberRemoved": "<strong>{{userName}}</strong> eemaldati kasutaja <em>{{adminName}}</em> poolt",
     "pending": "Ootel kutsed",
     "roleChanged": "<strong>{{userName}}</strong> on nüüd <em>{{role}}</em>",
     "teamSize": "Teie meeskonnas on <strong>{{count}}</strong> liiget <em>{{departments}} osakonnas</em>",
-    "title": "Meeskonna haldus"
+    "title": "Meeskonna haldus",
+    "dgdfgdfgg": "dfgdfgdg"
+  },
+  "login": {
+    "emailLabel": "E-post",
+    "emailPlaceholder": "Sisesta oma e-post",
+    "errorGeneric": "Sisselogimine ebaõnnestus",
+    "errorInvalidEmail": "Vigane e-posti aadress",
+    "errorPasswordRequired": "Parool on kohustuslik",
+    "hint": "Demo kasutajaandmed: <code>test@example.com</code> suvalise parooliga",
+    "passwordLabel": "Parool",
+    "passwordPlaceholder": "Sisesta oma parool",
+    "signIn": "Logi sisse",
+    "signOut": "Logi välja",
+    "signingIn": "Sisselogimine...",
+    "subtitle": "Jätkamiseks logi oma kontole sisse",
+    "title": "Tere tulemast tagasi"
+  },
+  "landing": {
+    "cta": {
+      "description": "Liitu <strong>10 000+</strong> meeskonnaga, kes juba kasutavad FinanceB-d oma äri kasvatamiseks."
+    },
+    "testimonials": {
+      "subtitle": "Vaadake, mida meie kliendid räägivad oma kogemusest FinanceB-ga."
+    }
+  },
+  "forgotPassword": {
+    "emailLabel": "E-posti aadress"
   }
 }
