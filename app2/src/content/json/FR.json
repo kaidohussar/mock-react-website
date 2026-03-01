@@ -1,4 +1,9 @@
 {
+  "chart": {
+    "description": "Affichage des données du <strong>{{startDate}}</strong> au <strong>{{endDate}}</strong>",
+    "period": "7 derniers mois",
+    "title": "Tendance des Revenus"
+  },
   "activity": {
     "newUser": "<strong>{{userName}}</strong> s'est inscrit",
     "paymentReceived": "Paiement de <strong>{{amount}}</strong> reçu de <link>{{company}}</link>",
@@ -7,11 +12,6 @@
     "title": "Activité récente",
     "userUpgrade": "<strong>{{userName}}</strong> est passé au <em>plan Pro</em>",
     "viewAll": "Voir tout"
-  },
-  "chart": {
-    "description": "Affichage des données du <strong>{{startDate}}</strong> au <strong>{{endDate}}</strong>",
-    "period": "7 derniers mois",
-    "title": "Tendance des Revenus"
   },
   "common": {
     "error": "Erreur de chargement des données",
@@ -112,7 +112,9 @@
     "newMessage": "Nouveau message de <strong>{{senderName}}</strong>",
     "replyTo": "Répondre à <em>{{subject}}</em>",
     "starred": "Étoilé",
-    "threadCount": "<em>{{count}}</em> réponses dans ce fil"
+    "threadCount": "<em>{{count}}</em> réponses dans ce fil",
+    "title": "Messages",
+    "unread": "Non lus"
   },
   "integrations": {
     "available": "Disponible",
@@ -162,150 +164,13 @@
     "subtitle": "Connectez vos outils et services préférés",
     "title": "Intégrations"
   },
-  "login": {
-    "errorGeneric": "Échec de la connexion",
-    "errorInvalidEmail": "Adresse e-mail invalide",
-    "errorPasswordRequired": "Le mot de passe est requis",
-    "emailLabel": "E-mail",
-    "emailPlaceholder": "Entrez votre e-mail",
-    "hint": "Identifiants de démonstration : <code>test@example.com</code> avec n'importe quel mot de passe",
-    "passwordLabel": "Mot de passe",
-    "passwordPlaceholder": "Entrez votre mot de passe",
-    "signIn": "Se connecter",
-    "signingIn": "Connexion en cours...",
-    "signOut": "Déconnexion",
-    "subtitle": "Connectez-vous à votre compte pour continuer",
-    "title": "Bon retour",
-    "forgotPassword": "Mot de passe oublié ?"
-  },
-  "landing": {
-    "nav": {
-      "features": "Fonctionnalités",
-      "testimonials": "Témoignages",
-      "pricing": "Tarifs",
-      "login": "Se Connecter"
-    },
-    "hero": {
-      "title": "Gestion Financière Intelligente pour les Équipes Modernes",
-      "subtitle": "Suivez vos revenus, gérez vos clients et développez votre entreprise avec des analyses puissantes et des informations en temps réel. Tout ce dont vous avez besoin en un seul tableau de bord.",
-      "cta": "Commencer Gratuitement",
-      "learnMore": "En Savoir Plus",
-      "note": "Aucune carte de crédit requise. Essai gratuit de 14 jours.",
-      "preview": {
-        "revenue": "Revenus",
-        "users": "Utilisateurs Actifs"
-      }
-    },
-    "features": {
-      "title": "Tout ce Dont Vous Avez Besoin pour Réussir",
-      "subtitle": "Des outils puissants conçus pour vous aider à gérer vos finances, suivre les performances et prendre des décisions basées sur les données.",
-      "analytics": {
-        "title": "Analyses Avancées",
-        "description": "Obtenez des informations approfondies sur les performances de votre entreprise avec des graphiques en temps réel, des tendances et des rapports personnalisables."
-      },
-      "security": {
-        "title": "Sécurité Entreprise",
-        "description": "Un chiffrement de niveau bancaire et l'authentification à deux facteurs protègent vos données financières en permanence."
-      },
-      "performance": {
-        "title": "Ultra Rapide",
-        "description": "Optimisé pour la vitesse avec des temps de chargement inférieurs à une seconde. Votre tableau de bord se met à jour en temps réel, sans actualisation."
-      },
-      "global": {
-        "title": "Support Multi-Devises",
-        "description": "Gérez vos finances à l'international avec le support de plus de 50 devises et des mises à jour automatiques des taux de change."
-      },
-      "mobile": {
-        "title": "Prêt pour le Mobile",
-        "description": "Accédez à votre tableau de bord partout. Un design entièrement responsive qui fonctionne parfaitement sur téléphones, tablettes et ordinateurs."
-      },
-      "support": {
-        "title": "Support 24/7",
-        "description": "Notre équipe de support dédiée est toujours disponible pour vous aider. Obtenez des réponses par chat, email ou téléphone à tout moment."
-      }
-    },
-    "testimonials": {
-      "title": "Adopté par des Équipes du Monde Entier",
-      "subtitle": "Découvrez ce que nos clients disent de leur expérience avec FinanceB.",
-      "testimonial1": {
-        "quote": "FinanceB a transformé la façon dont nous gérons nos opérations financières. Les analyses sont incroyablement détaillées et l'interface est un plaisir à utiliser.",
-        "name": "Jane Doe",
-        "role": "DAF chez TechStart Inc."
-      },
-      "testimonial2": {
-        "quote": "Nous sommes passés de trois outils différents à FinanceB seul. Il gère tout — facturation, rapports et gestion des clients en un seul endroit.",
-        "name": "Sam Kim",
-        "role": "Responsable des Opérations chez GrowthCo"
-      },
-      "testimonial3": {
-        "quote": "Le tableau de bord en temps réel nous donne une visibilité instantanée sur notre santé financière. Le meilleur investissement pour notre équipe financière.",
-        "name": "Maria Rodriguez",
-        "role": "Directrice Financière chez ScaleUp Ltd."
-      }
-    },
-    "pricing": {
-      "title": "Tarification Simple et Transparente",
-      "subtitle": "Choisissez le plan qui convient à votre équipe. Changez de plan à tout moment.",
-      "period": "mois",
-      "popular": "Le Plus Populaire",
-      "cta": "Commencer",
-      "starter": {
-        "name": "Débutant",
-        "feature1": "Jusqu'à 5 membres d'équipe",
-        "feature2": "Tableau de bord analytique de base",
-        "feature3": "Support par email"
-      },
-      "pro": {
-        "name": "Professionnel",
-        "feature1": "Jusqu'à 25 membres d'équipe",
-        "feature2": "Analyses avancées et rapports",
-        "feature3": "Support prioritaire",
-        "feature4": "Intégrations personnalisées"
-      },
-      "enterprise": {
-        "name": "Entreprise",
-        "feature1": "Membres d'équipe illimités",
-        "feature2": "Suite analytique complète",
-        "feature3": "Responsable de compte dédié",
-        "feature4": "SLA personnalisé et intégration"
-      }
-    },
-    "cta": {
-      "title": "Prêt à Prendre le Contrôle de Vos Finances ?",
-      "description": "Rejoignez plus de <strong>10 000</strong> équipes qui utilisent déjà FinanceB pour développer leur entreprise.",
-      "button": "Commencez Votre Essai Gratuit"
-    },
-    "footer": {
-      "description": "Gestion financière intelligente pour les équipes modernes.",
-      "product": "Produit",
-      "company": "Entreprise",
-      "legal": "Mentions Légales",
-      "about": "À Propos",
-      "contact": "Contact",
-      "privacy": "Politique de Confidentialité",
-      "terms": "Conditions d'Utilisation",
-      "copyright": "© 2026 FinanceB. Tous droits réservés."
-    }
-  },
-  "forgotPassword": {
-    "title": "Mot de Passe Oublié ?",
-    "subtitle": "Pas de souci ! Entrez l'adresse email associée à votre compte et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
-    "emailLabel": "Adresse Email",
-    "emailPlaceholder": "Entrez votre adresse email",
-    "submit": "Envoyer le Lien de Réinitialisation",
-    "sending": "Envoi en cours...",
-    "backToLogin": "← Retour à la Connexion",
-    "success": {
-      "title": "Vérifiez Votre Email",
-      "message": "Nous avons envoyé un lien de réinitialisation à <strong>{{email}}</strong>. Cliquez sur le lien dans l'email pour créer un nouveau mot de passe.",
-      "hint": "Vous n'avez pas reçu l'email ? Vérifiez votre dossier spam ou réessayez avec une autre adresse email.",
-      "backToLogin": "Retour à la Connexion"
-    }
-  },
   "onboarding": {
     "step": "Étape <strong>{{current}}</strong> sur <strong>{{total}}</strong>",
     "tutorial": "Besoin d'aide pour démarrer ? <link>Regarder notre tutoriel</link>",
-    "welcome": "Bienvenue sur <strong>{{appName}}</strong> !"
+    "welcome": "Bienvenue sur <strong>{{appName}}</strong> !",
+    "complete": "Terminer la configuration",
+    "inviteTeam": "Invitez les membres de votre équipe à <em>{{workspaceName}}</em>",
+    "celebration": "Beau travail, <strong>{{userName}}</strong> ! Votre espace de travail est prêt."
   },
   "pages": {
     "billing": {
@@ -341,7 +206,8 @@
       "stats": {
         "active": "Actifs",
         "avgOrders": "Commandes moyennes",
-        "totalCustomers": "Total des clients"
+        "totalCustomers": "Total des clients",
+        "test": "dfgdfgfdg"
       },
       "status": {
         "active": "Actif",
@@ -464,6 +330,9 @@
         "reduceMotion": {
           "label": "",
           "description": ""
+        },
+        "highContrast": {
+          "label": ""
         }
       }
     }
@@ -484,5 +353,152 @@
     "subtasks": "<strong>{{completed}}</strong> sur <strong>{{total}}</strong> sous-tâches effectuées",
     "taskCompleted": "<strong>{{userName}}</strong> a terminé <em>{{taskName}}</em>",
     "title": "Tâches"
+  },
+  "team": {
+    "dgdfgdfgg": "",
+    "invite": "Inviter un membre",
+    "inviteExpired": "L'invitation pour <strong>{{email}}</strong> a expiré. <link>Renvoyer l'invitation</link>",
+    "inviteSent": "Invitation envoyée à <strong>{{email}}</strong>",
+    "memberJoined": "<strong>{{userName}}</strong> a rejoint l'équipe"
+  },
+  "login": {
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "Entrez votre e-mail",
+    "errorGeneric": "Échec de la connexion",
+    "errorInvalidEmail": "Adresse e-mail invalide",
+    "errorPasswordRequired": "Le mot de passe est requis",
+    "hint": "Identifiants de démonstration : <code>test@example.com</code> avec n'importe quel mot de passe",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "signIn": "Se connecter",
+    "signOut": "Déconnexion",
+    "signingIn": "Connexion en cours...",
+    "subtitle": "Connectez-vous à votre compte pour continuer",
+    "title": "Bon retour",
+    "forgotPassword": "Mot de passe oublié ?"
+  },
+  "forgotPassword": {
+    "backToLogin": "← Retour à la Connexion",
+    "emailLabel": "Adresse e-mail",
+    "emailPlaceholder": "Entrez votre adresse email",
+    "sending": "Envoi en cours...",
+    "submit": "Envoyer le Lien de Réinitialisation",
+    "subtitle": "Pas de souci ! Entrez l'adresse email associée à votre compte et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
+    "success": {
+      "backToLogin": "Retour à la Connexion",
+      "hint": "Vous n'avez pas reçu l'email ? Vérifiez votre dossier spam ou réessayez avec une autre adresse email.",
+      "message": "Nous avons envoyé un lien de réinitialisation à <strong>{{email}}</strong>. Cliquez sur le lien dans l'email pour créer un nouveau mot de passe.",
+      "title": "Vérifiez Votre Email"
+    },
+    "title": "Mot de Passe Oublié ?"
+  },
+  "landing": {
+    "cta": {
+      "button": "Commencez Votre Essai Gratuit",
+      "description": "Rejoignez les <strong>10 000+</strong> équipes qui utilisent déjà FinanceB pour développer leur entreprise.",
+      "title": "Prêt à Prendre le Contrôle de Vos Finances ?"
+    },
+    "features": {
+      "analytics": {
+        "description": "Obtenez des informations approfondies sur les performances de votre entreprise avec des graphiques en temps réel, des tendances et des rapports personnalisables.",
+        "title": "Analyses Avancées"
+      },
+      "global": {
+        "description": "Gérez vos finances à l'international avec le support de plus de 50 devises et des mises à jour automatiques des taux de change.",
+        "title": "Support Multi-Devises"
+      },
+      "mobile": {
+        "description": "Accédez à votre tableau de bord partout. Un design entièrement responsive qui fonctionne parfaitement sur téléphones, tablettes et ordinateurs.",
+        "title": "Prêt pour le Mobile"
+      },
+      "performance": {
+        "description": "Optimisé pour la vitesse avec des temps de chargement inférieurs à une seconde. Votre tableau de bord se met à jour en temps réel, sans actualisation.",
+        "title": "Ultra Rapide"
+      },
+      "security": {
+        "description": "Un chiffrement de niveau bancaire et l'authentification à deux facteurs protègent vos données financières en permanence.",
+        "title": "Sécurité Entreprise"
+      },
+      "subtitle": "Des outils puissants conçus pour vous aider à gérer vos finances, suivre les performances et prendre des décisions basées sur les données.",
+      "support": {
+        "description": "Notre équipe de support dédiée est toujours disponible pour vous aider. Obtenez des réponses par chat, email ou téléphone à tout moment.",
+        "title": "Support 24/7"
+      },
+      "title": "Tout ce Dont Vous Avez Besoin pour Réussir"
+    },
+    "footer": {
+      "about": "À Propos",
+      "company": "Entreprise",
+      "contact": "Contact",
+      "copyright": "© 2026 FinanceB. Tous droits réservés.",
+      "description": "Gestion financière intelligente pour les équipes modernes.",
+      "legal": "Mentions Légales",
+      "privacy": "Politique de Confidentialité",
+      "product": "Produit",
+      "terms": "Conditions d'Utilisation"
+    },
+    "hero": {
+      "cta": "Commencer Gratuitement",
+      "learnMore": "En Savoir Plus",
+      "note": "Aucune carte de crédit requise. Essai gratuit de 14 jours.",
+      "preview": {
+        "revenue": "Revenus",
+        "users": "Utilisateurs Actifs"
+      },
+      "subtitle": "Suivez vos revenus, gérez vos clients et développez votre entreprise avec des analyses puissantes et des informations en temps réel. Tout ce dont vous avez besoin en un seul tableau de bord.",
+      "title": "Gestion Financière Intelligente pour les Équipes Modernes"
+    },
+    "nav": {
+      "features": "Fonctionnalités",
+      "login": "Se Connecter",
+      "pricing": "Tarifs",
+      "testimonials": "Témoignages"
+    },
+    "pricing": {
+      "cta": "Commencer",
+      "enterprise": {
+        "feature1": "Membres d'équipe illimités",
+        "feature2": "Suite analytique complète",
+        "feature3": "Responsable de compte dédié",
+        "feature4": "SLA personnalisé et intégration",
+        "name": "Entreprise"
+      },
+      "period": "mois",
+      "popular": "Le Plus Populaire",
+      "pro": {
+        "feature1": "Jusqu'à 25 membres d'équipe",
+        "feature2": "Analyses avancées et rapports",
+        "feature3": "Support prioritaire",
+        "feature4": "Intégrations personnalisées",
+        "name": "Professionnel"
+      },
+      "starter": {
+        "feature1": "Jusqu'à 5 membres d'équipe",
+        "feature2": "Tableau de bord analytique de base",
+        "feature3": "Support par email",
+        "name": "Débutant"
+      },
+      "subtitle": "Choisissez le plan qui convient à votre équipe. Changez de plan à tout moment.",
+      "title": "Tarification Simple et Transparente"
+    },
+    "testimonials": {
+      "subtitle": "Découvrez ce que nos clients disent de leur expérience avec FinanceB.",
+      "testimonial1": {
+        "name": "Jane Doe",
+        "quote": "FinanceB a transformé la façon dont nous gérons nos opérations financières. Les analyses sont incroyablement détaillées et l'interface est un plaisir à utiliser.",
+        "role": "DAF chez TechStart Inc."
+      },
+      "testimonial2": {
+        "name": "Sam Kim",
+        "quote": "Nous sommes passés de trois outils différents à FinanceB seul. Il gère tout — facturation, rapports et gestion des clients en un seul endroit.",
+        "role": "Responsable des Opérations chez GrowthCo"
+      },
+      "testimonial3": {
+        "name": "Maria Rodriguez",
+        "quote": "Le tableau de bord en temps réel nous donne une visibilité instantanée sur notre santé financière. Le meilleur investissement pour notre équipe financière.",
+        "role": "Directrice Financière chez ScaleUp Ltd."
+      },
+      "title": "Adopté par des Équipes du Monde Entier"
+    }
   }
 }
