@@ -493,7 +493,7 @@
         "title": "Profile Information"
       },
       "subtitle": "Manage your account preferences and settings",
-      "title": "Settings",
+      "title": "Settingswdwdw",
       "language": {
         "title": "Language & Region",
         "locale": "Select your preferred language and locale settings",
@@ -532,9 +532,9 @@
         }
       },
       "accessibility": {
-        "title": "Accessibility",
+        "title": "Accessibilityaaa",
         "highContrast": {
-          "label": "High Contrast",
+          "label": "High Contrastwdwd",
           "description": "Increase contrast for better visibility"
         },
         "fontSize": {
