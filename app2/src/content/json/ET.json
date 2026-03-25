@@ -24,7 +24,8 @@
     "profile": "Profiil",
     "search": "Otsi...",
     "title": "Töölaud",
-    "welcomeMessage": "Tere tulemast tagasi, <strong>{{userName}}</strong>! Teil on <CustomLink>{{count}} uut teavitust</CustomLink>."
+    "welcomeMessage": "Tere tulemast tagasi, <strong>{{userName}}</strong>! Teil on <CustomLink>{{count}} uut teavitust</CustomLink>.",
+    "generalGreeting2": "Tere, ilm on ilus ja olete valmis tegutsema."
   },
   "sidebar": {
     "analytics": "Analüütika",
