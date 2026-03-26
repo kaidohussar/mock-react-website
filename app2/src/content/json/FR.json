@@ -404,7 +404,8 @@
       "scheduled": {
         "monthlyAnalytics": "Analytique mensuelle",
         "quarterlyPerformance": "Performance trimestrielle",
-        "weeklySales": "Résumé hebdomadaire des ventes"
+        "weeklySales": "Résumé hebdomadaire des ventes",
+        "yearlyStats": "Statistiques annuelles"
       },
       "scheduledReports": "Rapports planifiés",
       "subtitle": "Générez et planifiez des rapports personnalisés",
