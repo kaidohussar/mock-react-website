@@ -308,7 +308,8 @@
       "scheduled": {
         "monthlyAnalytics": "Kuu analüütika",
         "quarterlyPerformance": "Kvartali tulemuslikkus",
-        "weeklySales": "Nädala müügi kokkuvõte"
+        "weeklySales": "Nädala müügi kokkuvõte",
+        "monthlyStats": "Kuu statistika"
       },
       "scheduledReports": "Ajastatud aruanded",
       "subtitle": "Looge ja ajastage kohandatud aruandeid",
