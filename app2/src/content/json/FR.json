@@ -24,7 +24,8 @@
     "profile": "Profil",
     "search": "Rechercher...",
     "title": "Tableau de bord",
-    "welcomeMessage": ""
+    "welcomeMessage": "",
+    "generalGreeting2": "Bonjour, il fait beau et vous êtes prêt à passer à l'action."
   },
   "sidebar": {
     "analytics": "Analytique",
