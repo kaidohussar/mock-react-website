@@ -355,7 +355,21 @@
         "status": "Statut",
         "totalSpent": "Total dépensé"
       },
-      "title": "Clients"
+      "title": "Clients",
+      "drawer": {
+        "phone": "",
+        "company": "",
+        "joinDate": "",
+        "recentOrders": "",
+        "orderId": "",
+        "date": "",
+        "amount": "",
+        "orderStatus": "",
+        "notes": "",
+        "notesPlaceholder": "",
+        "sendEmail": "",
+        "editCustomer": ""
+      }
     },
     "dashboard": {
       "title": "Tableau de bord",
