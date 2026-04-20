@@ -24,7 +24,8 @@
     "profile": "Perfil",
     "search": "Buscar...",
     "title": "Panel de control",
-    "welcomeMessage": "¡Bienvenido de nuevo, <strong>{{userName}}</strong>! Tiene <CustomLink>{{count}} notificaciones nuevas</CustomLink>."
+    "welcomeMessage": "¡Bienvenido de nuevo, <strong>{{userName}}</strong>! Tiene <CustomLink>{{count}} notificaciones nuevas</CustomLink>.",
+    "generalGreeting2": "Hola, hace buen tiempo y ya puedes empezar a operar."
   },
   "sidebar": {
     "analytics": "Análisis",
