@@ -72,6 +72,9 @@
     "subtitle": "Rastrea el rendimiento de tu sitio web y el comportamiento de usuarios",
     "table": {
       "page": "Página",
+      "sortAscending": "Ordenado ascendente",
+      "sortDescending": "Ordenado descendente",
+      "sortNone": "Haz clic para ordenar",
       "uniqueVisitors": "Visitantes únicos",
       "views": "Visitas"
     },

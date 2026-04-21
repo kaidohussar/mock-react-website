@@ -72,6 +72,9 @@
     "subtitle": "Suivez les performances de votre site web et le comportement des utilisateurs",
     "table": {
       "page": "Page",
+      "sortAscending": "Trié par ordre croissant",
+      "sortDescending": "Trié par ordre décroissant",
+      "sortNone": "Cliquez pour trier",
       "uniqueVisitors": "Visiteurs uniques",
       "views": "Vues"
     },

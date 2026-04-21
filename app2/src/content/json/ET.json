@@ -72,6 +72,9 @@
     "subtitle": "Jälgige oma veebisaidi jõudlust ja kasutajate käitumist",
     "table": {
       "page": "Leht",
+      "sortAscending": "Sorteeritud kasvavalt",
+      "sortDescending": "Sorteeritud kahanevalt",
+      "sortNone": "Klõpsa sorteerimiseks",
       "uniqueVisitors": "Unikaalsed külastajad",
       "views": "Vaatamised"
     },

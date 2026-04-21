@@ -82,6 +82,9 @@
     "subtitle": "Track your website performance and user behavior",
     "table": {
       "page": "Page",
+      "sortAscending": "Sorted ascending",
+      "sortDescending": "Sorted descending",
+      "sortNone": "Click to sort",
       "uniqueVisitors": "Unique Visitors",
       "views": "Views"
     },

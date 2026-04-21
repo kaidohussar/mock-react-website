@@ -140,6 +140,47 @@
   background-color: #f9fafb;
 }
 
+.data-table th.sortable {
+  padding: 0;
+  cursor: pointer;
+}
+
+.data-table th.sortable:hover {
+  background-color: #f3f4f6;
+}
+
+.data-table th.sortable button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  background: transparent;
+  border: none;
+  font: inherit;
+  font-weight: 600;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.data-table th.sortable button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: -2px;
+  border-radius: 4px;
+}
+
+.data-table th.sortable .sort-icon {
+  flex-shrink: 0;
+  color: #9ca3af;
+}
+
+.data-table th.sortable[aria-sort='ascending'] .sort-icon,
+.data-table th.sortable[aria-sort='descending'] .sort-icon {
+  color: #2563eb;
+}
+
 /* Badges and Status */
 .status-badge {
   display: inline-block;
