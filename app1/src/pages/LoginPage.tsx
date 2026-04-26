@@ -4,7 +4,6 @@ import Input from '../components/Input'
 import Button from '../components/Button'
 import styles from './LoginPage.module.scss'
 import { useNavigate } from 'react-router-dom'
-import { useIntl, FormattedMessage } from 'react-intl'
 
 interface LoginPageProps {
   onLoginSuccess: () => void
@@ -12,7 +11,6 @@ interface LoginPageProps {
 
 const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
   const navigate = useNavigate()
-  const intl = useIntl()
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -20,14 +18,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
     navigate('/dashboard')
   }
 
-  const emailLabelText = intl.formatMessage({ id: 'Login.Labels.Email' })
-  const passwordLabelText = intl.formatMessage({ id: 'Login.Labels.Password' })
-  const passwordPlaceholderText = intl.formatMessage({
-    id: 'Login.Labels.PasswordPlaceholder',
-  })
-  const emailPlaceholderText = intl.formatMessage({
-    id: 'Login.Labels.EmailPlaceholder',
-  })
+  const emailLabelText = 'Your email'
+  const passwordLabelText = 'Your password'
+  const passwordPlaceholderText = 'Password'
+  const emailPlaceholderText = 'Enter your email'
 
   return (
     <div className={styles.loginPage}>
@@ -47,11 +41,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
             required
           />
           <Button type="submit" className={styles.loginButton}>
-            <FormattedMessage id="Login.Labels.LoginButtonText" />
+            Login
           </Button>
         </form>
         <a href="#" className={styles.forgotPassword}>
-          <FormattedMessage id="Login.Labels.ForgotPassword" />
+          Forgot password?
         </a>
       </Card>
     </div>

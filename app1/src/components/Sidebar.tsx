@@ -8,7 +8,6 @@ import {
   Puzzle,
   Settings,
 } from 'lucide-react'
-import { FormattedMessage } from 'react-intl'
 
 const Sidebar: React.FC = () => {
   const location = useLocation()
@@ -25,41 +24,31 @@ const Sidebar: React.FC = () => {
           <li className={getLinkClass('/dashboard')}>
             <Link to="/dashboard">
               <LayoutDashboard size={20} />
-              <span>
-                <FormattedMessage id="Sidebar.Dashboard" />
-              </span>
+              <span>Dashboard</span>
             </Link>
           </li>
           <li className={getLinkClass('/analytics')}>
             <Link to="/analytics">
               <BarChart2 size={20} />
-              <span>
-                <FormattedMessage id="Sidebar.Analytics" />
-              </span>
+              <span>Analytics!</span>
             </Link>
           </li>
           <li className={getLinkClass('/reports')}>
             <Link to="/reports">
               <FileText size={20} />
-              <span>
-                <FormattedMessage id="Sidebar.Reports" />
-              </span>
+              <span>Reports</span>
             </Link>
           </li>
           <li className={getLinkClass('/integrations')}>
             <Link to="/integrations">
               <Puzzle size={20} />
-              <span>
-                <FormattedMessage id="Sidebar.Integrations" />
-              </span>
+              <span>Integrations</span>
             </Link>
           </li>
           <li className={getLinkClass('/settings')}>
             <Link to="/settings">
               <Settings size={20} />
-              <span>
-                <FormattedMessage id="Sidebar.Settings" />
-              </span>
+              <span>Settings</span>
             </Link>
           </li>
         </ul>

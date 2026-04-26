@@ -3,23 +3,12 @@ import KpiCard from '../components/KpiCard'
 import LineChartComponent from '../components/LineChartComponent'
 import DataTable from '../components/DataTable'
 import styles from './DashboardPage.module.scss'
-import { useIntl, FormattedMessage } from 'react-intl'
 
 const DashboardPage: React.FC = () => {
-  const intl = useIntl()
-
-  const totalVisitors = intl.formatMessage({
-    id: 'Dashboard.Infoboxes.TotalVisitors',
-  })
-  const bounceRate = intl.formatMessage({
-    id: 'Dashboard.Infoboxes.BounceRate',
-  })
-  const newSignups = intl.formatMessage({
-    id: 'Dashboard.Infoboxes.NewSignups',
-  })
-  const conversionRates = intl.formatMessage({
-    id: 'Dashboard.Infoboxes.ConversionRate',
-  })
+  const totalVisitors = 'Total visitors'
+  const bounceRate = 'Bounce rate'
+  const newSignups = 'New signups'
+  const conversionRates = 'Conversion rate'
 
   // Mock Data for KPI Cards
   const kpiData = [
@@ -53,12 +42,8 @@ const DashboardPage: React.FC = () => {
     },
   ]
 
-  const thisPeriodText = intl.formatMessage({
-    id: 'Dashboard.TrendingVisitors.ThisPeriod',
-  })
-  const previousPeriodText = intl.formatMessage({
-    id: 'Dashboard.TrendingVisitors.PreviousPeriod',
-  })
+  const thisPeriodText = 'This period'
+  const previousPeriodText = 'Previous period'
 
   // Mock Data for Line Chart
   const chartData = [
@@ -92,21 +77,19 @@ const DashboardPage: React.FC = () => {
     { source: 'LinkedIn', visitors: '1,900', conversionRate: '3.0%' },
   ]
 
-  const title = intl.formatMessage({
-    id: 'Dashboard.TrendingVisitors.Title',
-  }, { days: 30 })
+  const title = 'Visitor Trends (Last 30 Days)'
 
   return (
     <div className={styles.dashboardContent}>
       <h1 className={styles.welcomeTitle}>
-        <FormattedMessage id="Dashboard.Greeting" values={{ name: 'Alex' }} />
+        Welcome Back, Alex!
       </h1>
       <h2 className={styles.roleDisplay}>
-        <FormattedMessage id="Dashboard.RoleDisplay" />
+        Administrator
       </h2>
 
       <h3>
-        <FormattedMessage id="Sidebar.Test" />
+        Test
       </h3>
 
       <div className={styles.kpiCardsContainer}>
