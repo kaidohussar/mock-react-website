@@ -7,6 +7,7 @@ import {
   FileText,
   Puzzle,
   Settings,
+  Users,
 } from 'lucide-react'
 
 const Sidebar: React.FC = () => {
@@ -43,6 +44,12 @@ const Sidebar: React.FC = () => {
             <Link to="/integrations">
               <Puzzle size={20} />
               <span>Integrations</span>
+            </Link>
+          </li>
+          <li className={getLinkClass('/customers')}>
+            <Link to="/customers">
+              <Users size={20} />
+              <span>Customers</span>
             </Link>
           </li>
           <li className={getLinkClass('/settings')}>

@@ -1,0 +1,247 @@
+@use '../styles/variables' as *;
+@use 'sass:color';
+
+.customersPage {
+  padding: $spacing-lg;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-lg;
+
+  h1 {
+    font-size: $font-size-xxl;
+    color: $color-text-dark;
+  }
+}
+
+.addButton {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-xs;
+}
+
+.tableCard {
+  padding: 0;
+  overflow: hidden;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: $spacing-md $spacing-lg;
+    border-bottom: 1px solid $color-border;
+    text-align: left;
+  }
+
+  th {
+    background-color: color.adjust($color-background-light, $lightness: 2%);
+    font-weight: 600;
+    color: $color-text-dark;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+.actionsHeader,
+.actionsCell {
+  width: 80px;
+  text-align: right;
+}
+
+.empty {
+  text-align: center;
+  color: $color-text-light;
+  padding: $spacing-xl !important;
+}
+
+.badge {
+  display: inline-block;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $border-radius;
+  font-size: $font-size-sm;
+  font-weight: 600;
+}
+
+.planFree {
+  background-color: color.adjust($color-text-light, $lightness: 35%);
+  color: $color-text-dark;
+}
+
+.planPro {
+  background-color: rgba($color-primary, 0.15);
+  color: $color-primary-dark;
+}
+
+.planEnterprise {
+  background-color: rgba($color-warning, 0.2);
+  color: color.adjust($color-warning, $lightness: -20%);
+}
+
+.statusActive {
+  background-color: rgba($color-success, 0.15);
+  color: color.adjust($color-success, $lightness: -10%);
+}
+
+.statusInactive {
+  background-color: rgba($color-danger, 0.15);
+  color: color.adjust($color-danger, $lightness: -10%);
+}
+
+.menuTrigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: $border-radius;
+  color: $color-text-light;
+  transition: background-color 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    background-color: color.adjust($color-background-light, $lightness: -3%);
+    color: $color-text-dark;
+  }
+}
+
+.menuContent {
+  min-width: 180px;
+  background-color: $color-background-card;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-md;
+  padding: $spacing-xs;
+  z-index: 1000;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  padding: $spacing-sm $spacing-md;
+  border-radius: 4px;
+  font-size: $font-size-sm;
+  color: $color-text-dark;
+  cursor: pointer;
+  outline: none;
+
+  &[data-highlighted] {
+    background-color: rgba($color-primary, 0.1);
+    color: $color-primary-dark;
+  }
+}
+
+.menuItemDanger {
+  color: $color-danger;
+
+  &[data-highlighted] {
+    background-color: rgba($color-danger, 0.1);
+    color: $color-danger;
+  }
+}
+
+.menuSeparator {
+  height: 1px;
+  background-color: $color-border;
+  margin: $spacing-xs 0;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: $spacing-md;
+}
+
+.modal {
+  background-color: $color-background-card;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-md;
+  padding: $spacing-xl;
+  width: 100%;
+  max-width: 480px;
+  max-height: calc(100vh - #{$spacing-xl});
+  overflow-y: auto;
+
+  h2 {
+    font-size: $font-size-xl;
+    color: $color-text-dark;
+    margin-bottom: $spacing-lg;
+  }
+}
+
+.field {
+  margin-bottom: $spacing-md;
+}
+
+.fieldLabel {
+  display: block;
+  font-size: $font-size-sm;
+  font-weight: 600;
+  color: $color-text-dark;
+  margin-bottom: $spacing-xs;
+}
+
+.selectTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: $spacing-sm $spacing-md;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  background-color: $color-background-card;
+  color: $color-text-dark;
+  font-size: $font-size-md;
+  text-align: left;
+
+  &:hover {
+    border-color: $color-primary;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-primary;
+    box-shadow: 0 0 0 2px rgba($color-primary, 0.2);
+  }
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: $spacing-sm;
+  margin-top: $spacing-lg;
+}
+
+.detailsList {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: $spacing-sm $spacing-lg;
+
+  dt {
+    font-weight: 600;
+    color: $color-text-light;
+    font-size: $font-size-sm;
+  }
+
+  dd {
+    color: $color-text-dark;
+  }
+}

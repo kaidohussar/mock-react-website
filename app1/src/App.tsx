@@ -11,6 +11,7 @@ import AnalyticsPage from './pages/AnalyticsPage'
 import ReportsPage from './pages/ReportsPage'
 import IntegrationsPage from './pages/IntegrationsPage'
 import SettingsPage from './pages/SettingsPage'
+import CustomersPage from './pages/CustomersPage'
 import Layout from './components/Layout'
 import './styles/main.scss'
 import { ContentstorageIntlProvider } from '@contentstorage/react-intl-plugin'
@@ -56,6 +57,7 @@ const App: React.FC = () => {
                   <Route path="reports" element={<ReportsPage />} />
                   <Route path="analytics" element={<AnalyticsPage />} />
                   <Route path="integrations" element={<IntegrationsPage />} />
+                  <Route path="customers" element={<CustomersPage />} />
                   <Route path="settings" element={<SettingsPage />} />
                   <Route
                     path="*"
