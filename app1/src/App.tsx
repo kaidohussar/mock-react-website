@@ -10,6 +10,7 @@ import DashboardPage from './pages/DashboardPage'
 import AnalyticsPage from './pages/AnalyticsPage'
 import ReportsPage from './pages/ReportsPage'
 import IntegrationsPage from './pages/IntegrationsPage'
+import EventsPage from './pages/EventsPage'
 import SettingsPage from './pages/SettingsPage'
 import Layout from './components/Layout'
 import './styles/main.scss'
@@ -56,6 +57,7 @@ const App: React.FC = () => {
                   <Route path="reports" element={<ReportsPage />} />
                   <Route path="analytics" element={<AnalyticsPage />} />
                   <Route path="integrations" element={<IntegrationsPage />} />
+                  <Route path="events" element={<EventsPage />} />
                   <Route path="settings" element={<SettingsPage />} />
                   <Route
                     path="*"

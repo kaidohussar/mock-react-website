@@ -6,6 +6,7 @@ import {
   BarChart2,
   FileText,
   Puzzle,
+  CalendarDays,
   Settings,
 } from 'lucide-react'
 
@@ -43,6 +44,12 @@ const Sidebar: React.FC = () => {
             <Link to="/integrations">
               <Puzzle size={20} />
               <span>Integrations</span>
+            </Link>
+          </li>
+          <li className={getLinkClass('/events')}>
+            <Link to="/events">
+              <CalendarDays size={20} />
+              <span>Events</span>
             </Link>
           </li>
           <li className={getLinkClass('/settings')}>
