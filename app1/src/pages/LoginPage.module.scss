@@ -28,6 +28,13 @@
     padding: $spacing-md;
   }
 
+  .error {
+    color: $color-danger;
+    font-size: $font-size-sm;
+    margin-top: $spacing-sm;
+    margin-bottom: 0;
+  }
+
   .forgotPassword {
     display: block;
     text-align: center;
