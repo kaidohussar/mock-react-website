@@ -1,0 +1,95 @@
+@use '../../src/styles/variables' as *;
+
+.group {
+  position: relative;
+  margin-bottom: $spacing-md;
+  width: 100%;
+}
+
+.label {
+  display: block;
+  margin-bottom: $spacing-xs;
+  font-size: $font-size-sm;
+  color: $color-text-light;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: $spacing-sm $spacing-md;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  background-color: $color-background-card;
+  font-size: $font-size-md;
+  color: $color-text-dark;
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-align: left;
+
+  &:hover {
+    border-color: rgba($color-primary, 0.5);
+  }
+
+  &.open,
+  &:focus {
+    outline: none;
+    border-color: $color-primary;
+    box-shadow: 0 0 0 3px rgba($color-primary, 0.2);
+  }
+}
+
+.value {
+  color: $color-text-dark;
+}
+
+.placeholder {
+  color: $color-text-light;
+}
+
+.chevron {
+  color: $color-text-light;
+  transition: transform 0.2s ease-in-out;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + #{$spacing-xs});
+  left: 0;
+  right: 0;
+  background-color: $color-background-card;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-md;
+  list-style: none;
+  margin: 0;
+  padding: $spacing-xs;
+  max-height: 240px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $border-radius;
+  cursor: pointer;
+  font-size: $font-size-md;
+  color: $color-text-dark;
+
+  &:hover {
+    background-color: $color-background-light;
+  }
+}
+
+.optionSelected {
+  color: $color-primary;
+  font-weight: 600;
+}

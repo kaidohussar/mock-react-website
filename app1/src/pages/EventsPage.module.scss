@@ -1,0 +1,165 @@
+@use '../../src/styles/variables' as *;
+
+.eventsPage {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: $spacing-md;
+  flex-wrap: wrap;
+}
+
+.title {
+  margin: 0 0 $spacing-xs 0;
+  font-size: $font-size-xxl;
+  color: $color-text-dark;
+}
+
+.subtitle {
+  margin: 0;
+  color: $color-text-light;
+}
+
+.summaryCard {
+  width: fit-content;
+  min-width: 220px;
+}
+
+.summaryRow {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.summaryLabel {
+  font-size: $font-size-sm;
+  color: $color-text-light;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.summaryValue {
+  font-size: $font-size-xxl;
+  font-weight: 700;
+  color: $color-text-dark;
+  line-height: 1;
+}
+
+.sectionTitle {
+  margin: $spacing-md 0 0 0;
+  font-size: $font-size-lg;
+  color: $color-text-dark;
+}
+
+.emptyState {
+  align-items: center;
+  text-align: center;
+  color: $color-text-light;
+}
+
+.submissionList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: $spacing-md;
+}
+
+.submissionCard {
+  gap: $spacing-sm;
+}
+
+.submissionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $spacing-sm;
+}
+
+.submissionName {
+  margin: 0;
+  font-size: $font-size-lg;
+  color: $color-text-dark;
+}
+
+.badge {
+  font-size: $font-size-sm;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badge_public {
+  background-color: rgba($color-success, 0.15);
+  color: $color-success;
+}
+
+.badge_team {
+  background-color: rgba($color-primary, 0.15);
+  color: $color-primary;
+}
+
+.badge_private {
+  background-color: rgba($color-text-light, 0.2);
+  color: $color-text-dark;
+}
+
+.submissionDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-sm $spacing-md;
+  margin: $spacing-sm 0 0 0;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  dt {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-xs;
+    font-size: $font-size-sm;
+    color: $color-text-light;
+    margin: 0;
+  }
+
+  dd {
+    margin: 0;
+    font-size: $font-size-md;
+    color: $color-text-dark;
+  }
+}
+
+.submittedAt {
+  margin: $spacing-sm 0 0 0;
+  font-size: $font-size-sm;
+  color: $color-text-light;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxStack {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-md;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: $spacing-sm;
+  margin-top: $spacing-sm;
+}

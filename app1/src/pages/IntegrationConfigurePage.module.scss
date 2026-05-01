@@ -1,0 +1,96 @@
+@use '../../src/styles/variables' as *;
+
+.configurePage {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+  max-width: 720px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-xs;
+  background: none;
+  border: none;
+  padding: 0;
+  width: fit-content;
+  color: $color-primary;
+  font-size: $font-size-sm;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-primary-dark;
+  }
+}
+
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: $font-size-sm;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $color-primary;
+  font-weight: 600;
+}
+
+.title {
+  margin: 0;
+  font-size: $font-size-xxl;
+  color: $color-text-dark;
+}
+
+.subtitle {
+  margin: 0;
+  color: $color-text-light;
+}
+
+.formCard {
+  gap: $spacing-md;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  margin: $spacing-md 0 $spacing-sm 0;
+  font-size: $font-size-md;
+  color: $color-text-dark;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: $spacing-sm;
+  margin-top: $spacing-md;
+}
+
+.successCard {
+  flex-direction: row;
+  align-items: center;
+  gap: $spacing-md;
+  border: 1px solid rgba($color-success, 0.4);
+  background-color: rgba($color-success, 0.08);
+  color: $color-success;
+
+  p {
+    margin: 2px 0 0 0;
+    color: $color-text-dark;
+  }
+}
+
+.notFoundCard {
+  gap: $spacing-sm;
+}
