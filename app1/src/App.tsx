@@ -58,6 +58,7 @@ const App: React.FC = () => {
                     element={<IntegrationConfigurePage />}
                   />
                   <Route path="events" element={<EventsPage />} />
+                  <Route path="customers" element={<CustomersPage />} />
                   <Route path="settings" element={<SettingsPage />} />
                   <Route
                     path="*"
