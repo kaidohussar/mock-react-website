@@ -1,3 +1,102 @@
+@use '../../src/styles/variables' as *;
+
 .integrationsPage {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: $spacing-md;
+  flex-wrap: wrap;
+}
+
+.title {
+  margin: 0 0 $spacing-xs 0;
+  font-size: $font-size-xxl;
+  color: $color-text-dark;
+}
+
+.subtitle {
+  margin: 0;
+  color: $color-text-light;
+}
+
+.integrationList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $spacing-md;
+}
+
+.integrationCard {
+  gap: $spacing-sm;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconWrap {
+  width: 40px;
+  height: 40px;
+  border-radius: $border-radius;
+  background-color: rgba($color-primary, 0.1);
+  color: $color-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-xs;
+  font-size: $font-size-sm;
+  font-weight: 600;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: 12px;
+}
+
+.statusConnected {
+  background-color: rgba($color-success, 0.15);
+  color: $color-success;
+}
+
+.statusDisconnected {
+  background-color: rgba($color-text-light, 0.15);
+  color: $color-text-light;
+}
+
+.integrationName {
+  margin: $spacing-sm 0 0 0;
+  font-size: $font-size-lg;
+  color: $color-text-dark;
+}
+
+.category {
+  margin: 0;
+  font-size: $font-size-sm;
+  color: $color-text-light;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.description {
+  margin: $spacing-xs 0 0 0;
+  color: $color-text-dark;
+  flex-grow: 1;
+}
+
+.cardActions {
+  margin-top: $spacing-md;
+  display: flex;
+  justify-content: flex-end;
 }

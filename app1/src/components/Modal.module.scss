@@ -1,0 +1,78 @@
+@use '../../src/styles/variables' as *;
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: $spacing-md;
+  animation: fadeIn 0.15s ease-out;
+}
+
+.modal {
+  background-color: $color-background-card;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-md;
+  width: 100%;
+  max-width: 560px;
+  max-height: calc(100vh - #{$spacing-xl * 2});
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.2s ease-out;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing-md $spacing-lg;
+  border-bottom: 1px solid $color-border;
+}
+
+.title {
+  margin: 0;
+  font-size: $font-size-lg;
+  color: $color-text-dark;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: $color-text-light;
+  padding: $spacing-xs;
+  border-radius: $border-radius;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $color-background-light;
+    color: $color-text-dark;
+  }
+}
+
+.body {
+  padding: $spacing-lg;
+  overflow-y: auto;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
