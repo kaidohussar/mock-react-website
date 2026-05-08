@@ -406,7 +406,8 @@
       "scheduled": {
         "monthlyAnalytics": "Analítica mensual",
         "quarterlyPerformance": "Rendimiento trimestral",
-        "weeklySales": "Resumen semanal de ventas"
+        "weeklySales": "Resumen semanal de ventas",
+        "yearlyStats": "Estadísticas anuales"
       },
       "scheduledReports": "Informes programados",
       "subtitle": "Genera y programa informes personalizados",
