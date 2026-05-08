@@ -50,8 +50,8 @@ const App: React.FC = () => {
                   <Route path="dashboard" element={<DashboardPage />} />
                   <Route path="reports" element={<ReportsPage />} />
                   <Route path="analytics" element={<AnalyticsPage />} />
-                  <Route path="integrations" element={<IntegrationsPage />} />
                   <Route path="customers" element={<CustomersPage />} />
+                  <Route path="integrations" element={<IntegrationsPage />} />
                   <Route path="settings" element={<SettingsPage />} />
                   <Route
                     path="*"
