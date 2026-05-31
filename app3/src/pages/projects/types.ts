@@ -2,6 +2,8 @@ import { User } from '../users/types'
 
 export type UUID = `${string}-${string}-${string}-${string}-${string}`
 
+export type ProjectPriority = 'low' | 'medium' | 'high'
+
 export type Project = {
   id: UUID
   project_name: string
@@ -9,6 +11,8 @@ export type Project = {
   team: User['id'][]
   status: 'important' | 'completed' | 'archived' | 'in progress'
   created_at: string
+  description?: string
+  priority?: ProjectPriority
 }
 
 export type EmptyProject = Omit<Project, 'id' | 'project_owner' | 'created_at' | 'status'> & {

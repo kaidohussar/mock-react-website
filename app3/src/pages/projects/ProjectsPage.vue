@@ -6,6 +6,7 @@ import { useProjects } from './composables/useProjects'
 import ProjectCards from './widgets/ProjectCards.vue'
 import ProjectTable from './widgets/ProjectsTable.vue'
 import EditProjectForm from './widgets/EditProjectForm.vue'
+import AddProjectForm from './widgets/AddProjectForm.vue'
 import { Project } from './types'
 import { useModal, useToast } from 'vuestic-ui'
 import { useProjectUsers } from './composables/useProjectUsers'
@@ -146,10 +147,23 @@ const beforeEditFormModalClose = async (hide: () => unknown) => {
     >
       <h1 v-if="projectToEdit === null" class="va-h5 mb-4">{{ t('pages.projects.addProject') }}</h1>
       <h1 v-else class="va-h5 mb-4">{{ t('pages.projects.editProject') }}</h1>
+      <AddProjectForm
+        v-if="projectToEdit === null"
+        ref="editFormRef"
+        save-button-label="Create project"
+        @close="cancel"
+        @save="
+          (project) => {
+            onProjectSaved(project)
+            ok()
+          }
+        "
+      />
       <EditProjectForm
+        v-else
         ref="editFormRef"
         :project="projectToEdit"
-        :save-button-label="projectToEdit === null ? t('common.add') : t('common.save')"
+        :save-button-label="t('common.save')"
         @close="cancel"
         @save="
           (project) => {
