@@ -11,6 +11,8 @@ import AnalyticsPage from './pages/AnalyticsPage'
 import ReportsPage from './pages/ReportsPage'
 import IntegrationsPage from './pages/IntegrationsPage'
 import SettingsPage from './pages/SettingsPage'
+import ProfilePage from './pages/settings/ProfilePage'
+import BillingPage from './pages/settings/BillingPage'
 import CustomersPage from './pages/CustomersPage'
 import Layout from './components/Layout'
 import './styles/main.scss'
@@ -52,7 +54,11 @@ const App: React.FC = () => {
                   <Route path="analytics" element={<AnalyticsPage />} />
                   <Route path="customers" element={<CustomersPage />} />
                   <Route path="integrations" element={<IntegrationsPage />} />
-                  <Route path="settings" element={<SettingsPage />} />
+                  <Route path="settings" element={<SettingsPage />}>
+                    <Route index element={<Navigate to="profile" replace />} />
+                    <Route path="profile" element={<ProfilePage />} />
+                    <Route path="billing" element={<BillingPage />} />
+                  </Route>
                   <Route
                     path="*"
                     element={<Navigate to="dashboard" replace />}
